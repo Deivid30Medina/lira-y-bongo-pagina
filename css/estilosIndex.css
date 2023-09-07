@@ -1,0 +1,376 @@
+body{
+    margin: 0;
+}
+
+/*Estilos Cabecera Inicio*/
+
+.classHeader{
+    display:block;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+}
+
+.classNav{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+.classNavItems{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    /*border: 1px solid black;*/
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 20px;
+    
+}
+
+.classNavHamburgesa{
+    display: none;
+}
+
+/*Estilos Cabecera Fin*/
+
+/*Estilos Menu Inicio*/
+
+.classListaMenu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.classbtnMenu{
+    background: none;
+    border: 1px solid black;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    min-height: 40px;
+    max-height: 80px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.classbtnMenu:hover{
+    color: white;
+}
+
+.classbtnMenu::before{
+    content: "";
+    border-radius: 25px;
+    background: #e67d2e;
+    top: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    z-index: -1;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.classbtnMenu:hover::before{
+    width: 100%;
+    height: 100%;
+}
+
+.classNavHamburgesaCerrar{
+    display: none;
+}
+
+/*Estilos Menu Final*/
+
+/*Estilos main Inicio*/
+
+.classMainPagina{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("../imagenes/Prueba/Fondo2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    
+}
+
+.classBongo{
+    text-align: center;
+    border: 1px solid blue;
+    margin: 2px;
+}
+
+.classVideoLibro{
+    text-align: center;
+    border: 1px solid red;
+    margin: 2px;
+}
+
+.classGemaH4{
+    width: 100%;
+}
+
+.classGemas{
+    border: 1px solid white;
+    margin: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.classLira{
+    text-align: center;
+    border: 1px solid green;
+    margin: 2px;
+}
+
+.classImagenFinal{
+    width: 100%;
+    height: auto;
+}
+
+/*Estilos main Final*/
+
+/*Estilos footer Inicio*/
+
+.classPiePagina{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #002f70;
+    max-height: 200px;
+}
+
+.classFisguenosItem{
+    max-height: 60px;
+}
+
+.classRedesSociales{
+    border: 1px solid yellow;
+}
+
+.classImagenCasaDerechoButton{
+    border: 1px solid greenyellow;
+}
+
+.classLogoDNDA{
+    border: 1px solid purple;
+}
+
+.classSiguenos{
+    color: white;
+    text-align: center;
+}
+
+.classInformacionDNDAPiePagina{
+    color: white;
+    font-size: 10px;
+    border: 1px solid red;
+}
+
+/*Estilos footer Final*/
+
+
+/* ----------------- Responsive Design Movil------------------------------------*/
+
+@media screen and (max-width: 375px){
+    .body{ 
+        width: 800px;
+        
+    }
+
+    /* Boton de Opciones Header Inicio */
+    .classHeader{
+        display:block;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-size: 30px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: 0;
+    }
+    /* Boton de Opciones Header Fin*/
+
+    /* Boton de Opciones menu Inicio */
+    .abrirmenuclass{
+        width: 30px;
+        height: 50px;
+        position: fixed;
+        margin-top: 5px;
+        top: 0;
+        left: 0;
+    }
+
+    .abrirmenuclass span{
+        display: block;
+        cursor: pointer;
+        width: 100%;
+        height: 3px;
+        background-color: #e67d2e;
+        padding: 3px;
+        margin-left: 20px;
+        margin-top: 4px;
+        border-radius: 10%;
+        -webkit-border-radius: 10%;
+        -moz-border-radius: 10%;
+        -ms-border-radius: 10%;
+        -o-border-radius: 10%;
+    }
+
+    .classNavHamburgesaCerrar{
+        display: block;
+        margin: 8px;
+        margin-left: 20px;
+        color: #e67d2e;
+        cursor: pointer;
+    }
+    
+    .classNav{
+        opacity: 0;
+        visibility:hidden !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: aliceblue;
+    }
+    .classNav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .classNavItems{
+        display:flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: flex-start;
+        z-index: -1;
+        position: static;
+    }
+
+        /* Cambiar Color Botones*/
+        .classbtnMenu{
+            margin: 5px;
+            z-index: 1;
+        }
+        .classbtnMenu:hover{
+            color: white;
+        }
+        
+        .classbtnMenu::before{
+            content: "";
+            border-radius: 25px;
+            background: #e67d2e;
+            top: 0;
+            left: 0;
+            width: 0;
+            position: absolute;
+            z-index: -1;
+            transition: 0.6s;
+            -webkit-transition: 0.6s;
+            -moz-transition: 0.6s;
+            -ms-transition: 0.6s;
+            -o-transition: 0.6s;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            -ms-border-radius: 25px;
+            -o-border-radius: 25px;
+        }
+        
+        .classbtnMenu:hover::before{
+            width: 100%;
+            height: 100%;
+        }
+    /* Boton de Opciones menu Fin*/
+
+    /* Boton de Opciones main Inicio */
+
+    .classMainPagina{
+        display: flex;
+        flex-direction:row; 
+        
+        z-index: 0;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat; 
+        margin: 0;
+    }
+
+    .classSection{
+        margin: 0;
+    }
+
+    .classVideoLibro{
+        order: -1;
+        width: 100%;
+        align-items: center;
+    }
+
+    .classImagenVideo{
+        width: 100%;
+    }
+
+    .classBongo{
+        order: 1;
+        width: 50% ;
+        height: auto;
+        margin: 0;
+        display: flex;
+    }
+
+    .classBongo img{
+        
+        display: inline;
+        margin: 0;
+        width: 100%;
+    }
+
+    .classLira{
+        order: 2; 
+        width: 50%;
+        margin: 0;
+        height: auto;
+        display: flex;
+    }
+
+
+    /* Boton de Opciones main Fin*/
+
+    /* Boton de Opciones piePagina Inicio */
+    .classPiePagina{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .classpieItem{
+        width: 100%;
+        text-align: center;
+    }
+    /* Boton de Opciones piePagina Fin*/
+}
