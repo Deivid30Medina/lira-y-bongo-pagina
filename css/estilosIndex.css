@@ -180,6 +180,13 @@ body{
 
 .classImagenCasaDerechoButton{
     border: 1px solid greenyellow;
+    height: 0;
+    height: 86px;
+}
+
+.classImagenCasaDerechoButton img{
+    height: 100%;
+    width: 100%;
 }
 
 .classInformacionDNDA{
@@ -414,12 +421,38 @@ body{
     }
 
     .classRedesSociales{
-        width: 100%;
+        width: auto;  
         text-align: center;
     }
 
+    .classInformacionDNDAPiePagina{
+        color: white;
+        font-size: 10px;
+        border: 1px solid red;
+        text-align: center;
+        font-size: small;
+    }
+
+    .classLogoDNDA{
+        align-items: center;
+    }
+
     .classpieItem{
+        display: initial;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .classImagenCasaDerechoButton{
+        border: 1px solid greenyellow;
+        height: 0;
+        height: 100px;
+    }
+    
+    .classImagenCasaDerechoButton img{
         height: 100%;
+        width: 100%;
     }
     /* Boton de Opciones piePagina Fin*/
 }
