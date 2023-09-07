@@ -305,6 +305,7 @@ body{
     .classNav.visible{
         opacity: 1;
         visibility: visible;
+        z-index: 0;
     }
 
     .classNavItems{
@@ -312,7 +313,6 @@ body{
         flex-direction: column;
         align-items: inherit;
         margin: 40px;
-        z-index: -1;
         position: static;
         width: auto;
     }
@@ -419,6 +419,8 @@ body{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        position: relative;
+        z-index: 1;
     }
 
     .classRedesSociales{
