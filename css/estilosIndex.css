@@ -418,6 +418,8 @@ body{
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
+        
     }
 
     .classRedesSociales{
@@ -433,16 +435,13 @@ body{
         font-size: small;
     }
 
-    .classLogoDNDA{
-        align-items: center;
-    }
-
     .classpieItem{
         display: initial;
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
     }
+
 
     .classImagenCasaDerechoButton{
         border: 1px solid greenyellow;
