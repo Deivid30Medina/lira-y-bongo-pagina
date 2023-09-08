@@ -30,6 +30,7 @@
 /*Main Inicio*/
     .classContenedorPrincipal{
         width: 100%;
+        height: auto;
     }
 
     .classPrimeraDescripcion{
@@ -53,7 +54,7 @@
         float: left;
         margin-top: 5%;
         right: 15%;
-        width: 200px;
+        width: 15%;
     }
 
     .classAventurasP{
@@ -65,4 +66,34 @@
         width: auto;
     }
 
+    .classImagenFinalEscalar .classLiraBongo{
+        position: relative;
+        width: 30%;
+        height: 400px;
+        left: 9%;
+        top: -440px;
+        object-fit: scale-down;
+    }
+
+    .classFinalPagina{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        position: relative;
+        top: -400px;
+        flex-wrap: wrap;
+    }
+
+    .classImagenFinalLiraBongo{
+        height: 200px;
+        width: 40%;
+        object-fit: scale-down; 
+    }
+
+    .classPFinalLiraBongo{
+        font-size: 16px;
+        font-weight:normal;
+    }
 /*Main Final*/
