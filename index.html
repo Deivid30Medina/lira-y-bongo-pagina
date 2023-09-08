@@ -16,20 +16,14 @@
             <br>
             <h2>a través del Derecho de Autor!</h2>
         </header>
-        <div id="idAbrirMenu" class="abrirmenuclass">
-            <span class="linea1"></span>
-            <span class="linea2"></span>
-            <span class="linea3"></span>
-        </div>
         <nav class="classNav" id="idNav">
-            <div id="idCerrarMenu" class="classCerrarMenu">
-                <span class="linea1"></span>
-                <span class="linea2"></span>
-                <span class="linea3"></span>
-            </div>
+            <label for="menu" class="nav_label">
+                <img src="assets/menu.svg" class="nav_img">
+            </label>
+            <input class="classNavCheck" type="checkbox" id="menu">
             <div class="classNavItems" id="idNavItems">
-                <button class="classbtnMenu">Inicio</button>
-                <button class="classbtnMenu">Bienvenidos</button>
+                <button class="classbtnMenu" onclick="cargarContenido('inicio.html')">Inicio</button>
+                <button class="classbtnMenu" onclick="cargarContenido('bienvenidos.html')">Bienvenidos</button>
                 <button class="classbtnMenu">Descarga el <br>commit en <strong>pdf</strong></button>
                 <button class="classbtnMenu">Home Casa</button>
                 <button class="classbtnMenu">Registra tu obra</button>
@@ -38,21 +32,7 @@
             </div>
         </nav>
         <main class="classMainPagina">
-            <section class="classBongo classSection">
-                <img  src="imagenes/Prueba/Bongo.png" class="classImagenMain" >
-            </section>
-            <section class="classVideoLibro classSection">
-                <img class="classImagenVideo" src="imagenes/Prueba/video.png">
-                <section class="classGemas classSection">
-                    <img src="imagenes/Prueba/Gema1.png">
-                    <img src="imagenes/Prueba/Gema1.png">
-                    <img src="imagenes/Prueba/Gema1.png">
-                    <img src="imagenes/Prueba/Gema1.png">
-                </section>
-            </section>
-            <section class="classLira classSection">
-                <img src="imagenes/Prueba/Lira.png">
-            </section>
+            <div id="contenido-dinamico" class="contenido_cambiante"></div> <!-- Contenedor para el contenido dinámico -->
         </main>
         <img class="classImagenFinal" src="imagenes/Prueba/imagenPiePagina.png" alt="Imagen Pie Pagina">
         <footer class="classPiePagina">
@@ -85,6 +65,7 @@
             </div>
         </footer>
     </div>
-    <script src="js/index.js"></script>
+    <script src="js/index.js" defer></script>
+    <script src="js/cargarPaginasDinamicamente.js" defer></script>
 </body>
 </html>

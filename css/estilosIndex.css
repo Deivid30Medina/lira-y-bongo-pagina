@@ -23,6 +23,13 @@ body{
     position: relative;
 }
 
+.nav_label{
+    display: none;
+}
+
+.classNavCheck{
+    display: none;
+}
 
 .classNavItems{
     display:flex;
@@ -44,6 +51,13 @@ body{
 /*Estilos Cabecera Fin*/
 
 /*Estilos Menu Inicio*/
+
+.contenido_cambiante{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 .classListaMenu{
     display: flex;
@@ -115,41 +129,6 @@ body{
     background-repeat: no-repeat;
     border: 2px solid black;
     
-}
-
-.classBongo{
-    text-align: center;
-    border: 1px solid blue;
-    margin: 2px;
-}
-
-.classVideoLibro{
-    text-align: center;
-    border: 1px solid red;
-    margin: 2px;
-}
-
-.classGemaH4{
-    width: 100%;
-}
-
-.classGemas{
-    border: 1px solid white;
-    margin: 2px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.classLira{
-    text-align: center;
-    border: 1px solid green;
-    margin: 2px;
-}
-
-.classImagenFinal{
-    width: 100%;
-    height: auto;
 }
 
 /*Estilos main Final*/
@@ -224,7 +203,7 @@ body{
 
     /* Boton de Opciones Header Inicio */
     .classHeader{
-        display:block;
+        display:inline;
         justify-content: space-around;
         align-items: center;
         text-align: center;
@@ -233,7 +212,6 @@ body{
         width: 100%;
         left: 0;
         right: 0;
-        margin: 0;
     }
     /* Boton de Opciones Header Fin*/
 
@@ -247,80 +225,49 @@ body{
         left: 0;
     }
 
-    .abrirmenuclass span{
-        display: block;
+    .nav_label{
+        display: flex;
         cursor: pointer;
-        width: 100%;
-        height: 3px;
-        background-color: #e67d2e;
-        padding: 3px;
-        margin-left: 20px;
-        margin-top: 4px;
-        border-radius: 10%;
-        -webkit-border-radius: 10%;
-        -moz-border-radius: 10%;
-        -ms-border-radius: 10%;
-        -o-border-radius: 10%;
+        background-color: white;
     }
 
-    .classCerrarMenu{
-        width: 30px;
-        height: 50px;
-        position: fixed;
-        margin-top: 5px;
-        top: 0;
-        left: 0;
-    }
-
-    .classCerrarMenu span{
-        display: block;
-        cursor: pointer;
-        width: 100%;
-        height: 3px;
-        background-color: #e67d2e;
-        padding: 3px;
-        margin-left: 20px;
-        margin-top: 4px;
-        border-radius: 10%;
-        -webkit-border-radius: 10%;
-        -moz-border-radius: 10%;
-        -ms-border-radius: 10%;
-        -o-border-radius: 10%;
-    }
-    
     .classNav{
-        opacity: 0;
-        visibility:hidden !important;
         position: fixed;
         top: 0;
         left: 0;
-        bottom: 0;
-        right: 0;
-        width: 100vw;
-        height: 100vh; /* 100% del alto del viewport */
-        background-color: aliceblue;
-        border: none;
-        outline: none;
+        width: 100%;
+        z-index: 10;
     }
-    .classNav.visible{
-        opacity: 1;
-        visibility: visible;
-        z-index: 0;
+ 
+    .classNavCheck{
+        display: none;
+        z-index: 11;
+    }
+
+
+    .classNavCheck:checked + .classNavItems{
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        align-items: inherit;
+        position: static;
+        width: auto;
+        background-color: #f5d6bf;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
     }
 
     .classNavItems{
-        display:flex;
-        flex-direction: column;
-        align-items: inherit;
-        margin: 40px;
-        position: static;
-        width: auto;
+        display: none;
+        background-color: #f5d6bf;
     }
 
         /* Cambiar Color Botones*/
         .classbtnMenu{
-            margin: 5px;
             z-index: 1;
+            margin: 0;
         }
         .classbtnMenu:hover{
             color: white;
@@ -352,65 +299,6 @@ body{
         }
     /* Boton de Opciones menu Fin*/
 
-    /*  main Inicio */
-
-    .classMainPagina{
-        display: flex;
-        flex-direction:row; 
-        z-index: 0;
-        width: 100%;
-        background-size: cover;
-        background-repeat: no-repeat; 
-        margin: 0;
-        align-items: initial;
-    }
-
-    .classSection{
-        margin: 0;
-    }
-
-    .classVideoLibro{
-        order: -1;
-        width: 100%;
-        align-items: center;
-    }
-
-    .classImagenVideo{
-        width: 100%;
-    }
-
-    .classBongo{
-        order: 1;
-        width: 50% ;
-        margin: 0;
-        display: flex;
-    }
-
-    .classBongo img{
-        
-        display: inline;
-        margin: 0;
-        width: 100%;
-        height: auto;
-    }
-
-    .classLira{
-        order: 2; 
-        width: 50%;
-        margin: 0;
-        display: flex;
-        border: 2px solid black;
-    }
-
-    .classLira img{
-        
-        display: inline;
-        margin: 0;
-        width: 100%;
-        height: auto;
-    }
-
-    /* Boton de Opciones main Fin*/
 
     /* Boton de Opciones piePagina Inicio */
     .classPiePagina{
@@ -465,7 +353,7 @@ body{
 
     /* Boton de Opciones Header Inicio */
     .classHeader{
-        display:block;
+        display:inline;
         justify-content: space-around;
         align-items: center;
         text-align: center;
@@ -474,7 +362,6 @@ body{
         width: 100%;
         left: 0;
         right: 0;
-        margin: 0;
     }
     /* Boton de Opciones Header Fin*/
 
@@ -509,16 +396,6 @@ body{
 
     /* Boton de Opciones main Inicio */
 
-    .classMainPagina{
-        display: flex;
-        flex-direction:row; 
-        
-        z-index: 0;
-        width: 100%;
-        background-size: cover;
-        background-repeat: no-repeat; 
-        margin: 0;
-    }
 
     .classSection{
         margin: 0;

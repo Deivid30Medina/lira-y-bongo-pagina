@@ -1,0 +1,99 @@
+/*Estilos main Inicio*/
+
+.classBongo{
+    text-align: center;
+    border: 1px solid blue;
+    margin: 2px;
+}
+
+.classVideoLibro{
+    text-align: center;
+    border: 1px solid red;
+    margin: 2px;
+}
+
+.classGemaH4{
+    width: 100%;
+}
+
+.classGemas{
+    border: 1px solid white;
+    margin: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.classLira{
+    text-align: center;
+    border: 1px solid green;
+    margin: 2px;
+}
+
+.classImagenFinal{
+    width: 100%;
+    height: auto;
+}
+
+/*Estilos main Final*/
+
+@media screen and (max-width: 709px){
+     /*  main Inicio */
+
+     .classMainPagina{
+        display: flex;
+        flex-direction:row; 
+        z-index: 0;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat; 
+        margin: 0;
+        align-items: initial;
+    }
+
+    .classSection{
+        margin: 0;
+    }
+
+    .classVideoLibro{
+        order: -1;
+        width: 100%;
+        align-items: center;
+    }
+
+    .classImagenVideo{
+        width: 100%;
+    }
+
+    .classBongo{
+        order: 1;
+        width: 50% ;
+        margin: 0;
+        display: flex;
+    }
+
+    .classBongo img{
+        
+        display: inline;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .classLira{
+        order: 2;
+        width: 50% ;
+        margin: 0;
+        display: flex;
+    }
+
+    .classLira img{
+        
+        display: inline;
+        margin: 0;
+        width: 100%;
+
+    }
+
+    /* Boton de Opciones main Fin*/
+}
