@@ -1,5 +1,10 @@
 /*Estilos main Inicio*/
 
+.classSection{
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .classBongo{
     text-align: center;
     border: 1px solid blue;
@@ -53,6 +58,7 @@
 
     .classSection{
         margin: 0;
+
     }
 
     .classVideoLibro{

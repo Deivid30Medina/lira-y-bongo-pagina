@@ -1,5 +1,12 @@
 body{
     margin: 0;
+    background-image: url("../imagenes/Prueba/Fondo2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.classImagenFinal{
+    width: 100%;
 }
 
 .classContenedorPrincipal{
@@ -10,7 +17,7 @@ body{
 /*Estilos Cabecera Inicio*/
 
 .classHeader{
-    display:block;
+    display:grid;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
@@ -57,6 +64,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .classListaMenu{
@@ -124,11 +132,8 @@ body{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    background-image: url("../imagenes/Prueba/Fondo2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
     border: 2px solid black;
-    
+    width: 100%;
 }
 
 /*Estilos main Final*/

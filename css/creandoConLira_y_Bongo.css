@@ -1,0 +1,68 @@
+.classLiraBongoCotenedorPrincipal{
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+/*Inicio Header*/
+    .classHeaderLiraBongo{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .classHeaderA{
+        justify-content: center;
+        text-decoration: none;
+        cursor: pointer;
+        width: 100%;
+        
+    }
+    .classH1Header{
+        align-items: center;
+        justify-content: space-evenly;
+        color: #003f60;
+    }
+/*Fin Header*/
+
+/*Main Inicio*/
+    .classContenedorPrincipal{
+        width: 100%;
+    }
+
+    .classPrimeraDescripcion{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .classSegundaDescripcion{
+        text-align: center;
+        font-weight: bold;
+        color: #002f70;
+        font-size: 15px;
+    }
+
+    .classVideoA{
+        text-decoration: none;
+    }
+
+    .classImagenVideo{
+        position: absolute;
+        float: left;
+        margin-top: 5%;
+        right: 15%;
+        width: 200px;
+    }
+
+    .classAventurasP{
+        position: absolute;
+        font-size: 15px;
+        text-align: center;
+        right: 4%;
+        margin-top: 10%;
+        width: auto;
+    }
+
+/*Main Final*/
