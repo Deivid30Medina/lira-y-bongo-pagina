@@ -33,6 +33,7 @@
     text-align: center;
     border: 1px solid green;
     margin: 2px;
+    cursor: pointer;
 }
 
 .classImagenFinal{
