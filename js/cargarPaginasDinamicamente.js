@@ -37,6 +37,6 @@ window.addEventListener('load', function () {
             // Muestra el contenido con una animación
             document.querySelector('.contenido_cambiante').style.opacity = 1;
           });
-      }, 500); // Ajustar el tiempo de espera según las necesidades
+      }, 500); // Ajustar el tiempo de carga html
     }
 // Fin cargar paginas .html
