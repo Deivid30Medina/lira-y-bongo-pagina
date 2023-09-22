@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup sin JavaScript</title>
+    <style>
+        /* Estilo para el fondo oscuro */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Estilo para el cuadro de diálogo */
+        .popup-container {
+            display: none;
+        }
+
+        /* Estilo para mostrar el cuadro de diálogo cuando se selecciona */
+        #popup:checked + .popup-container {
+            display: block;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo para cerrar el cuadro de diálogo */
+        .close-btn {
+            text-align: right;
+        }
+
+        /* Estilo para el botón de cerrar */
+        .close-btn label {
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        /* Estilo para el contenido del cuadro de diálogo */
+        .popup-content {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Botón para mostrar el cuadro de diálogo -->
+    <label for="popup">Mostrar Diálogo</label>
+    <input type="checkbox" id="popup" style="display: none;">
+
+    <!-- Cuadro de diálogo oculto por defecto -->
+    <div class="popup-container">
+        <div class="close-btn">
+            <label for="popup">&times;</label>
+        </div>
+        <div class="popup-content">
+            <h2>Diálogo emergente sin JavaScript</h2>
+            <p>Este es un ejemplo de un cuadro de diálogo emergente creado solo con HTML y CSS, sin JavaScript.</p>
+        </div>
+    </div>
+</body>
+</html>

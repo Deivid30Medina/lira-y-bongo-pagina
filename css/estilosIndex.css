@@ -1,13 +1,4 @@
-body{
-    margin: 0;
-    background-image: url("../imagenes/Prueba/Fondo2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-.classImagenFinal{
-    width: 100%;
-}
 
 .classContenedorPrincipal{
     overflow-x: hidden;
@@ -17,11 +8,15 @@ body{
 /*Estilos Cabecera Inicio*/
 
 .classHeader{
-    display:grid;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    margin: 30px;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.classHeader img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
 }
 
 .classNav{
@@ -48,7 +43,8 @@ body{
     flex-wrap: wrap;
     margin: 0;
     padding: 20px;
-    
+    position: absolute;
+    top: -60px;    
 }
 
 .classNavHamburgesa{
@@ -73,6 +69,23 @@ body{
     align-items: center;
     flex-wrap: wrap;
 }
+
+.classBoton1{
+    height: 50px;
+    width: 200px;
+ }
+
+ .classBoton2{
+    position: relative;
+    top: -10px;
+    height: 80px;
+    width: 200px;
+ }
+
+ .classBtn{
+    display: flex;
+    align-items: center;
+ }
 
 .classbtnMenu{
     background: none;
@@ -134,6 +147,7 @@ body{
     flex-wrap: wrap;
     border: 2px solid black;
     width: 100%;
+    margin-top: 60px;
 }
 
 .ContenedorPrincipalPopUp{
