@@ -81,7 +81,32 @@ function manejarEventosLoad() {
       });
   });
 
-  // Agrega más eventos load para otros elementos SVG si es necesario
+  // Escuchar el evento load del objeto <object> para el otro SVG
+  document.getElementById('svgObjectRegistraObra').addEventListener('load', function () {
+    const svgDoc = this.contentDocument;
+    svgDoc.documentElement.addEventListener('click', function () {
+        const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'registraTuObra.html';
+        cargarContenidoDesdeSVG(archivo);
+    });
+  });
+  
+  // Escuchar el evento load del objeto <object> para el otro SVG
+  document.getElementById('svgObjectProyecto').addEventListener('load', function () {
+    const svgDoc = this.contentDocument;
+    svgDoc.documentElement.addEventListener('click', function () {
+        const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'sobreElProyecto.html';
+        cargarContenidoDesdeSVG(archivo);
+    });
+  });
+
+  // Escuchar el evento load del objeto <object> para el otro SVG
+  document.getElementById('svgObjectLiraBongo').addEventListener('load', function () {
+    const svgDoc = this.contentDocument;
+    svgDoc.documentElement.addEventListener('click', function () {
+        const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'creandoConLira_y_Bongo.html';
+        cargarContenidoDesdeSVG(archivo);
+    });
+  });
 }
 
 // Llamar a la función para manejar eventos load
