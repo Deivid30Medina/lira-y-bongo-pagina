@@ -28,6 +28,9 @@
         font-size: 21px;
         font-family: ; /*fira sans medium italic*/
       }
+      g:hover>path, g:focus>path{
+				fill: url(#Degradado_sin_nombre_22);
+			}
 
     </style>
     <clipPath id="clippath">
@@ -41,6 +44,15 @@
       <stop offset=".67" stop-color="#6fb3d8"/>
       <stop offset=".85" stop-color="#71c3e1"/>
       <stop offset="1" stop-color="#72c9e5"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_22" data-name="Degradado sin nombre 21" x1="-99.65" y1="37.68" x2="312.31" y2="37.68" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c204af"/>
+      <stop offset=".02" stop-color="#c103af"/>
+      <stop offset=".25" stop-color="#9d02c0"/>
+      <stop offset=".47" stop-color="#8e1bea"/>
+      <stop offset=".67" stop-color="#8401cc"/>
+      <stop offset=".85" stop-color="#7400d3"/>
+      <stop offset="1" stop-color="#6f00d6"/>
     </linearGradient>
   </defs>
   <g class="cls-2">

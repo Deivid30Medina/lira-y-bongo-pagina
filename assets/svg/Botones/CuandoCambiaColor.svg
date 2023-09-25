@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 276.63 86.78">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_4);
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_21);
+      }
+
+      .cls-4 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+
+      .cls-7 {
+        fill: #fff;
+        font-family: FiraSans-MediumItalic, 'Fira Sans';
+        font-size: 22px;
+        font-style: italic;
+        font-weight: 500;
+        opacity: .84;
+      }
+
+      .cls-8 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_4" data-name="Degradado sin nombre 4" x1="-86.22" y1="42.77" x2="325.75" y2="42.77" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c204af"/>
+      <stop offset="0" stop-color="#c103af"/>
+      <stop offset=".29" stop-color="#9d02c0"/>
+      <stop offset=".56" stop-color="#8401cc"/>
+      <stop offset=".81" stop-color="#7400d3"/>
+      <stop offset="1" stop-color="#6f00d6"/>
+    </linearGradient>
+    <clipPath id="clippath">
+      <rect class="cls-6" x="-393.3" y="-38.25" width="281.18" height="124.29"/>
+    </clipPath>
+    <linearGradient id="Degradado_sin_nombre_21" data-name="Degradado sin nombre 21" x1="-233.05" y1="40.38" x2="215.92" y2="40.38" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8e1bea"/>
+      <stop offset=".06" stop-color="#872deb"/>
+      <stop offset=".24" stop-color="#7464f1"/>
+      <stop offset=".42" stop-color="#6493f5"/>
+      <stop offset=".59" stop-color="#58b7f9"/>
+      <stop offset=".75" stop-color="#4fd0fb"/>
+      <stop offset=".89" stop-color="#49e0fd"/>
+      <stop offset="1" stop-color="#48e6fe"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-1" d="m239.06,77.83H43.33c-7.48,0-14.13-4.77-16.53-11.86L14.89,30.77c-3.83-11.32,4.59-23.05,16.53-23.05h219.54c11.95,0,20.36,11.73,16.53,23.05l-11.91,35.2c-2.4,7.09-9.05,11.86-16.53,11.86Z"/>
+  <g class="cls-5">
+    <g>
+      <path class="cls-2" d="m131.36,75.43H-81.95c-8.16,0-15.4-4.77-18.02-11.86l-12.98-35.2c-4.17-11.32,5-23.05,18.02-23.05h239.26c13.02,0,22.19,11.73,18.02,23.05l-12.98,35.2c-2.61,7.09-9.86,11.86-18.02,11.86Z"/>
+      <text class="cls-7" transform="translate(-99.34 47.01)"><tspan class="cls-4" x="0" y="0">#</tspan><tspan class="cls-10" x="11.35" y="0">C</tspan><tspan class="cls-9" x="23.39" y="0">r</tspan><tspan class="cls-3" x="31.24" y="0">e</tspan><tspan x="42.64" y="0">ando</tspan><tspan class="cls-8" x="93.37" y="0">C</tspan><tspan class="cls-11" x="105.25" y="0">onLi</tspan><tspan class="cls-9" x="147.62" y="0">r</tspan><tspan x="155.47" y="0">aYBongo</tspan></text>
+    </g>
+  </g>
+</svg>
