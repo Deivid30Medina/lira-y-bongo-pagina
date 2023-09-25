@@ -25,7 +25,6 @@ window.addEventListener('load', function () {
   function cargarContenido(archivo) {
       // Oculta el contenido actual
       document.querySelector('.contenido_cambiante').style.opacity = 0;
-
       setTimeout(function () {
         // Carga el nuevo contenido
         fetch(archivo)
@@ -40,3 +39,50 @@ window.addEventListener('load', function () {
       }, 500); // Ajustar el tiempo de carga html
     }
 // Fin cargar paginas .html
+
+
+
+// Función para cargar contenido dinámico
+function cargarContenidoDesdeSVG(archivo) {
+  // Ocultar el contenido actual
+  document.querySelector('.contenido_cambiante').style.opacity = 0;
+
+  setTimeout(function () {
+      // Cargar el nuevo contenido
+      fetch(archivo)
+          .then((response) => response.text())
+          .then((data) => {
+              // Actualizar el contenido
+              document.querySelector('.contenido_cambiante').innerHTML = data;
+
+              // Mostrar el contenido con una animación
+              document.querySelector('.contenido_cambiante').style.opacity = 1;
+          });
+  }, 500); // Ajustar el tiempo de carga HTML
+}
+
+// Manejar eventos load para varios elementos SVG
+function manejarEventosLoad() {
+  // Escuchar el evento load del objeto <object> para el SVG de Inicio
+  document.getElementById('svgObjectInicio').addEventListener('load', function () {
+      const svgDoc = this.contentDocument;
+      svgDoc.documentElement.addEventListener('click', function () {
+          const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'inicio.html';
+          cargarContenidoDesdeSVG(archivo);
+      });
+  });
+
+  // Escuchar el evento load del objeto <object> para el otro SVG
+  document.getElementById('svgObjectBienvenido').addEventListener('load', function () {
+      const svgDoc = this.contentDocument;
+      svgDoc.documentElement.addEventListener('click', function () {
+          const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'bienvenidos.html';
+          cargarContenidoDesdeSVG(archivo);
+      });
+  });
+
+  // Agrega más eventos load para otros elementos SVG si es necesario
+}
+
+// Llamar a la función para manejar eventos load
+manejarEventosLoad();

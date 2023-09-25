@@ -9,6 +9,7 @@
 
 .classBongo{
     width: 25%;
+    height: 100%;
     text-align: center;
     border: 1px solid blue;
     margin: 0px;
@@ -47,6 +48,7 @@
 
 .classLira{
     width: 25%;
+    height: 100%;
     text-align: center;
     border: 1px solid green;
     margin: 0px;
