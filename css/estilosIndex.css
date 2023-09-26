@@ -409,14 +409,26 @@ button{
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+        width: 100%;
         align-items: center;
         position: relative;
         z-index: 1;
     }
 
+    .classDivFooterConetnedor1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
     .classRedesSociales{
-        width: auto;  
-        text-align: center;
+        width: 100%;  
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: auto;
     }
 
     .classInformacionDNDAPiePagina{
@@ -428,7 +440,6 @@ button{
     }
 
     .classpieItem{
-        display: initial;
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
@@ -437,13 +448,23 @@ button{
 
     .classFooterImagsCentro{
         border: 1px solid greenyellow;
-        height: 0;
         height: 100px;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
     }
     
     .classFooterImagsCentro img{
         height: 100%;
         width: 100%;
+    }
+
+    .classLogoDNDA{
+        margin-top: 18%;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
     }
     /* Boton de Opciones piePagina Fin*/
 }
