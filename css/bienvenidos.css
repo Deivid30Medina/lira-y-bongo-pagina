@@ -26,7 +26,6 @@
     margin: 0;
     width: auto;
     object-fit: scale-down; 
-    border: 1px solid red;
 }
 
 /*======================Fin Header=========================*/
@@ -43,7 +42,6 @@
     align-items: start;
     justify-content: space-between;
     flex-wrap: wrap;
-    border: 1px solid orange;
 }
 
 .classMainDivImg1{
@@ -51,7 +49,6 @@
     width: 26%;
     height: 100%;
     position: relative;
-    border: 1px solid yellow;
     
 }
 
@@ -59,15 +56,15 @@
     position: absolute;
     width: 120%;
     object-fit: scale-down; 
-    border: 1px solid red;
 }
 
 .classMainContenedorP{
-    border: 1px solid red;
     width: 45%;
 }
 
 .classMainPPrincipal{
+    position: relative;
+    width: 110%;
     color: gray;
     text-align: justify;
     font-family: fuenteParrafo;
@@ -79,11 +76,9 @@
     height: 100%;
     align-items: start;
     position: relative;
-    border: 1px solid blue;
 }
 
 .classMainImg2{
-    border: 1px solid red;
     width: 100%;
     object-fit: scale-down; 
     margin: 0;
@@ -97,6 +92,8 @@
     margin: 0;
     font-style: italic;
     font-family: fuenteParrafo;
+    position: relative;
+    width: 110%;
 }
 
 .classMainPCargoDirector{
@@ -104,5 +101,7 @@
     color: gray;
     font-size: 10px;
     font-family: fuenteParrafo;
+    position: relative;
+    width: 110%;
 }
 /*======================Inicio Fin=========================*/
