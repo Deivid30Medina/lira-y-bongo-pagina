@@ -27,6 +27,7 @@
         fill: white;
         font-size: 21px;
         font-family: ; /*fira sans medium italic*/
+        cursor: pointer;
       }
 
       g:hover>path, g:focus>path{

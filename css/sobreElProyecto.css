@@ -1,7 +1,88 @@
-.classProyectoCotenedorPrincipal{
+@font-face {
+    font-family: fuenteParrafo;
+    src: url("assets/fonts/paragraph/ComicNeue-Regular.ttf");
+}
+
+/*===================Inicio Section classProcesoCreativo ====================*/
+
+.classProcesoCreativo{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 100px;
-    background-color: rgb(87, 226, 226);
+    height: 100%;
+    border: 1px solid red;
+    flex-wrap: wrap;
 }
+
+.classContenedorTextoCreativo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.classHeaderCreativo{
+    width: 100%;
+}
+
+.classImgTitleCreativo{
+    width: 100%;
+    object-fit: scale-down; 
+}
+
+.classPCreativos{
+    width: 100%;
+    color: gray;
+    font-family: fuenteParrafo;
+    text-align: justify !important;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.classContenedorVideoCreativo{
+    width: 50%;
+    position: relative;
+    display: flex;
+}
+
+.classImgVideo{
+    width: 100%;
+    object-fit: scale-down; 
+}
+
+.classFrameBienvenidos{
+    position: absolute;
+    width: 85%;
+    height: 79%;
+    left: 11%;
+    top: 10%;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+/*===================Fin Section classProcesoCreativo ====================*/
+
+
+/*===================Inicio Section Creadores ====================*/
+
+.classCreadores{
+    width: 100%;
+}
+
+.classHeaderCreadores{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.classImgCreadores{
+    width: 50%;
+    object-fit: scale-down; 
+}
+
+/*===================Fin Section Creadores ====================*/
