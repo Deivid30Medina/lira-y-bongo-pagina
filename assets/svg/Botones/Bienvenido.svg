@@ -2,14 +2,13 @@
 <svg id="Capa_1" class="classSvgPrincipal" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 281.18 124.29">
   <defs>
     <style>
-      .cls-1 {
-        fill: url(#Degradado_sin_nombre_21);
-      }
 
-      .cls-1, .cls-2 {
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_21);
         stroke: #fff;
         stroke-miterlimit: 10;
         stroke-width: 2px;
+        cursor: pointer;
       }
 
       .cls-3 {
@@ -22,10 +21,6 @@
 
       .cls-2 {
         fill: url(#Degradado_sin_nombre_21-2);
-      }
-
-      .classSvgPrincipal{
-        cursor: pointer;
       }
 
       .classText{

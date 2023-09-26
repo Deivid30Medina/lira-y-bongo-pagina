@@ -10,7 +10,7 @@
           // Agrega un tiempo de espera de 500 milisegundos antes de desmarcar la casilla de verificación
           setTimeout(() => {
               navCheck.checked = false;
-          }, 500); // Ajusta el tiempo de espera según tus necesidades
+          }, 1000); // Ajusta el tiempo de espera según tus necesidades
       });
   });
 // Fin Validación
@@ -36,7 +36,7 @@ window.addEventListener('load', function () {
             // Muestra el contenido con una animación
             document.querySelector('.contenido_cambiante').style.opacity = 1;
           });
-      }, 500); // Ajustar el tiempo de carga html
+      }, 1000); // Ajustar el tiempo de carga html
     }
 // Fin cargar paginas .html
 
@@ -58,7 +58,7 @@ function cargarContenidoDesdeSVG(archivo) {
               // Mostrar el contenido con una animación
               document.querySelector('.contenido_cambiante').style.opacity = 1;
           });
-  }, 500); // Ajustar el tiempo de carga HTML
+  }, 1000 ); // Ajustar el tiempo de carga HTML
 }
 
 // Manejar eventos load para varios elementos SVG
