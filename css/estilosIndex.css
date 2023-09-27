@@ -280,6 +280,7 @@ button{
     border: 1px solid red;
     align-items: center;
     width: 100%;    
+    text-align: center;
 }
 
 .classLogoDNDA{
