@@ -1,3 +1,13 @@
+@font-face {
+    font-family: fuenteParrafo;
+    src: url("assets/fonts/paragraph/ComicNeue-Regular.ttf");
+}
+
+@font-face {
+    font-family: fuenteTitulo;
+    src: url("assets/fonts/title/FiraSans-Light.ttf");
+}
+
 /*Estilos main Inicio*/
 
 .classPrincipalInicio{
@@ -118,10 +128,6 @@
     right: 0%;
 }
 
-.classDerechoGema{
-    text-align: center;
-}
-
 .classGemas{
     width: 100%;
     margin: 0;
@@ -136,6 +142,16 @@
 .classGemasImg{
     width: 100%;
     object-fit: scale-down; 
+}
+
+.classDerechoGema{
+    text-align: center;
+    font-weight: bold;
+    font-family: fuenteTitulo;
+}
+
+.classPInicio{
+    font-family: fuenteParrafo;
 }
 
 .classUniversoJuego{
