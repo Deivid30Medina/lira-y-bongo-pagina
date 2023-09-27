@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" class="classSvgPrincipal" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 281.18 124.29">
+  <defs>
+    <style>
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_21);
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+        cursor: pointer;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_21-2);
+      }
+
+      .classText{
+        fill: white;
+        font-size: 21px;
+        font-family: ; /*fira sans medium italic*/
+        cursor: pointer;
+      }
+
+      g:hover>path, g:focus>path{
+				fill: url(#Degradado_sin_nombre_22);
+			}
+      
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-4" width="281.18" height="124.29"/>
+    </clipPath>
+    <linearGradient id="Degradado_sin_nombre_21" data-name="Degradado sin nombre 21" x1="162.53" y1="81.66" x2="611.5" y2="81.66" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#634595"/>
+      <stop offset=".02" stop-color="#634897"/>
+      <stop offset=".25" stop-color="#6876b2"/>
+      <stop offset=".47" stop-color="#6c9ac8"/>
+      <stop offset=".67" stop-color="#6fb3d8"/>
+      <stop offset=".85" stop-color="#71c3e1"/>
+      <stop offset="1" stop-color="#72c9e5"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_22" data-name="Degradado sin nombre 21" x1="162.53" y1="81.66" x2="611.5" y2="81.66" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c204af"/>
+      <stop offset=".02" stop-color="#c103af"/>
+      <stop offset=".25" stop-color="#9d02c0"/>
+      <stop offset=".47" stop-color="#8e1bea"/>
+      <stop offset=".67" stop-color="#8401cc"/>
+      <stop offset=".85" stop-color="#7400d3"/>
+      <stop offset="1" stop-color="#6f00d6"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_21-2" data-name="Degradado sin nombre 21" x1="-1180.64" y1="833.49" x2="-768.67" y2="833.49" gradientTransform="translate(-797.36 915.16) rotate(-180)" xlink:href="#Degradado_sin_nombre_21"/>
+  </defs>
+  <g class="cls-3">
+    <g>
+      <path class="cls-2" d="m41.32,46.61h195.72c7.48,0,14.13,4.77,16.53,11.86l11.91,35.2c3.83,11.32-4.59,23.05-16.53,23.05H29.41c-11.95,0-20.36-11.73-16.53-23.05l11.91-35.2c2.4-7.09,9.05-11.86,16.53-11.86Z"/>
+      <text x="38" y="90" class="classText">
+        ¡Derrotemos a Piratería!
+      </text>
+    </g>
+  </g>
+</svg>

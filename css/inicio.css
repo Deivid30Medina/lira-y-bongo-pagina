@@ -77,6 +77,18 @@
     object-fit: scale-down; 
 }
 
+.classUniversoJuego{
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.classBtnSvgUniverso{
+    height: 80px;
+    margin-top: 5%;
+}
+
 .classLira{
     width: 25%;
     height: 100%;
