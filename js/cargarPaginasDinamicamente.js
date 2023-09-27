@@ -43,11 +43,45 @@ window.addEventListener('load', function () {
 
 
 function cargarContenidoDesdeSVG(archivo) {
+  // Obtener una referencia al div del main
+  const mainDiv = document.querySelector('.classMainPagina');
+
+  // Crear el div del loader dinámicamente
+  const loaderContainer = document.createElement('div');
+  loaderContainer.id = 'idLoader';
+  loaderContainer.className = 'container';
+
+  // Crear el div del loader
+  const loaderElement = document.createElement('div');
+  loaderElement.id = 'idLoader2';
+  loaderElement.className = 'loader';
+
+  // Crear el párrafo del mensaje
+  const messageElement = document.createElement('p');
+  messageElement.id = 'idloader3';
+  messageElement.className = 'message';
+  messageElement.textContent = 'Cargando...';
+
+  // Agregar el div del loader y el párrafo al contenedor del loader
+  loaderContainer.appendChild(loaderElement);
+  loaderContainer.appendChild(messageElement);
+
+  // Agregar el contenedor del loader al main
+  mainDiv.appendChild(loaderContainer);
+
   // Ocultar el canvas al cargar contenido diferente
   document.getElementById('canvas').style.display = 'none';
 
   // Ocultar el contenido actual
   document.querySelector('.contenido_cambiante').style.opacity = 0;
+
+  // Aplicar estilos para centrar el loader
+  loaderContainer.style.display = 'flex';
+  loaderContainer.style.alignItems = 'start';
+  loaderContainer.style.justifyContent = 'center';
+  loaderContainer.style.position = 'absolute'; // Posición absoluta
+  loaderContainer.style.width = '100%'; // Ancho completo
+  loaderContainer.style.top = '50%'; // Parte superior del main
 
   setTimeout(function () {
     // Cargar el nuevo contenido
@@ -60,6 +94,10 @@ function cargarContenidoDesdeSVG(archivo) {
         // Mostrar el contenido con una animación
         document.querySelector('.contenido_cambiante').style.opacity = 1;
 
+        // Ocultar y eliminar el div del loader cuando la carga esté completa
+        loaderContainer.style.display = 'none';
+        loaderContainer.remove();
+
         // Mostrar el canvas solo cuando se vuelve a la página principal
         if (archivo === 'inicio.html') {
           document.getElementById('canvas').style.display = 'block';
@@ -67,6 +105,8 @@ function cargarContenidoDesdeSVG(archivo) {
       });
   }, 1000); // Ajustar el tiempo de carga HTML
 }
+
+
 
 // Manejar eventos load para varios elementos SVG
 function manejarEventosLoad() {
