@@ -42,23 +42,30 @@ window.addEventListener('load', function () {
 
 
 
-// Función para cargar contenido dinámico
 function cargarContenidoDesdeSVG(archivo) {
+  // Ocultar el canvas al cargar contenido diferente
+  document.getElementById('canvas').style.display = 'none';
+
   // Ocultar el contenido actual
   document.querySelector('.contenido_cambiante').style.opacity = 0;
 
   setTimeout(function () {
-      // Cargar el nuevo contenido
-      fetch(archivo)
-          .then((response) => response.text())
-          .then((data) => {
-              // Actualizar el contenido
-              document.querySelector('.contenido_cambiante').innerHTML = data;
+    // Cargar el nuevo contenido
+    fetch(archivo)
+      .then((response) => response.text())
+      .then((data) => {
+        // Actualizar el contenido
+        document.querySelector('.contenido_cambiante').innerHTML = data;
 
-              // Mostrar el contenido con una animación
-              document.querySelector('.contenido_cambiante').style.opacity = 1;
-          });
-  }, 1000 ); // Ajustar el tiempo de carga HTML
+        // Mostrar el contenido con una animación
+        document.querySelector('.contenido_cambiante').style.opacity = 1;
+
+        // Mostrar el canvas solo cuando se vuelve a la página principal
+        if (archivo === 'inicio.html') {
+          document.getElementById('canvas').style.display = 'block';
+        }
+      });
+  }, 1000); // Ajustar el tiempo de carga HTML
 }
 
 // Manejar eventos load para varios elementos SVG
