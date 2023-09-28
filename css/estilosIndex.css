@@ -103,6 +103,10 @@
     -o-border-radius: 25px;
 }
 
+.classBtnHomeComic{
+    object-fit: scale-down; 
+}
+
 .classbtnMenu:hover{
     color: white;
 }

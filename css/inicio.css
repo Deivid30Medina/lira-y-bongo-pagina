@@ -22,20 +22,27 @@
     width: 25%;
     height: 100%;
     text-align: center;
-    border: 1px solid blue;
     margin: 0px;
-    
+    background-color: #ffffff00;
+    border-radius: 10px;
+    box-shadow: inset 0px -40px 5px -30px rgba(0,0,0,0.50);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    animation: anime2 1s infinite ease-in-out alternate;
+    -webkit-animation: anime2 1s infinite ease-in-out alternate;
+    animation-delay: .3s;
 }
 
 .classImagMainBongo{
-    position: relative;
     width: 100%;
-    bottom:  -50%;
-    object-fit: scale-down; 
-    -webkit-box-shadow: 0px 70px 22px -18px rgba(0,0,0,0.72);
-    -moz-box-shadow: 0px 70px 22px -18px rgba(0,0,0,0.72);
-    box-shadow: 0px 70px 22px -18px rgba(0,0,0,0.72);
+    object-fit: scale-down;
+    animation: anime 1s infinite ease-in-out alternate;
+    -webkit-animation: anime 1s infinite ease-in-out alternate;
+    animation-delay: .5s;
 }
+
 
 .classVideoLibro{
     width: 40%;
@@ -152,6 +159,9 @@
 .classGemasImg{
     width: 100%;
     object-fit: scale-down; 
+    animation: anime 1s infinite ease-in-out alternate;
+    -webkit-animation: anime 1s infinite ease-in-out alternate;
+    animation-delay: .5s;
 }
 
 .classDerechoGema{
@@ -184,18 +194,36 @@
     border: 1px solid green;
     margin: 0px;
     cursor: pointer;
-    
 }
 
 .classImgLira{
     width: 100%;
     height: 100%;
     object-fit: scale-down; 
+    animation: anime 1s infinite ease-in-out alternate;
+    -webkit-animation: anime 1s infinite ease-in-out alternate;
+    animation-delay: .5s;
 }
 
 .classImagenFinal{
     width: 100%;
     height: auto;
+}
+
+@keyframes anime{
+    100%{
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+        -moz-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        -o-transform: translateY(20px);
+    }
+}
+
+@keyframes anime2{
+    100%{
+        box-shadow: inset 0px -40px 5px -30px rgba(0,0,0,0.80);
+    }
 }
 
 /*Estilos main Final*/
