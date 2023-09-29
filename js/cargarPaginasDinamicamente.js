@@ -108,7 +108,7 @@ function cargarContenidoDesdeSVG(archivo) {
 
 
 
-// Manejar eventos load para varios elementos SVG
+// Manejar eventos load para Inicio.html
 function manejarEventosLoad() {
   // Escuchar el evento load del objeto <object> para el SVG de Inicio
   document.getElementById('svgObjectInicio').addEventListener('load', function () {
@@ -119,7 +119,7 @@ function manejarEventosLoad() {
       });
   });
 
-  // Escuchar el evento load del objeto <object> para el otro SVG
+  // Escuchar el evento load del objeto <object> para bienvenidos.html
   document.getElementById('svgObjectBienvenido').addEventListener('load', function () {
       const svgDoc = this.contentDocument;
       svgDoc.documentElement.addEventListener('click', function () {
@@ -128,7 +128,7 @@ function manejarEventosLoad() {
       });
   });
 
-  // Escuchar el evento load del objeto <object> para el otro SVG
+  // Escuchar el evento load del objeto <object> para RegistrarObra.html
   document.getElementById('svgObjectRegistraObra').addEventListener('load', function () {
     const svgDoc = this.contentDocument;
     svgDoc.documentElement.addEventListener('click', function () {
@@ -137,7 +137,7 @@ function manejarEventosLoad() {
     });
   });
   
-  // Escuchar el evento load del objeto <object> para el otro SVG
+  // Escuchar el evento load del objeto <object> para Sobre el proyecto
   document.getElementById('svgObjectProyecto').addEventListener('load', function () {
     const svgDoc = this.contentDocument;
     svgDoc.documentElement.addEventListener('click', function () {
@@ -146,7 +146,7 @@ function manejarEventosLoad() {
     });
   });
 
-  // Escuchar el evento load del objeto <object> para el otro SVG
+  // Escuchar el evento load del objeto <object> para CreandoLiraBongo
   document.getElementById('svgObjectLiraBongo').addEventListener('load', function () {
     const svgDoc = this.contentDocument;
     svgDoc.documentElement.addEventListener('click', function () {
@@ -154,6 +154,16 @@ function manejarEventosLoad() {
         cargarContenidoDesdeSVG(archivo);
     });
   });
+
+  // Escuchar el evento load del objeto <object> para descargarLibro
+  document.getElementById('svgObjectPDF').addEventListener('load', function () {
+    const svgDoc = this.contentDocument;
+    svgDoc.documentElement.addEventListener('click', function () {
+        const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'libro.html';
+        cargarContenidoDesdeSVG(archivo);
+    });
+  });
+
 }
 
 // Llamar a la función para manejar eventos load
