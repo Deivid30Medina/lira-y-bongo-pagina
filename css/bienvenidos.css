@@ -161,6 +161,7 @@
     border-left: 4px solid white;
     display: flex;
     flex-direction: column;
+    margin-top: 2%;
 }
 
 .classCargoCarrusel{
