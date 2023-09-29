@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ================================================================================ -->
+        <title>INTRANET DNDA - Home</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    </head>
+    <body>
+<!--================Header Menu Area =================-->
+
+            <!--slider pequeño que se mueve solo-->  
+                    <div class="mini-carrusel">
+                        <div><a style="cursor: pointer;" id="idManuales"><img src="assets/imagenes/DNDA/ObrasYoutube/1.jpg" alt="" width="381" class="card-img rounded-0"></a></div>
+                        <div><a style="cursor: pointer;" id="idComite"><img src="assets/imagenes/DNDA/ObrasYoutube/1.jpg" alt="" width="381" class="card-img rounded-0"></a></div>
+                        <div><a style="cursor: pointer;" id="idComiteControlInterno"><img src="assets/imagenes/DNDA/ObrasYoutube/1.jpg"></a></div>
+                    </div>
+
+<!---Opciones del Carrusel-------------------------------------------------------------------------------------------------------->
+        <script type="text/javascript">
+            $('.mini-carrusel').slick({
+                dots: false, //Activar/Desactivar los puntos de posicion de la galeria
+                infinite: true,//Activar/Desactivar sí el movimiento del carrusel sea inifinito
+                autoplay: true,//Activar/Desactivar el movimiento automatico del carrusel
+                speed: 600, //Definir la velocidad de movimiento de el carrusel (Ojo, no confundir con el tiempo en el que tarda en moverse)
+                slidesToShow: 2, //Cantidad de imagenes o enlaces que queremos que se muestre en el carrusel
+                slidesToScroll: 1,// Cantidad de imagenes o enlaces que se moveran en el carrusel
+                responsive: [
+                { // Responsive
+                    breakpoint: 1024, //Definicion de Ancho de Pantalla
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+                ]
+            });
+        </script>
+    </body>
+</html>

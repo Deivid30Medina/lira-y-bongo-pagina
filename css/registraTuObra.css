@@ -1,7 +1,81 @@
-.classRegistraObraCotenedorPrincipal{
+@font-face {
+    font-family: fuenteParrafo;
+    src: url("assets/fonts/paragraph/ComicNeue-Regular.ttf");
+}
+
+@font-face {
+    font-family: fuenteTitulo;
+    src: url("assets/fonts/title/FiraSans-Light.ttf");
+}
+
+/*===================================Inicio Header===================================*/
+
+.classH1Header{
+    font-family: fuenteTitulo;
+    color: rgb(9, 101, 221);
+    text-align: center;
+    font-size: 60px;
+}
+
+/*===================================Fin Header===================================*/
+
+
+/*===================================Inicio Main===================================*/
+
+.classContenedorMain{
+    width: 100vw;
     display: flex;
     align-items: center;
-    width: 100%;
-    height: 100px;
-    background-color: cadetblue ;
+    flex-direction: column;
+    margin-top: 5%;
 }
+
+.classInformaionInicioMain{
+    font-family: fuenteParrafo;
+    font-size: 25px;
+}
+
+.classContenedorImagenesMain{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.classContenedorVideoMain{
+    width: 50%;
+    position: relative;
+    display: flex;
+}
+
+.classVideo{
+    width: 100%;
+    object-fit: scale-down; 
+}
+
+.classFrameObra{
+    position: absolute;
+    width: 85%;
+    height: 79%;
+    left: 10%;
+    top: 10%;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+.classInformacionFinalMain{
+    font-family: fuenteParrafo;
+    font-size: 25px;
+    text-align: center;
+}
+/*===================================Fin Main===================================*/
+
+
+/*===================================Inicio Footer===================================*/
+
+
+
+/*===================================Fin Footer===================================*/
