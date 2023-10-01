@@ -1,16 +1,30 @@
 @font-face {
     font-family: fuenteParrafo;
-    src: url("assets/fonts/paragraph/ComicNeue-Regular.ttf");
+    src: url("../assets/fonts/paragraph/ComicNeue-Regular.ttf");
 }
 
 @font-face {
     font-family: fuenteTitulo;
-    src: url("assets/fonts/title/FiraSans-Light.ttf");
+    src: url("../assets/fonts/title/FiraSans-Light.ttf");
 }
+
+@font-face {
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../assets/fonts/slides/slick.eot');
+    src: url('../assets/fonts/slides/slick.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/slides/slick.woff') format('woff'), url('../assets/fonts/slides/slick.ttf') format('truetype'), url('../assets/fonts/slides/slick.svg#slick') format('svg');
+}
+
 
 /*===================================Inicio Header===================================*/
 
-.classH1Header{
+body{
+    overflow-x: hidden;
+}
+
+.classH1Header {
     font-family: fuenteTitulo;
     color: rgb(9, 101, 221);
     text-align: center;
@@ -22,7 +36,7 @@
 
 /*===================================Inicio Main===================================*/
 
-.classContenedorMain{
+.classContenedorMain {
     width: 100vw;
     display: flex;
     align-items: center;
@@ -30,30 +44,30 @@
     margin-top: 5%;
 }
 
-.classInformaionInicioMain{
+.classInformaionInicioMain {
     font-family: fuenteParrafo;
     font-size: 25px;
 }
 
-.classContenedorImagenesMain{
+.classContenedorImagenesMain {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.classContenedorVideoMain{
+.classContenedorVideoMain {
     width: 50%;
     position: relative;
     display: flex;
 }
 
-.classVideo{
+.classVideo {
     width: 100%;
-    object-fit: scale-down; 
+    object-fit: scale-down;
 }
 
-.classFrameObra{
+.classFrameObra {
     position: absolute;
     width: 85%;
     height: 79%;
@@ -66,16 +80,84 @@
     -o-border-radius: 5%;
 }
 
-.classInformacionFinalMain{
+.classInformacionFinalMain {
     font-family: fuenteParrafo;
     font-size: 25px;
     text-align: center;
 }
+
 /*===================================Fin Main===================================*/
 
 
 /*===================================Inicio Footer===================================*/
 
+.classContenedorImagenes {
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: auto;
+}
 
+.slick-list {
+    width: 90%;
+}
+
+
+.classAImagen {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;
+}
+
+.classImagenVideo {
+    width: 60%;
+    height: 60%;
+}
+
+/* Oculta los textps predeterminados de Slick Carousel */
+.slick-arrow {
+    color: transparent;
+    font-size: 0;
+    border: 0;
+}
+
+/* Estilo para los botones de prev y next */
+.slick-prev:before,
+.slick-next:before {
+    font-size: 30px;
+    /* Tamaño del icono */
+    color: red;
+    /* Color del icono */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    font-family: 'slick';
+}
+
+/* Estilo para los botones de prev y next cuando se pasa el mouse */
+.slick-prev:hover:before,
+.slick-next:hover:before {
+    background-color: lightcoral;
+    /* Cambia el color de fondo a uno más claro cuando se pasa el mouse */
+    color: white;
+    /* Cambia el color del icono cuando se pasa el mouse */
+}
+
+.slick-next:before {
+    right: 0;
+    content: "→";
+}
+
+.slick-prev:before {
+    left: 0;
+    content: "←";
+}
 
 /*===================================Fin Footer===================================*/
