@@ -4,99 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/registraTuObra.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
-  <!--Enlaces de la libreria Slick para el carrusel-->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <!--Este debe ir de primeras para que funcione el carrusel-->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <!--Fin enlaces de la libreria Slick para el carrusel-->
-
   <title>Document</title>
+  <link rel="stylesheet" href="css/contenedorObra.css">
 </head>
-
+  <iframe src="obra.html" frameborder="0" scrolling="no"></iframe>
 <body>
-  <header>
-    <h1 class="classH1Header">
-      Registrar tus obras es fácil y seguro de realizar.
-    </h1>
-  </header>
-  <main>
-    <div class="classContenedorMain">
-      <p class="classInformaionInicioMain">
-        Solo necesitarás un computador, acceso a internet y seguir los
-        siguientes videos tutoriales:
-      </p>
-      <div class="classContenedorImagenesMain">
-        <img class="classImg classBongo" src="" alt="Imagen de Bongó" />
-        <div class="classContenedorVideoMain">
-          <img class="classImg classVideo" src="assets/imagenes/InicioVideo.png" alt="Imagen Celular Fondo" />
-          <iframe class="classFrameObra" width="560" height="315" src="https://www.youtube.com/embed/eOkv-4pHPek?si=Gh0AgcSCIglpi9uc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <img class="classImg classLira" src="" alt="Imagen de Lira" />
-      </div>
-      <p class="classInformacionFinalMain">
-        También puedes ver los siguientes videos tutoriales acerca de cómo
-        registrar cada tipo de obra en la
-        <br />
-        Dirección Nacional de Derecho de Autor (DNDA).
-      </p>
-    </div>
-  </main>
-  <footer class="classFooterObra">
-
-    <div class="classContenedorImagenes classCarrusel">
-      <a class= "classAImagen" style="cursor: pointer;"><img src="assets/imagenes/DNDA/ObrasYoutube/Registros-72.png" alt="" class="classImagenVideo"></a>
-      <a class= "classAImagen" style="cursor: pointer;"><img src="assets/imagenes/DNDA/ObrasYoutube/Registros-73.png" alt="" class="classImagenVideo"></a>
-      <a class= "classAImagen" style="cursor: pointer;"><img src="assets/imagenes/DNDA/ObrasYoutube/Registros-74.png" alt="" class="classImagenVideo"></a>
-    </div>
-
-  </footer>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      // código de Slick Carousel aquí
-      $('.classCarrusel').slick({
-        dots: false,        //Activar/Desactivar los puntos de posicion de la galeria
-        infinite: true,     //Activar/Desactivar sí el movimiento del carrusel sea inifinito
-        autoplay: true,     //Activar/Desactivar el movimiento automatico del carrusel
-        autoplaySpeed: 3000, // Cambia las diapositivas cada 3 segundos
-        speed: 800,         //Definir la velocidad de movimiento de el carrusel (Ojo, no confundir con el tiempo en el que tarda en moverse)
-        slidesToShow: 2,    //Cantidad de imagenes o enlaces que queremos que se muestre en el carrusel
-        slidesToScroll: 1,  // Cantidad de imagenes o enlaces que se moveran en el carrusel
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: false
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
-        ]
-      });
-    });
-  </script>
+  
 </body>
 
 </html>

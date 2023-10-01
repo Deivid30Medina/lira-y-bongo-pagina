@@ -168,3 +168,5 @@ function manejarEventosLoad() {
 
 // Llamar a la función para manejar eventos load
 manejarEventosLoad();
+
+
