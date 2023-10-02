@@ -92,6 +92,7 @@ body{
 /*===================================Inicio Footer===================================*/
 
 .classContenedorImagenes {
+    margin-top: 5%;
     width: 100%;
     display: flex !important;
     align-items: center;
@@ -101,7 +102,8 @@ body{
 }
 
 .slick-list {
-    width: 90%;
+    margin-top: 2% !important;
+    width: 100%;
 }
 
 
@@ -121,22 +123,23 @@ body{
     color: transparent;
     font-size: 0;
     border: 0;
+    position: absolute;
+    right: 0;
+    top: -10%;
 }
 
 /* Estilo para los botones de prev y next */
 .slick-prev:before,
 .slick-next:before {
-    font-size: 30px;
-    /* Tamaño del icono */
-    color: red;
-    /* Color del icono */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 30px; /* Tamaño del icono */
+    color: red;  /* Color del icono */
     width: 30px;
     height: 30px;
-    background-color: black;
     border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
     font-family: 'slick';
 }
@@ -151,12 +154,11 @@ body{
 }
 
 .slick-next:before {
-    right: 0;
     content: "→";
 }
 
 .slick-prev:before {
-    left: 0;
+    right: 160%;
     content: "←";
 }
 
