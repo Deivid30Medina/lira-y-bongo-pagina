@@ -309,6 +309,7 @@ body{
         justify-content: space-evenly;
         order: 2;
         top: -340px;
+        align-items: center;
     }
 
     .classMainImg1{
