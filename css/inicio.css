@@ -174,26 +174,12 @@
     font-family: fuenteParrafo;
 }
 
-.classUniversoJuego{
-    display: flex;
-    width: auto;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 5%;
-}
-
-.classBtnSvgUniverso{
-    height: 80px;
-    margin-top: 5%;
-}
-
 .classLira{
     width: 25%;
     height: 100%;
     text-align: center;
     border: 1px solid green;
     margin: 0px;
-    cursor: pointer;
 }
 
 .classImgLira{

@@ -209,6 +209,21 @@ button{
     padding: 10px 25px;
 }
 
+.classUniversoJuego{
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -10vh;
+}
+
+.classBtnSvgUniverso{
+    height: 80px;
+    margin-top: 5%;
+    object-fit: scale-down;
+}
+
 /*Estilos main Final*/
 
 /*Estilos footer Inicio*/

@@ -69,8 +69,9 @@ function cargarContenidoDesdeSVG(archivo) {
   // Agregar el contenedor del loader al main
   mainDiv.appendChild(loaderContainer);
 
-  // Ocultar el canvas al cargar contenido diferente
+  // Ocultar el canvas y el section al cargar contenido diferente
   document.getElementById('canvas').style.display = 'none';
+  document.getElementById('idSectionBtnFinales').style.display = 'none';
 
   // Ocultar el contenido actual
   document.querySelector('.contenido_cambiante').style.opacity = 0;
@@ -101,6 +102,7 @@ function cargarContenidoDesdeSVG(archivo) {
         // Mostrar el canvas solo cuando se vuelve a la página principal
         if (archivo === 'inicio.html') {
           document.getElementById('canvas').style.display = 'block';
+          document.getElementById('idSectionBtnFinales').style.display = 'flex';
         }
       });
   }, 1000); // Ajustar el tiempo de carga HTML
@@ -160,6 +162,24 @@ function manejarEventosLoad() {
     const svgDoc = this.contentDocument;
     svgDoc.documentElement.addEventListener('click', function () {
         const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'libro.html';
+        cargarContenidoDesdeSVG(archivo);
+    });
+  });
+
+  // Escuchar el evento load del objeto <object> para Juego
+  document.getElementById('svgObjectJuego').addEventListener('load', function () {
+    const svgDoc = this.contentDocument;
+    svgDoc.documentElement.addEventListener('click', function () {
+        const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'juego.html';
+        cargarContenidoDesdeSVG(archivo);
+    });
+  });
+
+  // Escuchar el evento load del objeto <object> para Universo
+  document.getElementById('svgObjectUniverso').addEventListener('load', function () {
+    const svgDoc = this.contentDocument;
+    svgDoc.documentElement.addEventListener('click', function () {
+        const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'universo.html';
         cargarContenidoDesdeSVG(archivo);
     });
   });
