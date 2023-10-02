@@ -23,15 +23,6 @@
     height: 100%;
     text-align: center;
     margin: 0px;
-    background-color: #ffffff00;
-    border-radius: 10px;
-    box-shadow: inset 0px -40px 5px -30px rgba(0,0,0,0.50);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    animation: anime2 1s infinite ease-in-out alternate;
-    -webkit-animation: anime2 1s infinite ease-in-out alternate;
     animation-delay: .3s;
 }
 
@@ -203,12 +194,6 @@
         -moz-transform: translateY(20px);
         -ms-transform: translateY(20px);
         -o-transform: translateY(20px);
-    }
-}
-
-@keyframes anime2{
-    100%{
-        box-shadow: inset 0px -40px 5px -30px rgba(0,0,0,0.80);
     }
 }
 
