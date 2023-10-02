@@ -155,7 +155,7 @@ body{
 .classItemCarrusel{
     display: flex !important;
     align-items: center !important;
-    height: 24vh ;
+    height: 250px ;
     border-bottom-left-radius: 80px;
     border-bottom-right-radius: 80px;
     width: 90%;
@@ -291,3 +291,64 @@ body{
 }
 
 /*======================Carrusel Fin=========================*/
+@media screen and (min-width:767px) and (max-width: 1023px){
+    body{
+        height: 200vh !important;
+    }
+
+    .classMainContenedor{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .classMainDivImg1{
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        order: 2;
+        top: -340px;
+    }
+
+    .classMainImg1{
+        position: static;
+        width: 50%;
+        height: 50%;
+    }
+
+    .classMainContenedorP{
+        position: relative;
+        width: 100%;
+        order: 1;
+        top: -160px;
+    }
+
+    .classMainPDirectoNombre{
+        width: 100%;
+    }
+
+    .classMainPCargoDirector{
+        width: 100%;
+    }
+
+    .classMainDivImg2{
+        position: relative;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        order: -1;
+        top: -40px;
+    }
+
+    .classMainImg2{
+        position: static;
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+
+
+}
