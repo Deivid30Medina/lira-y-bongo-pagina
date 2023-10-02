@@ -144,6 +144,7 @@
 
 /*Estilos main Inicio*/
 
+
 .classMainPagina{
     display: flex;
     justify-content: space-evenly;
@@ -227,6 +228,10 @@ button{
 /*Estilos main Final*/
 
 /*Estilos footer Inicio*/
+
+.classFooterBienvenido{
+    margin-top: 10% !important;
+}
 
 .classPiePagina{
     display: flex;
@@ -435,6 +440,7 @@ button{
         align-items: center;
         position: relative;
         z-index: 1;
+        margin-top: 5%;
     }
 
     .classDivFooterConetnedor1{
@@ -494,7 +500,7 @@ button{
 @media screen and (max-width: 375px){
     .body{ 
         width: 800px;
-        
+        display: block;
     }
 
     /* Boton de Opciones Header Inicio */
