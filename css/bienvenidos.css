@@ -291,7 +291,7 @@ body{
 }
 
 /*======================Carrusel Fin=========================*/
-@media screen and (min-width:767px) and (max-width: 1031px){
+@media screen and (min-width:772px) and (max-width: 1031px){
     .classContenedorPrincipalBienvenidos{
         width: 100%;
         display: flex;
@@ -358,7 +358,7 @@ body{
 }
 
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 772px){
     .classContenedorPrincipalBienvenidos{
         width: 100%;
         display: flex;
@@ -418,9 +418,15 @@ body{
 
     .classMainImg2{
         object-fit: scale-down;
-        width: 50%;
+        width: 40%;
         position: static;
     }
 
+    .classUserCarrusel{
+        margin-top: 2vh;
+    }
 
+    .ItemCarrusel {
+        height: 316px !important;
+    }
 }
