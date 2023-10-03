@@ -40,13 +40,19 @@ body{
     width: 100vw;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     margin-top: 5%;
 }
 
 .classInformaionInicioMain {
     font-family: fuenteParrafo;
-    font-size: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 2em;
+    width: 100%;
 }
 
 .classContenedorImagenesMain {
@@ -54,6 +60,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .classContenedorVideoMain {
@@ -82,8 +89,12 @@ body{
 
 .classInformacionFinalMain {
     font-family: fuenteParrafo;
-    font-size: 25px;
+    font-size: 2em;
     text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 /*===================================Fin Main===================================*/
@@ -101,10 +112,7 @@ body{
     height: auto;
 }
 
-.slick-list {
-    margin-top: 2% !important;
-    width: 100%;
-}
+
 
 
 .classAImagen {
@@ -114,8 +122,9 @@ body{
 }
 
 .classImagenVideo {
-    width: 60%;
-    height: 60%;
+    width: 80%;
+    height: 100%;
+    object-fit: scale-down;
 }
 
 /* Oculta los textps predeterminados de Slick Carousel */
@@ -123,9 +132,12 @@ body{
     color: transparent;
     font-size: 0;
     border: 0;
-    position: absolute;
-    right: 0;
-    top: -10%;
+    background-color: transparent;
+}
+
+
+.slick-list {
+    width: 90%;
 }
 
 /* Estilo para los botones de prev y next */
@@ -140,8 +152,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
     font-family: 'slick';
+}
+
+.slick-next:before {
+    
+    content: "→"; 
+}
+
+.slick-prev:before {
+    content: "←";
 }
 
 /* Estilo para los botones de prev y next cuando se pasa el mouse */
@@ -153,13 +173,125 @@ body{
     /* Cambia el color del icono cuando se pasa el mouse */
 }
 
-.slick-next:before {
-    content: "→";
-}
-
-.slick-prev:before {
-    right: 160%;
-    content: "←";
-}
-
 /*===================================Fin Footer===================================*/
+
+
+/*===============Responsive=================*/
+/* Estilos generales que se aplican a todos los dispositivos */
+
+/* Estilos para tablets (entre 768px y 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+    .classContenedorVideoMain{
+        width: 100%;
+        order: -1;
+    }
+
+    .classContenedorImgBongo{
+        order: 1;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .classContenedorImgLira{
+        order: 2;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .classBongo{
+        width: 100%;
+    }
+
+    .classLira{
+        width: 1000%;
+    }
+
+    .classImg{
+        object-fit: scale-down;
+    }
+
+    .slick-list{
+        width: 100%;
+    }
+
+    .slick-prev{
+        position: absolute;
+        bottom: -20%;
+        left: 40%   ;
+    }
+
+    .slick-next{
+        position: absolute;
+        bottom: -20%;
+        right: 40%;
+    }
+}
+
+
+/* Estilos para dispositivos móviles (menos de 768px) */
+@media screen and (max-width: 767px) {
+    /* Agrega tus estilos específicos para dispositivos móviles aquí */
+    .classContenedorVideoMain{
+        width: 100%;
+        order: -1;
+    }
+
+    .classContenedorImgBongo{
+        order: 1;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .classContenedorImgLira{
+        order: 2;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .classBongo{
+        width: 100%;
+    }
+
+    .classLira{
+        width: 1000%;
+    }
+
+    .classImg{
+        object-fit: scale-down;
+    }
+
+    .slick-list{
+        width: 100%;
+    }
+
+    .slick-prev{
+        position: absolute;
+        bottom: -30%;
+        left: 40%   ;
+    }
+
+    .slick-next{
+        position: absolute;
+        bottom: -30%;
+        right: 40%;
+    }
+
+    .classInformaionInicioMain{
+        text-align: justify;
+    }
+
+    .classInformacionFinalMain{
+        text-align: justify;
+    }
+}
+
