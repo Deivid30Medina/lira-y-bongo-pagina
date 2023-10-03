@@ -413,7 +413,8 @@ body{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        position: static;
+        position: relative;
+        top: -5vh;
     }
 
     .classMainImg2{
