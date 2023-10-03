@@ -86,3 +86,62 @@
 }
 
 /*===================Fin Section Creadores ====================*/
+
+
+/* Estilos generales que se aplican a todos los dispositivos */
+
+/* Estilos para tablets (entre 768px y 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .classContenedorTextoCreativo{
+        width: 100%;
+    }
+
+    .classContenedorVideoCreativo{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .classFrameBienvenidos{
+        position: absolute;
+        width: 69%;
+        height: 79%;
+        left: 18%;
+        top: 10%;
+    }
+
+    .classImgVideo{
+        width: 80%;
+    }
+
+    
+}
+
+
+/* Estilos para dispositivos móviles (menos de 768px) */
+@media screen and (max-width: 767px) {
+    .classContenedorTextoCreativo{
+        width: 100%;
+    }
+
+    .classContenedorVideoCreativo{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .classFrameBienvenidos{
+        position: absolute;
+        width: 69%;
+        height: 79%;
+        left: 18%;
+        top: 10%;
+    }
+
+    .classImgVideo{
+        width: 80%;
+    }
+}
+
