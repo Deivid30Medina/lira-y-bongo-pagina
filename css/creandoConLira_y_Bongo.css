@@ -99,3 +99,103 @@
 
 
 /*Main Final*/
+
+
+/*================Estilos Popup Inicio==============*/
+
+.classContenedorPrincipalPopup{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.classContenedorBlanco{
+    background-color: rgb(164, 189, 197);
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.classEncabezadoPopup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.classImgEscudoPopup{
+    object-fit: scale-down;
+    height: 100px;
+    width: 20%;
+}
+
+.classTituloPoppup{
+    text-align: center;
+    width: 50%;
+}
+
+.classImgBordonPopup{
+    object-fit: scale-down;
+    height: 100px;
+    width: 20%;
+}
+
+.classDepartamentoPoppup{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.classBtnsAzulPoppup{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 18%;
+}
+
+.classBtnvisitadoAzulPoppup{
+    background: linear-gradient(90deg, rgba(0,219,250,1) 0%, rgba(0,90,230,1) 100%);
+    border-radius: 30px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5%;
+    
+}
+
+.classBtnsNaranjaPoppup{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 18%;
+}
+
+.classBtnvisitadoNaranjaPoppup{
+    background: linear-gradient(90deg, rgba(250,100,0,1) 0%, rgba(255,188,0,1) 55%, rgba(253,0,137,1) 100%);
+    border-radius: 30px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5%;
+}
+
+.classImgDepartamentPoppup{
+    object-fit: scale-down;
+    width: 40%;
+}
+
+.classTextoFinalPoppup{
+    text-align: center;
+}
+
+.classBtnAtrasPoppup{
+    background-color: #2767C9;
+    border-radius: 5px;
+    width: 10%;
+    height: 40px;
+}
+
+/*================Estilos Popup Final==============*/

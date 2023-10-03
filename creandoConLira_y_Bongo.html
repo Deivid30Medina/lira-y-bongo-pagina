@@ -39,16 +39,26 @@
 	 style="enable-background:new 0 0 715 771;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#EDEDED;}  /* Color del borde del mapa Colombia*/
-	.st1{fill:#B3E1DE;} /* Color de los Departamentos*/
+	.st1{fill:#B3E1DE;} /* Color de los Departamentos no visitados*/
 	.st2{fill:#C0F2C7;} /* Color del mini bordeado del mapa.*/
 	.st3{fill:#F4F4F4;} /* Color que demarca cada uno de los departamentos*/ 
 	.st4{fill:none;stroke:#EDEDED;stroke-width:12;stroke-miterlimit:10;} /* Color borde San Andres y Providencia*/
-	.st5{fill:url(#SVGID_1_);}
-	.st6{fill:url(#SVGID_00000181767560991199005490000016908557528091194541_);}
-	.st7{fill:url(#SVGID_00000175291468970388797160000007789031463920270252_);}
-	.st8{fill:url(#SVGID_00000067228843545192785620000001897361632916208009_);}
-	.st9{fill:url(#SVGID_2_);}
+	.estiloColoresDepartamento{fill:url(#diagonalGradient);} /*Color de los departamentos visitados*/
 </style>
+<!--
+	<stop>: Define los puntos de color en el degradado.
+			En este caso, hay 3 puntos. La primera está
+			en el 0% del degradado y es #00FA86. La segunda
+			está en el 55% y es #00F497 y la tercera en
+			#00E6C3
+-->
+<linearGradient id="diagonalGradient" gradientTransform="rotate(0)">
+	<stop  offset="0%" style="stop-color:#00FA86"/>
+	<stop  offset="55%" style="stop-color:#00F497"/>
+	<stop  offset="100%" style="stop-color:#00E6C3"/>
+  </linearGradient>
+  
+  
 <path class="st0" d="M526.8,756c-4,0-6.7-3.1-8-6.1c-1.2-1.4-4.9-4.8-6.2-6c-0.8-0.7-1.4-1.3-1.7-1.6c-1.1-1.1-3-3.1-4.3-5.7
 	c-1,0.4-2.2,0.9-3.6,1.3c-0.8,0.2-1.6,0.3-2.4,0.3c-2.8,0-5.1-1.3-6.6-2.9c-1.6-0.2-4.1-0.9-6.3-3.1c-2-2-4.6-4.8-3.6-9
 	c0.4-1.3,0.4-1.3,3.9-6.9c3.5-5.5,10.8-17.1,12.2-20.5c1.7-4.2,5.2-8.6,8-12.2c0.4-0.5,0.9-1.1,1.3-1.7c0,0,0,0,0,0
@@ -594,14 +604,9 @@
 	c0.1,0.3,0.8,1,1.1,1.2c0.2,0.2,0.5,0.1,2.3,0.2c1.8,0.1,0.8,0.8,0.8,1c0.1,0.2,0.6,1.2,1.1,1.6c0.5,0.4,1.2,0.8,1.4,0.8
 	c0.1,0,0.9,1,0.9,1.2c0,0.2-0.1,1.2,0.1,1.6c0.2,0.4,0.7,1.1,1.3,0.9c0.6-0.2,1.7-0.4,1.7-0.4s1,1.6,1.2,1.7c0.3,0.1,1.6,0.2,2,0.2
 	c0.4,0,2,0.6,2.4,0.8c0.4,0.1,0.9,0.1,1.7,0.1c0.1,0.5,0.2,0.8,0.2,1C255.1,364.4,256,365.4,255.2,365.8z"/></a>
-	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="309.6475" y1="380.3453" x2="330.7951" y2="380.3453">
-		<stop  offset="0" style="stop-color:#00FA86"/>
-		<stop  offset="0.1882" style="stop-color:#00F497"/>
-		<stop  offset="0.5612" style="stop-color:#00E6C3"/>
-		<stop  offset="1" style="stop-color:#00D2FF"/>
-	</linearGradient>
+	
 	<a xlink:title="Bogotá D.C" xlink:href="#bogota" id="OPEN1">
-<path class="st5" d="M330.8,363.5c-0.1,1.4-0.7,3.8-1.8,5.2c-1.1,1.4-1.6,2.2-2.3,3.8c-0.7,1.6-1.2,4.6-1.2,4.8
+<path class="estiloColoresDepartamento" d="M330.8,363.5c-0.1,1.4-0.7,3.8-1.8,5.2c-1.1,1.4-1.6,2.2-2.3,3.8c-0.7,1.6-1.2,4.6-1.2,4.8
 	c0,0.2-0.3,2.2-0.3,2.6c0,0.4,0.6,1.1,0.9,1.7c0.2,0.6,0,1.8-0.1,2.2c-0.1,0.5-1.2,1.9-1.6,2.5c0,0-0.1,0.1-0.1,0.2
 	c-0.2,0.6,0.1,1.4,0.2,1.7c0.1,0.3,0.9,0.5,2.4,0.6c0.7,0,1.1,0.4,1.4,0.8c-1.5,0.7-3.4,0.9-3.7,1c-0.3,0-3.4,3.2-3.8,4.1
 	c-0.4,0.9-2.4,5-3,6.1c-0.6,1.1-3.7,4.9-4.8,5.4c-0.7,0.3-1.8,0.6-2.4,0.6c-0.3,0-0.5,0-0.5-0.1c-0.1-0.2-0.3-1.6-0.4-2.7
@@ -620,6 +625,7 @@
 	c0.5-0.6,2.4-2,4.2-3.4c1.5-1.1,3-2.2,3.6-2.7v0c0.2-0.1,0.3-0.2,0.3-0.2s5-7,6.3-8.5c0.5-0.6,0.9-0.6,1.4-0.4
 	c0.2,0.9,0.6,2.6,1.1,3.1c0.6,0.6,2.7,2,3.1,3c0.4,1,0.5,2,0.9,2.9c0.4,0.9,1.8,1.6,2,2.1c0.2,0.5,0.7,1.2,0.1,1.8s-0.8,1.9-0.8,2.8
 	C288.1,94.9,288.2,98.8,287.9,99.5z"/></a>
+
 	<a xlink:title="Bolivar" xlink:href="#bolivar" id="OPEN16">
 <path class="st1" d="M334.9,201.5c-0.1,0.3-0.1,0.6-0.2,1c-0.2,1-0.4,2.2-0.5,2.7c-0.2,0.6-0.5,1.3-0.5,2c0,0.2,0,0.5,0.1,0.7v0
 	c0,0-1,1.4-1.5,2.3c-0.6,0.9-2.1,1.8-2.2,2.7c-0.1,0.9-0.3,1.6,0.1,2.9c0.5,1.3,0.6,2.4,1.2,3.6c0.6,1.2,0.9,1.8,0.9,2.1
@@ -690,7 +696,7 @@
 		<stop  offset="1" style="stop-color:#00D2FF"/>
 	</linearGradient>
 	<a xlink:title="Cundinamarca" xlink:href="#cun" id="OPEN18">
-<path class="st9" d="M371.3,372c-0.9,2.5-1.2,5.1-1.1,5.9s0.6,2.3-1.1,2.1c-1.7-0.2-5-1.8-5.9-1.8c-0.9,0-2.9,0-3.2-0.2
+<path class="estiloColoresDepartamento" d="M371.3,372c-0.9,2.5-1.2,5.1-1.1,5.9s0.6,2.3-1.1,2.1c-1.7-0.2-5-1.8-5.9-1.8c-0.9,0-2.9,0-3.2-0.2
 	c-0.4-0.2-0.9-1.2-1.7-1.2s-1.4-0.1-2,0.1c-0.5,0.2-0.6,0.4-1.7,0.6c-1.1,0.2-2.8,0.8-3.8-0.4c-0.9-1.2-2.6-2.1-2.9-3.5
 	c-0.3-1.4-1.2-3.5-1.5-4.1c-0.3-0.6-1.8-3.2-2.9-2.8c-1,0.4-3,1.1-2.9,2.3c0,1.1,0.9,1.9,0.1,2.4c-0.8,0.5-2,0.9-2,0.9
 	s-0.4,0.6,0.1,1.5c0.5,0.9,1.8,2.6,1.8,2.9s-0.9,0.4-0.4,2.1c0.5,1.7,1.5,2,1.6,2.6c0.1,0.6-0.5,1.2-1.2,1.6s-2.7,0.2-3.5,1.2
@@ -745,14 +751,14 @@
 	c0.2,0.5-0.1,1.1-0.3,1.7c-0.1,0.3-0.1,0.5-0.1,0.7c0,0.6,0.2,1.2,1.1,3c0.9,1.8,1.1,3.2,1.1,3.2l0.9,1.9c0,0-1.6,0.1-1.7,0.5
 	c-0.2,0.4-0.5,1.3-0.2,1.6c0.4,0.3,2.1-0.3,2.3-0.3c0.1,0,0.7-0.4,0.9,0.2c0.1,0.7,0,1.1-0.5,1.7C336.2,95.4,335.7,95.8,335.8,96.7z
 	"/></a>
-	<linearGradient id="SVGID_00000090255846266328508210000010939296153912978568_" gradientUnits="userSpaceOnUse" x1="315.3959" y1="158.4241" x2="369.3076" y2="158.4241">
-		<stop  offset="0" style="stop-color:#00FA86"/>
-		<stop  offset="0.1882" style="stop-color:#00F497"/>
-		<stop  offset="0.5612" style="stop-color:#00E6C3"/>
-		<stop  offset="1" style="stop-color:#00D2FF"/>
-	</linearGradient>
+		<linearGradient id="SVGID_00000090255846266328508210000010939296153912978568_" gradientUnits="userSpaceOnUse" x1="315.3959" y1="158.4241" x2="369.3076" y2="158.4241">
+			<stop  offset="0" style="stop-color:#00FA86"/>
+			<stop  offset="0.1882" style="stop-color:#00F497"/>
+			<stop  offset="0.5612" style="stop-color:#00E6C3"/>
+			<stop  offset="1" style="stop-color:#00D2FF"/>
+		</linearGradient>
 	<a xlink:title="Cesar" xlink:href="#cesar" id="OPEN2">
-<path style="fill:url(#SVGID_00000090255846266328508210000010939296153912978568_);" d="M369,109.3l0.2,5.4c0,1.1,0.1,2.6,0.1,3.6s-0.7,1.3-1.4,2.6c-0.7,1.3,0.3,1.7,0.1,2.6c-0.2,0.9-0.6,1.1-1.6,1.5
+<path class="estiloColoresDepartamento" d="M369,109.3l0.2,5.4c0,1.1,0.1,2.6,0.1,3.6s-0.7,1.3-1.4,2.6c-0.7,1.3,0.3,1.7,0.1,2.6c-0.2,0.9-0.6,1.1-1.6,1.5
 	c-1,0.4-0.6,3.8-0.6,3.8s0,0.7,0,1c0,0.3,1.3,0.8,1.8,1.1s-0.3,2.5-0.8,3.6s-0.9,1.6-1.5,2.3c-0.6,0.7-1.5,1.9-1.6,2.7
 	c-0.2,0.9,0.1,1.6-0.2,2.8c-0.3,1.2-0.7,1.2-1.2,2.1c-0.5,0.9-1.2,0.8-1.9,1c-0.6,0.2-0.4,0.3-1.4,1.9s-2,4.8-2,4.8
 	s-0.2,0.3-0.6,0.7c-0.4,0.4-0.9,1.1-1.5,1.6c-0.1,0.1-0.2,0.2-0.3,0.4c-0.2,0.2-0.3,0.3-0.5,0.5c-1.3,1.3,0,0.9-0.1,1.3
@@ -803,14 +809,8 @@
 	s-0.2,0.5-0.5,0.8c-0.2,0.3-1.1,0.9-1.1,1.5c0,0.6,1.1,1.1,1.5,1.1c0.4,0.1,1.6-0.1,3.2-0.3c1.6-0.2,1-0.9,1.4-1.3
 	c0.4-0.4,1.2-1.2,2-1.6c0.8-0.5,1.4,0.1,2.4,0.1c0.9,0,1.5,0.1,2.6,0.2c1.1,0.1,1.1,1.3,1.8,1.8s1.6,0.8,2.3,0.9
 	c0.6,0.1,1.2,1.3,1.5,1.9c0.3,0.7,0.5,1.5,0.9,2.1C290.3,203.9,290.6,204,291.1,204.1z"/></a>
-	<linearGradient id="SVGID_00000034059782627108611600000001312276194869397656_" gradientUnits="userSpaceOnUse" x1="340.7734" y1="209.2727" x2="413.1387" y2="209.2727">
-		<stop  offset="0" style="stop-color:#00FA86"/>
-		<stop  offset="0.1882" style="stop-color:#00F497"/>
-		<stop  offset="0.5612" style="stop-color:#00E6C3"/>
-		<stop  offset="1" style="stop-color:#00D2FF"/>
-	</linearGradient>
 	<a xlink:title="Norte De Santander"  xlink:href="#ns" id="OPEN3">
-<path style="fill:url(#SVGID_00000034059782627108611600000001312276194869397656_);" d="M413.1,252.9c0,0-0.1,1.4-0.3,1.4c-0.2,0-2.5-0.1-3.1,0.1c-0.6,0.2-3.4-0.1-3.7,0.1c-0.3,0.3-2.2,1-2.2,1
+<path class="estiloColoresDepartamento" d="M413.1,252.9c0,0-0.1,1.4-0.3,1.4c-0.2,0-2.5-0.1-3.1,0.1c-0.6,0.2-3.4-0.1-3.7,0.1c-0.3,0.3-2.2,1-2.2,1
 	s0.6,1.1,0.1,1.4c-0.6,0.3-1.6,0.4-1.8,0.1s-0.9-1.2-1.3-1.1c-0.4,0.1-1,1.2-1,2.2c0,0.9,0.3,1.5,0.1,1.9c-0.2,0.4-1.5,1.1-2.3,1.4
 	s-2.5,0.5-2.7,0.5c-0.3,0-0.1-1.3-1.1-1.2c-0.9,0-1.6,0-2.5,0.1h-0.1c-0.9,0.1-1.8,0.9-2,0.2c-0.2-0.7-0.1-1.5-0.1-2.5
 	c0-0.1,0-0.1,0-0.2c0-0.2,0.1-0.3,0.1-0.5c0,0,0-0.1,0-0.1c0.1-0.2,0.2-0.4,0.2-0.6c0.1-0.4,0.1-0.8-0.5-0.8c-1.3,0-1.8-0.1-2.7,0.1
@@ -1002,14 +1002,8 @@
 	s-0.1,1.2,0.1,1.8c0.2,0.6,0.3,7.4,1.5,9.1c1.3,1.7,1.6,2.9,2.4,3.9s2.1,1.8,2.8,2.2c0.7,0.4,1.1,0.5,2.5,0.9
 	c1.3,0.4,3.6,2.1,3.9,2.6c0.2,0.4,3.3,4.1,3.6,5.6c0.3,1.4,0.6,2-0.2,2.6c-0.8,0.6-1.5,0.5-1.6,1.7c0,1.2-0.4,2.2,0.2,3.3
 	c0.5,1.1,1,2.1,1,2.6c0,0.6-0.1,1.2,0.4,2.1c0.6,0.9,0.6,0.4,0.9,1.7C299.5,195.9,299.9,196.3,299.8,197.5z"/></a>
-	<linearGradient id="SVGID_00000083050750097715512670000009299682689254198149_" gradientUnits="userSpaceOnUse" x1="226.1521" y1="345.9797" x2="268.9893" y2="345.9797">
-		<stop  offset="0" style="stop-color:#00FA86"/>
-		<stop  offset="0.1882" style="stop-color:#00F497"/>
-		<stop  offset="0.5612" style="stop-color:#00E6C3"/>
-		<stop  offset="1" style="stop-color:#00D2FF"/>
-	</linearGradient>
 	<a xlink:title="Risaralda" xlink:href="#risaralda" id="OPEN4">
-<path class="st1" style="fill:url(#SVGID_00000083050750097715512670000009299682689254198149_);" d="M269,357.8c0,0-0.1,3.1-0.2,3.5c0,0.1-0.1,0.3-0.1,0.5c0,0.1-0.1,0.2-0.1,0.2c0,0,0,0,0,0
+<path class="estiloColoresDepartamento" d="M269,357.8c0,0-0.1,3.1-0.2,3.5c0,0.1-0.1,0.3-0.1,0.5c0,0.1-0.1,0.2-0.1,0.2c0,0,0,0,0,0
 	c0,0.1-0.1,0.2-0.2,0.2c-0.1,0.1-0.1,0.2-0.2,0.2c-0.1,0-0.1,0-0.2,0.1c-0.4,0.1-0.7-0.2-2,0.1s-2.2,0.7-4.1,0.8c-0.6,0-1.2,0-1.7,0
 	c-0.2,0-0.3,0-0.5,0h-0.1c-0.2,0-0.4,0-0.6,0c-0.3,0-0.5,0-0.7,0s-0.5,0-0.7,0c-1-0.1-1.7-0.7-2.6-0.7l-0.2,0
 	c-0.8,0-1.2,0.1-1.7-0.1c-0.5-0.1-2.1-0.8-2.4-0.8c-0.4,0-1.7-0.1-2-0.2c-0.3-0.1-1.2-1.7-1.2-1.7s-1.1,0.2-1.7,0.4
@@ -3516,36 +3510,32 @@
 		
         </main>
 
-		<div class="ContenedorPrincipalPopUp">
-			<div  class="cassilla" id="Bogota">
-				<div class="bordeado" id="bogota">
-					<h2>Bogota D.C</h2>
-					<p>.</p>
-					<center><table>
-						<tr>
-							<th>
-								<th></th>
-								<th></th>
-								<th></th>
-								<th></th>
-								<th>		
-								<a href="https://www.instagram.com/explore/tags/bogot%C3%A1liraybong%C3%B3fbatuta/" target="_blank"><img src="assets/imagenes/Comic/CreandoConLiraBongo/Botones/boton-fundacion-batuta.png"></a>
-								</th>
-								<th></th>
-								<th></th>
-								<th></th>
-								<th></th>
-						<th rowspan="1"><img src="assets/imagenes/Comic/CreandoConLiraBongo/Departamentos/Bogota.jpg" width="200px" height="200px"></th>
-					</tr>
-					<br>
-					</table></center>
-						<center><p>*Clic en uno de los botones para ver las fotos</p></center>
-					<br>
-					<button id="CLOSE1">Volver</button>
+<!--======================Estructura PopPup===================-->
+		<div class="classContenedorPrincipalPopup">
+			<div class="classContenedorBlanco">
+				<div class="classEncabezadoPopup">
+					<img class="classImgEscudoPopup" src="assets/imagenes/Comic/piePaginaEscudo.png" alt="Imagen Escudo">
+					<h1 class="classTituloPoppup">Bogotá D.C.</h1>
+					<img class="classImgBordonPopup" src="assets/imagenes/Comic/piePaginaVaculo.png" alt="Imagen Bordon">
 				</div>
+				<div class="classDepartamentoPoppup">
+					<div class="classBtnsAzulPoppup">
+						<button class="classBtnvisitadoAzulPoppup">Fundación<br>Batuta</button>
+						<button class="classBtnvisitadoAzulPoppup">Fundación<br>Batuta</button>
+					</div>
+					<img class="classImgDepartamentPoppup" src="assets/imagenes/Comic/CreandoConLiraBongo/Departamentos/Bogota.jpg" alt="">
+					<div class="classBtnsNaranjaPoppup">
+						<button class="classBtnvisitadoNaranjaPoppup">Fundación<br>Batuta</button>
+						<button class="classBtnvisitadoNaranjaPoppup">Fundación<br>Batuta</button>
+					</div>
+				</div>
+				<p class="classTextoFinalPoppup">*Clic en uno de los botones para ver las fotos</p>
+				<button class="classBtnAtrasPoppup">Volver</button>
 			</div>
-	
 		</div>
+
+
+
 
     </div>
 	
