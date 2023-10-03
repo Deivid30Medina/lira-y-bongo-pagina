@@ -312,7 +312,7 @@ body{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        top: -8vh;
+        top: -2vh;
     }
 
     .classMainImg1{
@@ -324,7 +324,7 @@ body{
     .classMainContenedorP{
         width: 100%;
         position: relative;
-        top: -5vh;
+        top: -2vh;
     }
 
     .classMainPPrincipal{
@@ -346,7 +346,8 @@ body{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        position: static;
+        position: relative;
+        top: -1vh;
     }
 
     .classMainImg2{
