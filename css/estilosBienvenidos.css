@@ -8,30 +8,17 @@ body, html {
     height: 1000px;
 }
 
-@media screen and (min-width:783px) and (max-width: 1017px){
+@media screen and (min-width:767px) and (max-width: 1031px){
     .classObject{
-        height: 1100px;
+        height: 220vh;
     }
 
 }
 
-@media screen and (min-width:644px) and (max-width: 782px){
+@media screen and (max-width: 767px){
     .classObject{
-        height: 1200px;
+        height: 205vh;
     }
 
 }
 
-@media screen and (min-width:529px) and (max-width: 643px){
-    .classObject{
-        height: 1400px;
-    }
-
-}
-
-@media screen and (min-width:400px) and (max-width: 528px){
-    .classObject{
-        height: 1700px;
-    }
-
-}
