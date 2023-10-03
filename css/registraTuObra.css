@@ -51,7 +51,7 @@ body{
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
-    font-size: 2em;
+    font-size: 30px;
     width: 100%;
 }
 
@@ -89,7 +89,7 @@ body{
 
 .classInformacionFinalMain {
     font-family: fuenteParrafo;
-    font-size: 2em;
+    font-size: 30px;
     text-align: center;
     width: 100%;
     display: flex;
@@ -288,10 +288,12 @@ body{
 
     .classInformaionInicioMain{
         text-align: justify;
+        font-size: 25px;
     }
 
     .classInformacionFinalMain{
         text-align: justify;
+        font-size: 25px;
     }
 }
 
