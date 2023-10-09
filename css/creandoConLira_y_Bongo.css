@@ -8,8 +8,9 @@
     src: url("../assets/fonts/title/Fira_Sans/FiraSans-Light.ttf");
 }
 
-body{
+.classMapaColombia{
     overflow-x: hidden;
+    overflow-y:hidden;
 }
 
 .classLiraBongoCotenedorPrincipal{
@@ -88,6 +89,22 @@ body{
         left: 9%;
         top: -440px;
         object-fit: scale-down;
+    }
+
+    .classLiraBongo{
+        animation: anime 3s infinite ease-in-out alternate;
+        -webkit-animation: anime 3s infinite ease-in-out alternate;
+        animation-delay: .8s;
+}
+
+    @keyframes anime{
+        100%{
+            transform: translateY(20px);
+            -webkit-transform: translateY(20px);
+            -moz-transform: translateY(20px);
+            -ms-transform: translateY(20px);
+            -o-transform: translateY(20px);
+        }
     }
 
     .classFinalPagina{
@@ -244,6 +261,14 @@ body{
     pointer-events: auto;
     opacity: 1;
     z-index: 2 !important;
+}
+
+.classAAzulBtn{
+    width: 100%;
+}
+
+.classANaranjaBtn{
+    width: 100%;
 }
 
 /*================Estilos Popup Final==============*/

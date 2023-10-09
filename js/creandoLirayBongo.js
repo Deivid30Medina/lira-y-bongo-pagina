@@ -31,6 +31,8 @@ const open29 = document.getElementById('OPEN28');
 const open30 = document.getElementById('OPEN29');
 const open31 = document.getElementById('OPEN30');
 const open32 = document.getElementById('OPEN31');
+const open33 = document.getElementById('OPEN32');
+const open34 = document.getElementById('OPEN33');
 
 
 //Boton de vovler en el popup
@@ -66,6 +68,8 @@ const volver29 = document.getElementById('idPopupVolverRisaralda');
 const volver30 = document.getElementById('idPopupVolverQuindio');
 const volver31 = document.getElementById('idPopupVolverCaldas');
 const volver32 = document.getElementById('idPopupVolverMeta');
+const volver33 = document.getElementById('idPopupVolverSanAndres');
+const volver34 = document.getElementById('idPopupVolverProvidencia');
 
 
 
@@ -105,6 +109,8 @@ const volver32 = document.getElementById('idPopupVolverMeta');
 	const popup30 = document.getElementById('idPopupQuindio');
 	const popup31 = document.getElementById('idPopupCaldas');
 	const popup32 = document.getElementById('idPopupMeta');
+    const popup33 = document.getElementById('idPopupSanAndres');
+    const popup34 = document.getElementById('idPopupProvidencia');
 	
 
 //Button Cerrar de la ventana PopUp
@@ -398,6 +404,23 @@ volver32.addEventListener('click', () => {
     popup32.classList.remove('show');
 });
 
+// Evento 33
+open33.addEventListener('click', () => {
+    popup33.classList.add('show');
+});
+
+volver33.addEventListener('click', () => {
+    popup33.classList.remove('show');
+});
+
+// Evento 33
+open34.addEventListener('click', () => {
+    popup34.classList.add('show');
+});
+
+volver34.addEventListener('click', () => {
+    popup34.classList.remove('show');
+});
 
 
 
