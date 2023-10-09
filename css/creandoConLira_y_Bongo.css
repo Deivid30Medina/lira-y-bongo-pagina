@@ -115,7 +115,6 @@
         text-align: center;
         position: relative;
         top: -400px;
-        flex-wrap: wrap;
     }
 
     .classImagenFinalLiraBongo{
@@ -272,3 +271,44 @@
 }
 
 /*================Estilos Popup Final==============*/
+
+/* Estilos generales que se aplican a todos los dispositivos */
+
+/* Estilos para tablets (entre 768px y 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .classLiraBongo{
+        height: 200px !important;
+        top: -220px !important;
+    }
+
+    .classImagenVideo{
+        right: 22% !important;
+    }
+
+    .classFinalPagina{
+        top: -200px !important;
+    }
+}
+
+
+/* Estilos para dispositivos móviles (menos de 768px) */
+@media screen and (max-width: 767px) {
+    .classLiraBongo{
+        height: 200px !important;
+        top: -120px !important;
+    }
+
+    .classImagenVideo{
+        right: 22% !important;
+    }
+
+    .classFinalPagina{
+        flex-wrap: wrap !important;
+        top: -200px !important;
+    }
+
+    .classAventurasP{
+        margin-top: 20% !important;
+        font-size: 15px !important;
+    }
+}
