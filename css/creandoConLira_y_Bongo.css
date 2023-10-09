@@ -288,6 +288,19 @@
     .classFinalPagina{
         top: -200px !important;
     }
+
+    .classContenedorBlanco{
+        width: 75% !important;
+    }
+
+    .classTituloPoppup{
+        width: 100% !important;
+        font-size: 25px !important;
+    }
+
+    .classBtnAtrasPoppup{
+        width: 30%;
+    }
 }
 
 
@@ -310,5 +323,36 @@
     .classAventurasP{
         margin-top: 20% !important;
         font-size: 15px !important;
+    }
+
+    .classContenedorBlanco{
+        width: 75% !important;
+    }
+
+    .classTituloPoppup{
+        width: 100% !important;
+        font-size: 25px !important;
+    }
+
+    .classBtnAtrasPoppup{
+        width: 30% !important;
+    }
+
+    .classBtnsAzulPoppup{
+        width: 50% !important;
+        order: 1 !important;
+    }
+
+    .classBtnsNaranjaPoppup{
+        width: 50% !important;
+        order: 2 !important;
+    }
+
+    .classImgDepartamentPoppup{
+        width: 52% !important;
+    }
+
+    .classDepartamentoPoppup{
+        flex-wrap: wrap !important;
     }
 }
