@@ -179,6 +179,9 @@ body{
 /*===============Responsive=================*/
 /* Estilos generales que se aplican a todos los dispositivos */
 
+
+
+
 /* Estilos para tablets (entre 768px y 1023px) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
