@@ -448,15 +448,16 @@ body{
     .classMainDivImg1{
         order: 2;
         width: 100%;
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        top: -8vh;
+        top: -2vh;
     }
 
     .classMainImg1{
         object-fit: scale-down;
-        width: 40%;
+        width: 50%;
         position: static;
     }
 
@@ -493,6 +494,7 @@ body{
         object-fit: scale-down;
         width: 40%;
         position: static;
+        margin-top: 10%;
     }
 
     .classUserCarrusel{
