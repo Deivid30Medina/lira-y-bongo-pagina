@@ -11,12 +11,22 @@
     margin: 0;
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
-.classHeader img{
+.classHeaderTitulo{
     width: 100%;
     height: 100%;
     object-fit: scale-down;
+}
+
+.classHeaderImgLogo{
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    height: 25%;
+    object-fit: scale-down;
+    cursor: pointer;
 }
 
 .classNav{
@@ -280,18 +290,18 @@ button{
 }
 
 .classFooterImagsCentro a{
-    width: 50%;
+    width: 80%;
 }
 
 .classFooterImgCentro2{
-    width: 50%;
+    width: 20%;
     height: 100%;
     object-fit: scale-down; 
 }
 
 .classFooterImgCentro1{
     width: 100%;
-    height: 100%;
+    height: 125%;
     object-fit: scale-down; 
 }
 
@@ -302,11 +312,12 @@ button{
 
 .classInformacionDNDAPiePagina{
     color: white;
-    font-size: 10px;
+    font-size: 7px;
     border: 1px solid red;
     align-items: center;
     width: 100%;    
     text-align: center;
+    margin: 0;
 }
 
 .classLogoDNDA{
@@ -316,6 +327,8 @@ button{
 .classSiguenos{
     color: white;
     text-align: center;
+    font-size: 12px;
+    margin: 0;
 }
 
 
@@ -324,6 +337,9 @@ button{
 
 
 /* ----------------- Responsive Design Movil------------------------------------*/
+
+
+
 
 @media screen and (max-width: 709px){
     .body{ 
