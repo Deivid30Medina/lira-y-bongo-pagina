@@ -89,6 +89,12 @@ function cargarContenidoDesdeSVG(archivo) {
     fetch(archivo)
       .then((response) => response.text())
       .then((data) => {
+
+        //Desmarcar contenido del menuHamburguesa
+        const hamburgesa = document.getElementById('menu');
+        hamburgesa.checked = false;
+
+
         // Actualizar el contenido
         document.querySelector('.contenido_cambiante').innerHTML = data;
 

@@ -500,6 +500,11 @@ button{
         align-items: center;
     }
     /* Boton de Opciones piePagina Fin*/
+
+    .classHeaderImgLogo{
+        height: 90% !important;
+        top: -31% !important;
+    }
 }
 
 @media screen and (max-width: 375px){
@@ -607,4 +612,9 @@ button{
         text-align: center;
     }
     /* Boton de Opciones piePagina Fin*/
+
+    .classHeaderImgLogo{
+        height: 90% !important;
+        top: -31% !important;
+    }
 }
