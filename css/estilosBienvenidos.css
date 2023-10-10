@@ -5,19 +5,26 @@ body, html {
 
 .classObject{
     width: 100%;
-    height: 1000px;
+    height: 150vh;
+}
+
+@media screen and (min-width:1031px) and (max-width: 1075px){
+    .classObject{
+        height: 190vh;
+    }
+
 }
 
 @media screen and (min-width:767px) and (max-width: 1031px){
     .classObject{
-        height: 320vh;
+        height: 280vh;
     }
 
 }
 
 @media screen and (max-width: 767px){
     .classObject{
-        height: 1550px;
+        height: 260vh;
     }
 
 }

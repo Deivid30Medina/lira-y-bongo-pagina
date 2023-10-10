@@ -3,10 +3,10 @@ $(document).ready(function () {
     $('.col').slick({
       dots: false,        //Activar/Desactivar los puntos de posicion de la galeria
       infinite: true,     //Activar/Desactivar sí el movimiento del carrusel sea inifinito
-      autoplay: true,     //Activar/Desactivar el movimiento automatico del carrusel
+      autoplay: false,     //Activar/Desactivar el movimiento automatico del carrusel
       autoplaySpeed: 3000, // Cambia las diapositivas cada 3 segundos
       speed: 800,         //Definir la velocidad de movimiento de el carrusel (Ojo, no confundir con el tiempo en el que tarda en moverse)
-      slidesToShow: 3,    //Cantidad de imagenes o enlaces que queremos que se muestre en el carrusel
+      slidesToShow: 2,    //Cantidad de imagenes o enlaces que queremos que se muestre en el carrusel
       slidesToScroll: 1,  // Cantidad de imagenes o enlaces que se moveran en el carrusel
       responsive: [
         {

@@ -61,16 +61,15 @@ body{
 
 .classMainDivImg1{
     display: flex;
-    width: 26%;
+    width: 21%;
     height: 100%;
-    position: relative; 
-    align-items: end;
+    align-items: start;
 }
 
 .classMainImg1{
-    position: absolute;
-    width: 120%;
-    top: -60px;
+    position: fixed;
+    width: 22%;
+    top: 46%;
     object-fit: scale-down; 
     border: 1px solid red;
 }
@@ -91,18 +90,17 @@ body{
 
 .classMainDivImg2{
     display: flex;
-    width: 26%;
+    width: 20%;
     height: 100%;
-    align-items: start;
-    position: relative;
+    align-items: end;
 }
 
 .classMainImg2{
-    width: 100%;
+    position: fixed;
     object-fit: scale-down; 
+    width: 17%;
     margin: 0;
-    position: absolute;
-    top: -110px;
+    top: 20%;
     border: 1px solid red;
 }
 
@@ -138,6 +136,7 @@ body{
 .slick-list{
     margin-bottom: 5% !important;
     width: 100%;
+    height: 300px !important;
 }
 
 .slick-track{
@@ -160,13 +159,16 @@ body{
     border-bottom-right-radius: 80px;
     width: 90%;
     margin-bottom: 10%;
+    position: relative;
 }
 
 .classColorTop{
+    
     background-color: bisque;
 }
 
 .classColorTop2{
+
     background-color: cadetblue;
 }
 
@@ -175,17 +177,19 @@ body{
 }
 
 .classUserCarrusel{
-    margin-top: 8%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    position: absolute;
     background-color: rgb(0, 200, 250);
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     width: 100%;
     margin-top: 8%;
+    top: 2%;
+    
 }
 
 .classDatosUserCarrusel{
@@ -200,6 +204,7 @@ body{
     color: white;
     font-weight: bold;
     font-size: 20px;
+    text-align: center;
 }
 
 .classDatosFechaUserCarrusel{
@@ -214,6 +219,7 @@ body{
     font-weight: bold;
     margin-left: 4%;
     font-size: 20px;
+    
 }
 
 .classFechaComentarioCarrusel{
@@ -232,10 +238,7 @@ body{
     height: auto;
     background-color: white;
     border-radius: 35px;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    -ms-border-radius: 35px;
-    -o-border-radius: 35px;
+    height: 100%;
 }
 
 .classComentarioCarrusel{
@@ -260,7 +263,7 @@ body{
 .slick-prev:before,
 .slick-next:before {
     font-size: 30px; /* Tamaño del icono */
-    color: red;  /* Color del icono */
+    color: rgb(0, 200, 250);  /* Color del icono */
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -290,8 +293,54 @@ body{
     /* Cambia el color del icono cuando se pasa el mouse */
 }
 
+.col{
+    position: static !important;
+    max-width: 60% !important;
+    margin-left: 5%;
+}
+
+.classFoterBienvenido{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 /*======================Carrusel Fin=========================*/
+@media screen and (min-width:1031px) and (max-width: 1075px){
+    .classMainImg1{
+        width: 25% !important;
+        top: 50%;
+    }
+
+    .slick-list{
+        height: 300px !important;
+    }
+
+}
+
 @media screen and (min-width:772px) and (max-width: 1031px){
+
+    .classNombreUserCarrusel{
+        font-size: 15px;
+    }
+
+    .classCargoCarrusel{
+        font-size: 15px;
+    }
+
+    .classFechaComentarioCarrusel{
+        font-size: 15px;
+    }
+
+    .classComentarioCarrusel{
+        font-size: 14px;
+    }
+
+    .slick-list{
+        height: 400px !important;
+    }
+    
     .classContenedorPrincipalBienvenidos{
         width: 100%;
         display: flex;
@@ -360,6 +409,11 @@ body{
 
 
 @media screen and (max-width: 772px){
+
+    .slick-list{
+        height: 340px !important;
+    }
+
     .classContenedorPrincipalBienvenidos{
         width: 100%;
         display: flex;
@@ -430,5 +484,21 @@ body{
 
     .ItemCarrusel {
         height: 316px !important;
+    }
+
+    .classNombreUserCarrusel{
+        font-size: 15px;
+    }
+
+    .classCargoCarrusel{
+        font-size: 15px;
+    }
+
+    .classFechaComentarioCarrusel{
+        font-size: 15px;
+    }
+
+    .classComentarioCarrusel{
+        font-size: 14px;
     }
 }
