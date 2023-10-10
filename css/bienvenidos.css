@@ -528,13 +528,13 @@ body{
 
     .slick-prev{
         position: absolute;
-        bottom: 5%;
+        bottom: 0%;
         left: 30%;
     }
 
     .slick-next{
         position: absolute;
-        bottom: 5%;
+        bottom: 0%;
         right: 30%;
     }
 }
