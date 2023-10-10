@@ -15,17 +15,19 @@ body, html {
 
 }
 
-@media screen and (min-width:767px) and (max-width: 1031px){
+@media screen and (min-width:772px) and (max-width: 1031px){
     .classObject{
-        height: 280vh;
+        height: 210vh;
     }
 
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 772px){
     .classObject{
-        height: 260vh;
+        height: 220vh;
     }
 
 }
+
+
 

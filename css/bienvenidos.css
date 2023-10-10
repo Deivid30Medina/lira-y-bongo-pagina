@@ -338,7 +338,8 @@ body{
     }
 
     .slick-list{
-        height: 400px !important;
+        height: 18vh !important;
+        margin: 0 !important;
     }
     
     .classContenedorPrincipalBienvenidos{
@@ -405,14 +406,30 @@ body{
         position: static;
     }
 
+    
+    .col{
+        position: static !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .slick-prev{
+        position: absolute;
+        bottom: 3%;
+        left: 40%;
+    }
+
+    .slick-next{
+        position: absolute;
+        bottom: 3%;
+        right: 40%;
+    }
 }
 
 
 @media screen and (max-width: 772px){
 
-    .slick-list{
-        height: 340px !important;
-    }
+
 
     .classContenedorPrincipalBienvenidos{
         width: 100%;
@@ -500,5 +517,22 @@ body{
 
     .classComentarioCarrusel{
         font-size: 14px;
+    }
+
+    .col{
+        position: static !important;
+        max-width: 100% !important;
+    }
+
+    .slick-prev{
+        position: absolute;
+        bottom: 7%;
+        left: 30%;
+    }
+
+    .slick-next{
+        position: absolute;
+        bottom: 7%;
+        right: 30%;
     }
 }
