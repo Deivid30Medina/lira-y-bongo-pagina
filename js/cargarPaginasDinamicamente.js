@@ -76,6 +76,10 @@ function cargarContenidoDesdeSVG(archivo) {
   // Ocultar el contenido actual
   document.querySelector('.contenido_cambiante').style.opacity = 0;
 
+  //Desmarcar contenido del menuHamburguesa
+  const hamburgesa = document.getElementById('menu');
+  hamburgesa.checked = false;
+
   // Aplicar estilos para centrar el loader
   loaderContainer.style.display = 'flex';
   loaderContainer.style.alignItems = 'start';
@@ -90,11 +94,7 @@ function cargarContenidoDesdeSVG(archivo) {
       .then((response) => response.text())
       .then((data) => {
 
-        //Desmarcar contenido del menuHamburguesa
-        const hamburgesa = document.getElementById('menu');
-        hamburgesa.checked = false;
-
-
+        
         // Actualizar el contenido
         document.querySelector('.contenido_cambiante').innerHTML = data;
 
@@ -111,7 +111,7 @@ function cargarContenidoDesdeSVG(archivo) {
           document.getElementById('idSectionBtnFinales').style.display = 'flex';
         }
       });
-  }, 1000); // Ajustar el tiempo de carga HTML
+  }, 2000); // Ajustar el tiempo de carga HTML
 }
 
 
