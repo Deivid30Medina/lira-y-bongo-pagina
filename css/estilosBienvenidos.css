@@ -24,7 +24,7 @@ body, html {
 
 @media screen and (max-width: 772px){
     .classObject{
-        height: 220vh;
+        height: 200vh;
     }
 
 }
