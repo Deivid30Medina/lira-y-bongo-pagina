@@ -413,17 +413,6 @@ body{
         margin-left: 0 !important;
     }
 
-    .slick-prev{
-        position: absolute;
-        bottom: 3%;
-        left: 40%;
-    }
-
-    .slick-next{
-        position: absolute;
-        bottom: 3%;
-        right: 40%;
-    }
 }
 
 
@@ -526,15 +515,5 @@ body{
         max-width: 100% !important;
     }
 
-    .slick-prev{
-        position: absolute;
-        bottom: 2%;
-        left: 30%;
-    }
-
-    .slick-next{
-        position: absolute;
-        bottom: 2%;
-        right: 30%;
-    }
+    
 }
