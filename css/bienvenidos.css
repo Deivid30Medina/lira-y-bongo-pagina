@@ -82,7 +82,7 @@ body{
 .classMainPPrincipal{
     position: relative;
     width: 110%;
-    color: gray;
+    color: #4a4a4a;
     text-align: justify;
     font-family: fuenteParrafo;
 
@@ -203,7 +203,7 @@ body{
     margin-top: 6%;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
 }
 
@@ -218,7 +218,7 @@ body{
     color: white;
     font-weight: bold;
     margin-left: 4%;
-    font-size: 20px;
+    font-size: 15px;
     
 }
 
@@ -227,7 +227,7 @@ body{
     color: rgb(241, 241, 241);
     margin: 0;
     margin-left: 4%;
-    font-size: 20px;
+    font-size: 15px;
     text-align: left;
 }
 
@@ -307,14 +307,36 @@ body{
 }
 
 /*======================Carrusel Fin=========================*/
-@media screen and (min-width:1031px) and (max-width: 1075px){
+@media screen and (min-width: 1700px) and (max-width: 2000px) {
     .classMainImg1{
         width: 25% !important;
-        top: 50%;
+        top: 38%;
+        height: 25% !important;
     }
+
+    .classMainImg2{
+        width: 15% !important;
+        height: 15% !important;
+    }
+
+    .classItemCarrusel{
+        height: 220px !important;
+    }
+}
+
+@media screen and (min-width:1031px) and (max-width: 1700px){
+    .classMainImg1{
+        width: 25% !important;
+        top: 40%;
+    }
+    
 
     .slick-list{
         height: 300px !important;
+    }
+
+    .classItemCarrusel{
+        height: 240px !important;
     }
 
 }

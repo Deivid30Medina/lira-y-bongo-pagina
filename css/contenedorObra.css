@@ -9,6 +9,12 @@ iframe {
     border: none;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
+    iframe {
+        height: 1400px;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     iframe {
         height: 1240px;

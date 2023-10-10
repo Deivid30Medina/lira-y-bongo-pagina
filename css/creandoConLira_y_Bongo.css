@@ -8,6 +8,8 @@
     src: url("../assets/fonts/title/Fira_Sans/FiraSans-Light.ttf");
 }
 
+
+
 .classMapaColombia{
     overflow-x: hidden;
     overflow-y:hidden;
@@ -273,6 +275,15 @@
 /*================Estilos Popup Final==============*/
 
 /* Estilos generales que se aplican a todos los dispositivos */
+
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
+    .classSvgMapa{
+        display: flex;
+        margin: auto;
+        width: 40%;
+        height: 4%;
+    }
+}
 
 /* Estilos para tablets (entre 768px y 1023px) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {

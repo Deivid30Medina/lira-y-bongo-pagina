@@ -11,6 +11,13 @@
     border: none;
 }
 
+@media screen and (min-width: 1023px) and (max-width: 2000px) {
+    .classObjectLiraBongo{
+        height: 160vh !important;
+    }
+}
+
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .classObjectLiraBongo{
         height: 240vh !important;
