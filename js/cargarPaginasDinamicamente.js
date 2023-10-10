@@ -76,9 +76,6 @@ function cargarContenidoDesdeSVG(archivo) {
   // Ocultar el contenido actual
   document.querySelector('.contenido_cambiante').style.opacity = 0;
 
-  //Desmarcar contenido del menuHamburguesa
-  const hamburgesa = document.getElementById('menu');
-  hamburgesa.checked = false;
 
   // Aplicar estilos para centrar el loader
   loaderContainer.style.display = 'flex';
@@ -87,6 +84,10 @@ function cargarContenidoDesdeSVG(archivo) {
   loaderContainer.style.position = 'absolute'; // Posición absoluta
   loaderContainer.style.width = '100%'; // Ancho completo
   loaderContainer.style.top = '50%'; // Parte superior del main
+
+  //Desmarcar contenido del menuHamburguesa
+  const hamburgesa = document.getElementById('menu');
+  hamburgesa.checked = false;
 
   setTimeout(function () {
     // Cargar el nuevo contenido
