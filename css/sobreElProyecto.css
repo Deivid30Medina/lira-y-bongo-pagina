@@ -3,6 +3,21 @@
     src: url("../assets/fonts/paragraph/Comic_Neue/ComicNeue-Regular.ttf");
 }
 
+body{
+    scroll-behavior: smooth;
+}
+
+.classDivPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.classBodyProyecto{
+    overflow-y: hidden !important;
+}
+
 /*===================Inicio Section classProcesoCreativo ====================*/
 
 .classProcesoCreativo{
@@ -64,6 +79,7 @@
     -o-border-radius: 5%;
 }
 
+
 /*===================Fin Section classProcesoCreativo ====================*/
 
 
@@ -71,21 +87,278 @@
 
 .classCreadores{
     width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.classHeaderCreadores{
+.classDivContenedorCreadores{
+    display: flex;
     width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.classDivContenedorVideo{
+    width: 50%;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.classImgCreadores{
-    width: 50%;
+.classImgVideo2{
+    width: 100%;
     object-fit: scale-down; 
 }
 
+.classFrameBienvenidos2{
+    position: absolute;
+    width: 85%;
+    height: 79%;
+    left: 11%;
+    top: 10%;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+
+.classDivContenedorCreadores{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.classImgCreadores{
+    width: 85%;
+    object-fit: scale-down; 
+}
+
+.classPCreadores{
+    width: 90%;
+    color: gray;
+    font-family: fuenteParrafo;
+    text-align: justify !important;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.classDivImgCreadores{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.classIMGActores{
+    object-fit: scale-down;
+    height: 25vh;
+}
+
+.classIMGActores:hover{
+    transform:  scale(1.08);
+    -webkit-transform:  scale(1.08);
+    -moz-transform:  scale(1.08);
+    -ms-transform:  scale(1.08);
+    -o-transform:  scale(1.08);
+}
 /*===================Fin Section Creadores ====================*/
+
+
+/*===================Inicio Section Derechos Conexos ====================*/
+
+.classDerechosConexos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 6%;
+}
+
+.classDivContenedorConexos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.classDivContenedorVideo3{
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.classImgCreadoresConexos{
+    object-fit: scale-down;
+    height: 35vh;
+}
+
+.classPCreadoresConexos{
+    width: 90%;
+    color: gray;
+    font-family: fuenteParrafo;
+    text-align: justify !important;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.classImgVideo3{
+    width: 100%;
+    object-fit: scale-down; 
+}
+
+.classFrameBienvenidos3{
+    position: absolute;
+    width: 85%;
+    height: 79%;
+    left: 11%;
+    top: 10%;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+
+/*===================Fin Section Derechos Conexos ====================*/
+
+
+
+
+
+
+
+
+/*================Inicio Section Personajes Comic=========================*/
+
+.classActoresComic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    border: 2px solid rebeccapurple;
+    margin-top: 5%;
+}
+
+.classCard{
+    position: relative;
+    width: 35vh;
+    height: 40vh;
+}
+
+.classCard .face{
+    position: absolute;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: 1.0s;
+    -webkit-transition: 1.0s;
+    -moz-transition: 1.0s;
+    -ms-transition: 1.0s;
+    -o-transition: 1.0s;
+}
+
+.classCard .front{
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+}
+
+.classCard .back{
+    transform:  rotateY(180deg);
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}   
+
+.classCard:hover .front{
+    transform:  rotateY(180deg);
+}
+
+.classCard:hover .back{
+    z-index: 1;
+    transform:  rotateY(360deg);
+}
+
+.face{
+    width: 100%;
+}
+
+.back{
+    width: 100%;
+}
+
+.classPersonaComic{
+    object-fit: scale-down;
+    height: 30vh;
+}
+
+.classsPersonajeVoz{
+    object-fit: scale-down;
+    height: 30vh;
+}
+
+/*================Fin Section Personajes Comic=========================*/
+
+
+
+
+
+/*===================Inicio Norma=========================*/
+
+.classNorma{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.classImgNorma{
+    object-fit: scale-down;
+    width: 80%;
+}
+
+/*===================Fin Norma=========================*/
+
+
+
+.classUp{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    right: 2%;
+}
+
+.classUp i{
+    cursor: pointer;
+    font-size: 30px;
+    color: #72c9e5;
+}
+
+
+
 
 
 /* Estilos generales que se aplican a todos los dispositivos */
