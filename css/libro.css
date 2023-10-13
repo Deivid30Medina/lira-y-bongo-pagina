@@ -1,8 +1,11 @@
+
+
 .classLibroPdf{
-    margin: auto;
+    
     display: block;
     width: 50vw;
     height: 100vh;
+    margin-bottom: 3vh;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
