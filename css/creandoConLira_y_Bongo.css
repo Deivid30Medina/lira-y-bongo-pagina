@@ -15,121 +15,92 @@
     overflow-y:hidden;
 }
 
-.classLiraBongoCotenedorPrincipal{
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    background-color: white;
-}
 
-/*Inicio Header*/
-    .classHeaderLiraBongo{
-        display: flex;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        margin-bottom: 40px;
-    }
-    .classHeaderA{
-        justify-content: center;
-        text-decoration: none;
-        cursor: pointer;
-        width: 100%;
-        
-    }
-    .classH1Header{
-        align-items: center;
-        justify-content: space-evenly;
-        color: #003f60;
-    }
-/*Fin Header*/
+
 
 /*Main Inicio*/
-    .classContenedorPrincipal{
-        width: 100%;
-        height: auto;
 
-    }
-
-    .classPrimeraDescripcion{
-        text-align: center;
-        font-size: 15px;
-    }
-
-    .classSegundaDescripcion{
-        text-align: center;
-        font-weight: bold;
-        color: #002f70;
-        font-size: 15px;
-    }
-
-    .classVideoA{
-        text-decoration: none;
-    }
-
-    .classImagenVideo{
-        position: absolute;
-        float: left;
-        margin-top: 5%;
-        right: 15%;
-        width: 15%;
-    }
-
-    .classAventurasP{
-        position: absolute;
-        font-size: 15px;
-        text-align: center;
-        right: 4%;
-        margin-top: 10%;
-        width: auto;
-    }
-
-    .classImagenFinalEscalar .classLiraBongo{
-        position: relative;
-        width: 30%;
-        height: 400px;
-        left: 9%;
-        top: -440px;
-        object-fit: scale-down;
-    }
-
-    .classLiraBongo{
-        animation: anime 3s infinite ease-in-out alternate;
-        -webkit-animation: anime 3s infinite ease-in-out alternate;
-        animation-delay: .8s;
+.classLiraBongoCotenedorPrincipal{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
 }
 
-    @keyframes anime{
-        100%{
-            transform: translateY(20px);
-            -webkit-transform: translateY(20px);
-            -moz-transform: translateY(20px);
-            -ms-transform: translateY(20px);
-            -o-transform: translateY(20px);
-        }
-    }
 
-    .classFinalPagina{
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: space-around;
-        text-align: center;
-        position: relative;
-        top: -400px;
-    }
+.classDivContenido1{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 5%;
+}
 
-    .classImagenFinalLiraBongo{
-        height: 200px;
-        width: 40%;
-        object-fit: scale-down; 
-    }
+.classHeaderA{
+    text-decoration: none;
+}
 
-    .classPFinalLiraBongo{
-        font-size: 16px;
-        font-weight:normal;
-    }
+.classH1Header{
+    width: 100%;
+    text-align: center;
+    font-family: fuenteTitulo;
+    color: #2767C9;
+}
 
+.classPrimeraDescripcion{
+    font-family: fuenteParrafo;
+    text-align: justify;
+    width: 100%;
+    color: #4a4a4a;
+    text-align: justify;
+    font-size: 19px;
+}
+
+.classSegundaDescripcion{
+    font-family: fuenteParrafo;
+    text-align: justify;
+    width: 100%;
+    color: #4a4a4a;
+    text-align: justify;
+    font-size: 19px;
+}
+
+.classAventurasImg{
+    object-fit: scale-down;
+    width: 100%;
+}
+
+.classPFinalLiraBongo{
+    font-family: fuenteParrafo;
+    text-align: justify;
+    width: 100%;
+    color: #4a4a4a;
+    text-align: justify;
+    font-size: 19px;
+}
+
+.classImgFinal{
+    object-fit: scale-down;
+    width: 100%;
+}
+
+
+
+.classMain{
+    width: 50%;
+}
+
+.classContenedorPrincipal{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 
 /*Main Final*/
 
@@ -278,10 +249,12 @@
 
 @media screen and (min-width: 1024px) and (max-width: 2000px) {
     .classSvgMapa{
+        position: absolute;
         display: flex;
         margin: auto;
-        width: 40%;
-        height: 4%;
+        width: 140%;
+        left: 0;
+        margin-top: 40%;
     }
 }
 
