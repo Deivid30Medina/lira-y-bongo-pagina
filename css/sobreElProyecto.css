@@ -154,7 +154,7 @@ body{
     width: 80%;
     display: flex;
     align-items: center;
-    flex-direction: row;
+
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -180,6 +180,7 @@ body{
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 6%;
@@ -393,7 +394,40 @@ body{
         width: 80%;
     }
 
+
+
+
+    .classDivContenedorCreadores{
+        order: -1;
+        width: 100%;
+    }
+
+    .classDivContenedorVideo{
+        order: 1;
+        width: 80%;
+        margin-top: 5%;
+    }
+
+    .classDivImgCreadores{
+        margin-top: 3%;
+    }
+
+    .classPCreadores{
+        width: 80%;
+    }
+
     
+    .classDivContenedorConexos{
+        width: 100%;
+    }
+
+    .classPCreadoresConexos{
+        width: 80%;
+    }
+
+    .classDivContenedorVideo3{
+        width: 80%;
+    }
 }
 
 
@@ -419,6 +453,38 @@ body{
     }
 
     .classImgVideo{
+        width: 80%;
+    }
+
+    .classDivContenedorCreadores{
+        order: -1;
+        width: 100%;
+    }
+
+    .classDivContenedorVideo{
+        order: 1;
+        width: 80%;
+        margin-top: 5%;
+    }
+
+    .classDivImgCreadores{
+        margin-top: 3%;
+    }
+
+    .classPCreadores{
+        width: 80%;
+    }
+
+    
+    .classDivContenedorConexos{
+        width: 100%;
+    }
+
+    .classPCreadoresConexos{
+        width: 80%;
+    }
+
+    .classDivContenedorVideo3{
         width: 80%;
     }
 }
