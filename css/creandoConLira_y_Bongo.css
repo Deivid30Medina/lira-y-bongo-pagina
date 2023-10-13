@@ -243,6 +243,16 @@
     width: 100%;
 }
 
+.classImgColombia{
+    object-fit: scale-down;
+    position: absolute;
+    display: flex;
+    margin: auto;
+    width: 30%;
+    right: 10%;
+    margin-bottom: 60%;
+}
+
 /*================Estilos Popup Final==============*/
 
 /* Estilos generales que se aplican a todos los dispositivos */
