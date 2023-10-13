@@ -260,6 +260,7 @@ body{
     position: relative;
     width: 35vh;
     height: 40vh;
+    cursor: pointer;
 }
 
 .classCard .face{
@@ -309,6 +310,7 @@ body{
 .classPersonaComic{
     object-fit: scale-down;
     height: 30vh;
+    
 }
 
 .classsPersonajeVoz{
@@ -357,7 +359,10 @@ body{
     color: #72c9e5;
 }
 
-
+.classTop{
+    position: absolute;
+    top: 0;
+}
 
 
 
