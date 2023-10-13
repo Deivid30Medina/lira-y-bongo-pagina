@@ -192,121 +192,38 @@ body{
 
 
 
-/* Estilos para tablets (entre 768px y 1023px) */
+@media screen and (min-width: 1600px) and (max-width: 2000px) {
+
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1600px) {
+
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-
-
-    .classContenedorVideoMain{
-        width: 100%;
-        order: -1;
-    }
-
-    .classContenedorImgBongo{
-        order: 1;
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .classContenedorImgLira{
-        order: 2;
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .classBongo{
+    .classContenedor1{
         width: 100%;
     }
 
-    .classLira{
-        width: 1000%;
+    .classContenedorImagenesMain{
+        width: 80%;
     }
 
-    .classImg{
-        object-fit: scale-down;
-    }
-
-    .slick-list{
-        width: 100%;
-    }
-
-    .slick-prev{
-        position: absolute;
-        bottom: -20%;
-        left: 40%   ;
-    }
-
-    .slick-next{
-        position: absolute;
-        bottom: -20%;
-        right: 40%;
+    .slick-list {
+        width: 80%;
     }
 }
 
-
-/* Estilos para dispositivos móviles (menos de 768px) */
 @media screen and (max-width: 767px) {
-    /* Agrega tus estilos específicos para dispositivos móviles aquí */
-    .classContenedorVideoMain{
-        width: 100%;
-        order: -1;
+    .classContenedor1{
+        width: 100% !important;
     }
 
-    .classContenedorImgBongo{
-        order: 1;
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+    .classContenedorImagenesMain{
+        width: 80%;
     }
 
-    .classContenedorImgLira{
-        order: 2;
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .classBongo{
-        width: 100%;
-    }
-
-    .classLira{
-        width: 100%;
-    }
-
-    .classImg{
-        object-fit: scale-down;
-    }
-
-    .slick-list{
-        width: 100%;
-    }
-
-    .slick-prev{
-        position: absolute;
-        bottom: -30%;
-        left: 40%   ;
-    }
-
-    .slick-next{
-        position: absolute;
-        bottom: -30%;
-        right: 40%;
-    }
-
-    .classInformaionInicioMain{
-        text-align: justify;
-        font-size: 25px;
-    }
-
-    .classInformacionFinalMain{
-        text-align: justify;
-        font-size: 25px;
+    .slick-list {
+        width: 70%;
     }
 }
-
