@@ -151,17 +151,16 @@ body{
 }
 
 .classDivImgCreadores{
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
-
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .classIMGActores{
     object-fit: scale-down;
-    height: 25vh;
+    width: 30%;
 }
 
 .classIMGActores:hover{
@@ -204,7 +203,7 @@ body{
 
 .classImgCreadoresConexos{
     object-fit: scale-down;
-    height: 35vh;
+    width: 100%;
 }
 
 .classPCreadoresConexos{
@@ -250,17 +249,16 @@ body{
 .classActoresComic{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     width: 80%;
     border: 2px solid rebeccapurple;
-    margin-top: 5%;
 }
 
 .classCard{
     position: relative;
-    width: 35vh;
-    height: 40vh;
+    width: 21%;
+    margin-bottom: 30%;
     cursor: pointer;
 }
 
@@ -300,23 +298,16 @@ body{
     transform:  rotateY(360deg);
 }
 
-.face{
-    width: 100%;
-}
-
-.back{
-    width: 100%;
-}
 
 .classPersonaComic{
     object-fit: scale-down;
-    height: 30vh;
+    width: 90%;
     
 }
 
 .classsPersonajeVoz{
     object-fit: scale-down;
-    height: 30vh;
+    width: 90%;
 }
 
 /*================Fin Section Personajes Comic=========================*/
@@ -428,6 +419,10 @@ body{
     .classDivContenedorVideo3{
         width: 80%;
     }
+
+    .classActoresComic{
+        margin-top: 5%;
+    }
 }
 
 
@@ -486,6 +481,22 @@ body{
 
     .classDivContenedorVideo3{
         width: 80%;
+    }
+
+    .classPersonaComic{
+        object-fit: scale-down;
+        width: 100%;
+        
+    }
+    
+    .classsPersonajeVoz{
+        object-fit: scale-down;
+        width: 100%;
+    }
+
+    .classCard{
+        width: 50%;
+        margin-bottom: 80%;
     }
 }
 

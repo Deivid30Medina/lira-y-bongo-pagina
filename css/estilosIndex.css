@@ -66,7 +66,7 @@
 /*Estilos Menu Inicio*/
 
 .contenido_cambiante{
-    display: flex;
+
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
