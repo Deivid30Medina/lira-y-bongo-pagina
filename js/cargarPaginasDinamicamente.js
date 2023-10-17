@@ -33,6 +33,11 @@ window.addEventListener('load', function () {
 
 //Cargar Dinamicamente html al dar clic en una opción dle menu
   function cargarContenido(archivo) {
+      if(archivo == "juego.html"){
+         // Ocultar el canvas y el section al cargar contenido diferente
+         document.getElementById('canvas').style.display = 'none';
+         document.getElementById('idSectionBtnFinales').style.display = 'none';
+      }
       // Capturar la URL completa
       document.querySelector('.contenido_cambiante').style.opacity = 0;
       setTimeout(function () {
@@ -40,9 +45,7 @@ window.addEventListener('load', function () {
         fetch(archivo)
           .then((response) => response.text())
           .then((data) => {
-            // Ocultar el canvas y el section al cargar contenido diferente
-            document.getElementById('canvas').style.display = 'none';
-            document.getElementById('idSectionBtnFinales').style.display = 'none';
+           
             // Actualiza el contenido
             document.querySelector('.contenido_cambiante').innerHTML = data;
 
