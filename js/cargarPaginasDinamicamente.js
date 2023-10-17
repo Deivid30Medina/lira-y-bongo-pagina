@@ -18,7 +18,7 @@
 
 // Cargar el contenido de "inicio.html" al cargar la página
 window.addEventListener('load', function () {
-    const urlCompleta = window.location.href;; 
+    const urlCompleta = window.location.href; 
     console.log("Url acutal:" + urlCompleta);
     console.log(urlCompleta.includes("juego.html"));
     if(urlCompleta.includes("juego.html") == false){
