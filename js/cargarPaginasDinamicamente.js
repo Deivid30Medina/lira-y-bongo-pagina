@@ -27,17 +27,15 @@ window.addEventListener('load', function () {
 
     }else{
       console.log("Entro en 1");
+      // Ocultar el canvas y el section al cargar contenido diferente
+      document.getElementById('canvas').style.display = 'none';
+      document.getElementById('idSectionBtnFinales').style.display = 'none';
       cargarContenido('juego.html');
     }
   });
 
 //Cargar Dinamicamente html al dar clic en una opción dle menu
   function cargarContenido(archivo) {
-      if(archivo == "juego.html"){
-         // Ocultar el canvas y el section al cargar contenido diferente
-         document.getElementById('canvas').style.display = 'none';
-         document.getElementById('idSectionBtnFinales').style.display = 'none';
-      }
       // Capturar la URL completa
       document.querySelector('.contenido_cambiante').style.opacity = 0;
       setTimeout(function () {
