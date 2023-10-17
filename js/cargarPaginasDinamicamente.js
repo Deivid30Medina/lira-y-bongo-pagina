@@ -18,14 +18,16 @@
 
 // Cargar el contenido de "inicio.html" al cargar la página
 window.addEventListener('load', function () {
-    const urlCompleta = window.location.href; 
+    const urlCompleta = "https://deivid30medina.github.io/webtest.github.io/index.html?page=juego.html"; 
     console.log("Url acutal:" + urlCompleta);
-    if(urlCompleta.includes("juego.html")){
-      cargarContenido('Entro 1');
-      cargarContenido('juego.html');
-    }else{
-      cargarContenido('Entro 2');
+    console.log(urlCompleta.includes("juego.html"));
+    if(urlCompleta.includes("juego.html") == false){
+      console.log("Entro en 2");
       cargarContenido('inicio.html');
+
+    }else{
+      console.log("Entro en 1");
+      cargarContenido('juego.html');
     }
   });
 
