@@ -133,7 +133,7 @@ function manejarEventosLoad() {
       const svgDoc = this.contentDocument;
       svgDoc.documentElement.addEventListener('click', function () {
           const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'inicio.html';
-          history.pushState({}, '', `index.html`);
+          
           cargarContenidoDesdeSVG(archivo);
       });
   });
@@ -143,7 +143,7 @@ function manejarEventosLoad() {
       const svgDoc = this.contentDocument;
       svgDoc.documentElement.addEventListener('click', function () {
           const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'bienvenidos.html';
-          history.pushState({}, '', `index.html`);
+          
           cargarContenidoDesdeSVG(archivo);
       });
   });
@@ -153,7 +153,7 @@ function manejarEventosLoad() {
     const svgDoc = this.contentDocument;
     svgDoc.documentElement.addEventListener('click', function () {
         const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'registraTuObra.html';
-        history.pushState({}, '', `index.html`);
+        
         cargarContenidoDesdeSVG(archivo);
     });
   });
@@ -163,7 +163,7 @@ function manejarEventosLoad() {
     const svgDoc = this.contentDocument;
     svgDoc.documentElement.addEventListener('click', function () {
         const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'sobreElProyecto.html';
-        history.pushState({}, '', `index.html`);
+        
         cargarContenidoDesdeSVG(archivo);
     });
   });
@@ -173,7 +173,7 @@ function manejarEventosLoad() {
     const svgDoc = this.contentDocument;
     svgDoc.documentElement.addEventListener('click', function () {
         const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'creandoConLira_y_Bongo.html';
-        history.pushState({}, '', `index.html`);
+        
         cargarContenidoDesdeSVG(archivo);
     });
   });
@@ -183,7 +183,7 @@ function manejarEventosLoad() {
     const svgDoc = this.contentDocument;
     svgDoc.documentElement.addEventListener('click', function () {
         const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'libro.html';
-        history.pushState({}, '', `index.html`);
+        
         cargarContenidoDesdeSVG(archivo);
     });
   });
@@ -205,7 +205,7 @@ function manejarEventosLoad() {
     const svgDoc = this.contentDocument;
     svgDoc.documentElement.addEventListener('click', function () {
         const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'universo.html';
-        history.pushState({}, '', `index.html`); //para modificar la URL en la barra de direcciones del navegador. Esto agrega un parámetro archivo a la URL, lo que permite que el usuario vea el parámetro en la barra de direcciones sin recargar la página.
+         //para modificar la URL en la barra de direcciones del navegador. Esto agrega un parámetro archivo a la URL, lo que permite que el usuario vea el parámetro en la barra de direcciones sin recargar la página.
         cargarContenidoDesdeSVG(archivo);
     });
   });
