@@ -1,11 +1,11 @@
 @font-face {
     font-family: fuenteParrafo;
-    src: url("../assets/fonts/paragraph/ComicNeue-Regular.ttf");
+    src: url("../assets/fonts/paragraph/Comic_Neue/ComicNeue-Regular.ttf");
 }
 
 @font-face {
     font-family: fuenteTitulo;
-    src: url("../assets/fonts/title/FiraSans-Light.ttf");
+    src: url("../assets/fonts/title/Fira_Sans/FiraSans-Light.ttf");
 }
 
 /*Estilos main Inicio*/
