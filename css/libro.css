@@ -1,14 +1,31 @@
 
 
+.classBodyPdf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.classContenedorLibro{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .classLibroPdf{
     
-    display: block;
-    width: 50vw;
+    width: 50%;
     height: 100vh;
-    margin-bottom: 3vh;
+    margin-bottom: 3%;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+}
+
+#toolbar {
+    --pdf-toolbar-text-color: rgb(255 181 13) !important; 
 }
