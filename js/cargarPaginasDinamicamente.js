@@ -21,8 +21,10 @@ window.addEventListener('load', function () {
     const urlCompleta = window.location.href; 
     console.log("Url acutal:" + urlCompleta);
     if(urlCompleta.includes("juego.html")){
+      cargarContenido('Entro 1');
       cargarContenido('juego.html');
     }else{
+      cargarContenido('Entro 2');
       cargarContenido('inicio.html');
     }
   });
