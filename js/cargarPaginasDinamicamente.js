@@ -18,12 +18,17 @@
 
 // Cargar el contenido de "inicio.html" al cargar la página
 window.addEventListener('load', function () {
+    const urlCompleta = window.location.href; 
+    console.log("Url acutal:" + urlCompleta);
+    if(urlCompleta.includes("juego.html")){
+      cargarContenido('juego.html');
+    }
     cargarContenido('inicio.html');
   });
 
 //Cargar Dinamicamente html al dar clic en una opción dle menu
   function cargarContenido(archivo) {
-      // Oculta el contenido actual
+      // Capturar la URL completa
       document.querySelector('.contenido_cambiante').style.opacity = 0;
       setTimeout(function () {
         // Carga el nuevo contenido
