@@ -195,7 +195,7 @@ function manejarEventosLoad() {
       const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'juego';
   
       // Modificar la URL para incluir el parámetro 'archivo'
-      history.pushState({}, '', `index.html?archivo=${archivo}`);
+      history.pushState({}, '', `pages=${archivo}`);
       cargarContenidoDesdeSVG(`${archivo}.html`);
     });
   });
