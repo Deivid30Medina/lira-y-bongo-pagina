@@ -100,12 +100,16 @@
 
 .classCard .back{
     transform:  rotateY(180deg);
-    background-color: #f0f7ff;
+    background-color: transparent;
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: justify;
+    position: absolute;
+    bottom: -85%;
+    left: -47%;
+    width: 39em;
 }   
 
 .classCard:hover .front{
@@ -148,12 +152,11 @@
 }
 
 
+
+
 .classGemasImg{
     width: 100%;
     object-fit: scale-down; 
-    animation: anime 1s infinite ease-in-out alternate;
-    -webkit-animation: anime 1s infinite ease-in-out alternate;
-    animation-delay: .5s;
 }
 
 .classDerechoGema{
