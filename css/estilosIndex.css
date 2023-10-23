@@ -1,8 +1,44 @@
 
+@font-face {
+    font-family: fuenteParrafo;
+    src: url("../assets/fonts/paragraph/Comic_Neue/ComicNeue-Regular.ttf");
+}
+
+body{
+    overflow-x: hidden;
+}
 
 .classContenedorPrincipal{
     overflow-x: hidden;
     align-items: initial;
+}
+
+.classContenedorContadorVisitantes{
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+    right: -44%;
+    bottom: 0;
+}
+
+.classPContador{
+    font-family: fuenteParrafo;
+    margin: 0;
+    font-size: 13px;
+    color: #19afe7;
+}
+
+#sfcs94earf7faeh8kr851yg89phatebfjxc{
+    border: 1px solid #bbc2c5;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#FCS_bhubrygfknnfsbyfdl6y22dka7zgg49s_btSee{
+    display: none !important;
 }
 
 /*Estilos Cabecera Inicio*/
@@ -231,7 +267,7 @@ button{
 
 .classBtnSvgUniverso{
     height: 80px;
-    margin-top: 5%;
+    margin-top: 7%;
     object-fit: scale-down;
 }
 
