@@ -202,7 +202,7 @@ body{
     align-items: center;
     justify-content: space-evenly;
     position: absolute;
-    background-color: rgb(0, 200, 250);
+    background-color: #084db2;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     width: 100%;
@@ -216,6 +216,7 @@ body{
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
+    height: 30%;
 }
 
 .classNombreUserCarrusel{
@@ -233,6 +234,7 @@ body{
     flex-direction: column;
     margin-top: 2%;
     width: 60%;
+    height: 100%;
 }
 
 .classCargoCarrusel{
@@ -249,7 +251,7 @@ body{
     margin: 0;
     margin-left: 4%;
     font-size: 15px;
-    text-align: left;
+    text-align: center;
 }
 
 .classComentarioUserCarrusel{
@@ -260,6 +262,9 @@ body{
     background-color: white;
     border-radius: 35px;
     height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .classComentarioCarrusel{
@@ -269,7 +274,7 @@ body{
     text-align: center;
     margin-left: 2%;
     justify-content: space-evenly;
-    font-size: 14px;
+    font-size: 11px;
     margin-top: 3%;
 }
 
@@ -374,9 +379,9 @@ body{
 
 
 .instagram-media{
-    height: 400px;
+    height: 450px;
+    width: 100px;
 }
-
 
 /*======================Carrusel 2 Fin=========================*/
 
