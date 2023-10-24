@@ -16,7 +16,7 @@ function crearComentario(comentario) {
     itemCarrusel.className = 'ItemCarrusel';
 
     const classItemCarrusel = document.createElement('div');
-    classItemCarrusel.className = `classItemCarrusel classColorTop`;
+    classItemCarrusel.className = 'classItemCarrusel classColorTop';
     classItemCarrusel.style.backgroundColor = comentario.color;
     
 
