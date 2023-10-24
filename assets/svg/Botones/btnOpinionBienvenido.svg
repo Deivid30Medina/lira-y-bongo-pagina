@@ -39,8 +39,12 @@
         font-weight: bold;
       }
 
-      g:hover>path, g:focus>path{
+      g:hover>path+text, path:focus>text{
 				fill: white;
+			}
+
+      g:hover>path, g:focus>path{
+				fill: url(#Degradado_sin_nombre_22);
 			}
 
       .classLineaSvg{

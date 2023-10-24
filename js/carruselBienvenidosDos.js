@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // código de Slick Carousel aquí
-    $('.classCarrusel2').slick({
+    $('.col').slick({
       dots: false,        //Activar/Desactivar los puntos de posicion de la galeria
       infinite: true,     //Activar/Desactivar sí el movimiento del carrusel sea inifinito
       autoplay: false,     //Activar/Desactivar el movimiento automatico del carrusel

@@ -48,6 +48,7 @@ body{
 
 .classMainBienvenidos{
     width: 100%;
+    height: 25vh;
 }
 
 .classMainContenedor{
@@ -57,9 +58,11 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     border: 1px solid black;
+    height: 100%;
 }
 
 .classMainDivImg1{
+    position: relative;
     display: flex;
     width: 21%;
     height: 100%;
@@ -67,9 +70,8 @@ body{
 }
 
 .classMainImg1{
-    position: fixed;
+    position: absolute;
     width: 22%;
-    top: 46%;
     object-fit: scale-down; 
     border: 1px solid red;
 }
@@ -89,18 +91,19 @@ body{
 }
 
 .classMainDivImg2{
+    position: relative;
     display: flex;
     width: 20%;
     height: 100%;
-    align-items: end;
+
 }
 
 .classMainImg2{
-    position: fixed;
+    position: absolute !important;
     object-fit: scale-down; 
-    width: 17%;
+    width: 100%;
     margin: 0;
-    top: 20%;
+    top: 0;
     border: 1px solid red;
 }
 
@@ -132,9 +135,11 @@ body{
     margin-bottom: 5%;
 }
 
-.classsvgGemas{
-    width: 25%;
+.classSvgBtnOpinion{
+    width: 20%;
 }
+
+
 
 /*======================Inicio Fin=========================*/
 
@@ -150,7 +155,7 @@ body{
 .slick-list{
     margin-bottom: 5% !important;
     width: 100%;
-    height: 300px !important;
+    height: 50% !important;
 }
 
 .slick-track{
@@ -160,7 +165,7 @@ body{
 .ItemCarrusel{
     display: flex !important;
     align-items: center !important;
-    height: 255px !important;
+    height: 290px !important;
     justify-content: space-evenly !important;
     width: 100%;
 }
@@ -168,7 +173,7 @@ body{
 .classItemCarrusel{
     display: flex !important;
     align-items: center !important;
-    height: 250px ;
+    height: 100% !important;
     border-bottom-left-radius: 80px;
     border-bottom-right-radius: 80px;
     width: 90%;
@@ -203,7 +208,7 @@ body{
     width: 100%;
     margin-top: 8%;
     top: 2%;
-    
+    height: 90% !important;
 }
 
 .classDatosUserCarrusel{
@@ -214,6 +219,7 @@ body{
 }
 
 .classNombreUserCarrusel{
+    width: 40%;
     margin-top: 6%;
     color: white;
     font-weight: bold;
@@ -226,6 +232,7 @@ body{
     display: flex;
     flex-direction: column;
     margin-top: 2%;
+    width: 60%;
 }
 
 .classCargoCarrusel{
@@ -233,7 +240,7 @@ body{
     font-weight: bold;
     margin-left: 4%;
     font-size: 15px;
-    
+    text-align: center;
 }
 
 .classFechaComentarioCarrusel{
@@ -256,13 +263,14 @@ body{
 }
 
 .classComentarioCarrusel{
-    width: 90%;
+    width: 92%;
     display: flex;
     align-items: center;
     text-align: center;
     margin-left: 2%;
     justify-content: space-evenly;
     font-size: 14px;
+    margin-top: 3%;
 }
 
 /* Oculta los textps predeterminados de Slick Carousel */
@@ -318,39 +326,110 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
+.classH2TituloComentarios{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.classImgTituloComentario{
+    object-fit: scale-down;
+    width: 35%;
+}
 /*======================Carrusel Fin=========================*/
+
+
+
+
+
+
+
+
+
+/*======================Carrusel 2 Inicio=========================*/
+
+.classContarinerCarrusel2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.classCarrusel2{
+    width: 60% !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 5% !important;
+}
+
+
+
+
+.instagram-media{
+    height: 400px;
+}
+
+
+/*======================Carrusel 2 Fin=========================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 1700px) and (max-width: 2000px) {
+    .classMainBienvenidos{
+        width: 100%;
+        height: 25vh;
+    }
+
     .classMainImg1{
         width: 25% !important;
-        top: 38%;
+        top: 32%;
         height: 25% !important;
     }
 
     .classMainImg2{
-        width: 15% !important;
-        height: 15% !important;
+        width: 100% !important;
     }
 
     .classItemCarrusel{
-        height: 220px !important;
+        height: 100% !important;
     }
 }
 
 @media screen and (min-width:1031px) and (max-width: 1700px){
+    .classMainBienvenidos{
+        height: 27vh;
+    }
+
     .classMainImg1{
-        width: 25% !important;
-        top: 40%;
+        width: 125% !important;
+        bottom: 0%;
     }
     
 
     .slick-list{
-        height: 300px !important;
+        height: 50% !important;
     }
 
     .classItemCarrusel{
-        height: 240px !important;
+        height: 100% !important;
     }
 
 }
@@ -374,7 +453,7 @@ body{
     }
 
     .slick-list{
-        height: 18vh !important;
+        height: 50% !important;
         margin: 0 !important;
     }
     
@@ -438,8 +517,7 @@ body{
 
     .classMainImg2{
         object-fit: scale-down;
-        width: 50%;
-        position: static;
+        width: 100%;    
     }
 
     
