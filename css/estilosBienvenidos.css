@@ -16,7 +16,7 @@ body, html {
 
 @media screen and (min-width: 1031px) and (max-width: 1700px) {
     .classObject {
-        height: 150vh;
+        height: 190vh;
     }
 }
 

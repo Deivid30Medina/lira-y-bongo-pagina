@@ -122,6 +122,20 @@ body{
     position: relative;
     width: 110%;
 }
+
+.classContainerOpinion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.classsvgGemas{
+    width: 25%;
+}
+
 /*======================Inicio Fin=========================*/
 
 /*======================Carrusel Inicio=========================*/
@@ -238,7 +252,7 @@ body{
     height: auto;
     background-color: white;
     border-radius: 35px;
-    height: 100%;
+    height: 130px;
 }
 
 .classComentarioCarrusel{
