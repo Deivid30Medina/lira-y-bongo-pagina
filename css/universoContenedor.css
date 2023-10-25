@@ -1,0 +1,229 @@
+@font-face {
+    font-family: fuenteParrafo;
+    src: url("../assets/fonts/paragraph/Comic_Neue/ComicNeue-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: fuenteTitulo;
+    src: url("../assets/fonts/title/Fira_Sans/FiraSans-Light.ttf");
+  }
+  
+  .classBody{
+      overflow-x: hidden !important;
+      overflow-y: hidden !important;
+      width: 100%;
+      height: 100%;
+  }
+  
+  .classMainUniverso{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  
+  
+  
+  
+  /*===============================Inicio Section 1======================================*/
+  
+  .classSection1{
+    margin-top: 10%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .classTituloUniverso{
+    object-fit: scale-down;
+    width: 100%;
+    
+  }
+  
+  
+  .classTituloReloj{
+    width: 70%;
+    margin: auto;
+    border: 1px solid orangered;
+  }
+  
+  
+  .classContainerCarrusel{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 45%;
+    
+  }
+  
+  .carruselPersonajes{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .iconPrev{
+    color: rgb(0, 200, 250);
+    font-size: 160%;
+  }
+  
+  .btn1Prev{
+    margin-left: -38%;
+    justify-content: left;
+  }
+  
+  .iconNext{
+    color: rgb(0, 200, 250);
+    font-size: 160%;
+  }
+  
+  .btn1Next{
+    justify-content: right;
+    margin-right: -40%;
+  }
+  
+  .iconPrev:hover{
+    color: lightcoral;
+  }
+  
+  .iconNext:hover{
+    color: lightcoral;
+  }
+  
+  
+  /*===============================Fin Section 1======================================*/
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*===============================Inicio Section 2======================================*/
+  
+  .classSection2{
+    margin-top: 10%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .classPInformacion1{
+    width: 90%;
+    color: #4a4a4a;
+    text-align: justify;
+    font-family: fuenteParrafo;
+    margin-top: 10%;
+  }
+  
+  .classContainer2{
+    width: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgb(5, 43, 216);
+    margin-top: 10%;
+  }
+
+  .classImgMarcoPersonaje{
+    object-fit: scale-down;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .informacionPersonaje{
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3%;
+  }
+
+  .classNombrePersonaje{
+    width: 80%;
+    font-family: fuenteTitulo;
+    font-weight: 1000;
+    font-size: 25px;
+    text-align: left;
+    margin: 0;
+  }
+  
+  .classApodoPersonaje{
+    width: 80%;
+    font-family: fuenteParrafo;
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+  }
+
+  .classFechaPersonaje{
+    width: 80%;
+    font-family: fuenteParrafo;
+    font-size: 15px;
+    text-align: left;
+    margin: 0;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .classInspiracionPersona{
+    width: 95%;
+    font-family: fuenteParrafo;
+    font-size: 13px;
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+    margin-top: 2%;
+    color: #355fdb;
+    margin-top: 8%;
+    margin-bottom: 3%;
+    font-weight: 600;
+  }
+
+
+  .classLorePersonaje{
+    width: 95%;
+    font-family: fuenteParrafo;
+    font-size: 13px;
+    text-align: justify;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 2%;
+    color: black;
+    margin-bottom: 3%;
+  }
+
+
+  .classFooterPersonaje{
+    width: 100%;
+  }
+
+  .classImgEscudo{
+    object-fit: scale-down;
+    width: 100%;
+  }
+  
+  /*===============================Fin Section 2======================================*/
