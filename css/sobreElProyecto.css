@@ -3,6 +3,11 @@
     src: url("../assets/fonts/paragraph/Comic_Neue/ComicNeue-Regular.ttf");
 }
 
+@font-face {
+    font-family: fuenteTitulo;
+    src: url("../assets/fonts/title/Fira_Sans/FiraSans-Light.ttf");
+}
+
 body{
     scroll-behavior: smooth;
 }
@@ -391,6 +396,41 @@ body{
 }
 
 /*===================Fin Sobre creadores Sitio web=========================*/
+
+
+
+
+
+
+
+
+
+
+/*===================Inicio Banda SONORA=========================*/
+
+.classBandaSonora{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.classTituloBandaSonora{
+    width: 80%;
+    color: gray;
+    font-family: fuenteTitulo;
+    text-align: justify !important;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+.classBandaSonoraVideo{
+    width: 50%;
+}
+/*===================Fin Banda SONORA=========================*/
 
 
 
