@@ -116,7 +116,11 @@
 
 
 .classCard:hover .front{
-    transform:  rotateY(180deg);
+    transform:  scale(1.5);
+    -webkit-transform:  scale(1.5);
+    -moz-transform:  scale(1.5);
+    -ms-transform:  scale(1.5);
+    -o-transform:  scale(1.5);
 }
 
 .classCard:hover .back{
