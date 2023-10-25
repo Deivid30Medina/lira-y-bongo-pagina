@@ -72,6 +72,18 @@ body{
     flex-wrap: wrap;
 }
 
+.classContainerTitulo2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.classImgTitle2{
+    object-fit: scale-down;
+    width: 50%;
+}
+
 .classContenedorVideoMain {
     width: 100%;
     position: relative;
@@ -183,7 +195,29 @@ body{
     /* Cambia el color del icono cuando se pasa el mouse */
 }
 
+
+.classBtnRegistrarObras{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.classLinkRegistraObra{
+    width: 40%;
+}
+
+.classImgBtnRegistar{
+    object-fit: scale-down;
+    width: 100%;
+}
+
 /*===================================Fin Footer===================================*/
+
+
+
+
 
 
 /*===============Responsive=================*/
