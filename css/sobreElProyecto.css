@@ -316,6 +316,92 @@ body{
 
 
 
+
+
+/*===================Inicio Sobre creadores Sitio web=========================*/
+
+
+.classSobreCreadores{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.classTituloCreadoresWeb{
+    object-fit: scale-down;
+    width: 30%;
+}
+
+.classInformacionCreadoresWeb{
+    width: 80%;
+    color: gray;
+    font-family: fuenteParrafo;
+    text-align: justify !important;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.classContenedorCreadores{
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 0;
+    border: 2px solid rgb(214, 86, 26);
+}
+
+.classComunicacionEquipo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: 2px solid rgb(30, 172, 89);
+}
+
+.classImgEquipoComunicacion{
+    object-fit: scale-down;
+    width: 100%;
+}
+
+.classInformacion{
+    width: 100%;
+    color: gray;
+    font-family: fuenteParrafo;
+    text-align: left !important;
+    margin-left: 8%;
+}
+
+
+.classTIEquipo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: 2px solid rebeccapurple;
+}
+
+
+.classImgEquipoTI{
+    object-fit: scale-down;
+    width: 100%;
+}
+
+/*===================Fin Sobre creadores Sitio web=========================*/
+
+
+
+
+
+
+
+
+
+
+
 /*===================Inicio Norma=========================*/
 
 .classNorma{

@@ -124,6 +124,12 @@ function cargarContenidoDesdeSVG(archivo) {
         if (archivo === 'inicio.html') {
           document.getElementById('canvas').style.display = 'block';
           document.getElementById('idSectionBtnFinales').style.display = 'flex';
+          document.getElementById('idSectionBtnFinales').style.position = 'relative';
+          document.getElementById('idSectionBtnFinales').style.top = '-10vh';
+        }else if(archivo === 'universo.html' || archivo === 'juego.html'){
+          document.getElementById('idSectionBtnFinales').style.display = 'flex';
+          document.getElementById('idSectionBtnFinales').style.position = 'absolute';
+          document.getElementById('idSectionBtnFinales').style.top = "0";
         }
       });
   }, 2000); // Ajustar el tiempo de carga HTML
