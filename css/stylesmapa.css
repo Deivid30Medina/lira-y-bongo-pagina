@@ -11,23 +11,27 @@
     border: none;
 }
 
-@media screen and (min-width: 1023px) and (max-width: 2000px) {
+
+@media screen and (min-width: 1600px) and (max-width: 2000px) {
     .classObjectLiraBongo{
-        height: 160vh !important;
+        height: 120vh !important;
     }
 }
 
+@media screen and (min-width: 1023px) and (max-width: 1600px) {
+    .classObjectLiraBongo{
+        height: 170vh !important;
+    }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .classObjectLiraBongo{
-        height: 240vh !important;
+        height: 250vh !important;
     }
 }
 
-
-/* Estilos para dispositivos móviles (menos de 768px) */
 @media screen and (max-width: 767px) {
     .classObjectLiraBongo{
-        height: 170vh !important;
+        height: 250vh !important;
     }
 }
