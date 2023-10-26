@@ -1,0 +1,19 @@
+.classBodyJuego{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    
+}
+
+.classMainJuego{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.classImgProximamente{
+    object-fit: scale-down;
+    width: 50%;
+}
