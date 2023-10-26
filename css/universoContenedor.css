@@ -49,9 +49,8 @@
   
   
   .classTituloReloj{
-    width: 70%;
-    margin: auto;
     border: 1px solid orangered;
+    width: 90%;
   }
   
   
@@ -62,11 +61,10 @@
     justify-content: center;
     position: absolute;
     top: 45%;
-    
   }
   
   .carruselPersonajes{
-    width: 35%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,11 +72,11 @@
   
   .iconPrev{
     color: rgb(0, 200, 250);
-    font-size: 160%;
+    font-size: 170%;
   }
   
   .btn1Prev{
-    margin-left: -38%;
+    margin-left: -45%;
     justify-content: left;
   }
   
@@ -89,7 +87,7 @@
   
   .btn1Next{
     justify-content: right;
-    margin-right: -40%;
+    margin-right: -50%;
   }
   
   .iconPrev:hover{
@@ -132,8 +130,28 @@
     font-family: fuenteParrafo;
     margin-top: 10%;
   }
+
+  /* Agrega una clase para ocultar el contenido */
+.hidden-content {
+  opacity: 0;
+  transform: scale(0.8); /* Empieza con un tamaño más pequeño */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Transición suave */
+}
+
+/* Cuando la clase hidden-content se retira, el contenido se mostrará gradualmente */
+.visible-content {
+  opacity: 1;
+  transform: scale(1); /* Tamaño original */
+}
+
+.fadeInAnimation {
+  animation: fadeIn 1s ease;
+  -webkit-animation: fadeIn 1s ease;
+}
   
   .classContainer2{
+    animation: fadeIn 1s ease;
+    -webkit-animation: fadeIn 1s ease;
     width: 90%;
     position: relative;
     display: flex;
@@ -142,7 +160,7 @@
     flex-direction: column;
     border: 1px solid rgb(5, 43, 216);
     margin-top: 10%;
-  }
+}
 
   .classImgMarcoPersonaje{
     object-fit: scale-down;
@@ -169,7 +187,9 @@
     font-size: 25px;
     text-align: left;
     margin: 0;
-  }
+    animation: teclear 3s steps(16);
+    -webkit-animation: teclear 3s steps(30);
+}
   
   .classApodoPersonaje{
     width: 80%;
@@ -177,7 +197,8 @@
     font-size: 20px;
     text-align: left;
     margin: 0;
-  }
+    
+}
 
   .classFechaPersonaje{
     width: 80%;
@@ -219,11 +240,57 @@
 
   .classFooterPersonaje{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 
-  .classImgEscudo{
-    object-fit: scale-down;
+  .classDatosPersonalesPersonaje{
     width: 100%;
+    border-left: 1px solid black;
+    padding-left: 2%;
+    margin-left: 5%;
   }
+
+  .classPInformacionPersonaje{
+    margin: 0%;
+    font-family: fuenteParrafo;
+    font-size: 13px;
+    text-align: justify;
+    color: black;
+  }
+
+  .classNegritaFooter{
+    font-weight: 1000 !important;
+    color: black !important;
+  }
+
   
   /*===============================Fin Section 2======================================*/
+
+
+
+
+
+  /*===============================Inicio animaciones efectos======================================*/
+
+@keyframes teclear{
+  from{
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  to{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity: 0;
+    filter: blur();
+    -webkit-filter: blur(30px);
+}
+}
+
+
+  /*===============================Fin animaciones efectos======================================*/
