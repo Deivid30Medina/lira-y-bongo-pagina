@@ -40,4 +40,9 @@ body, html {
     }
 }
 
+@media screen and (max-width: 380px) {
+    .classObject{
+        height: 470vh;
+    }
+}
 
