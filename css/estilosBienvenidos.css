@@ -10,7 +10,7 @@ body, html {
 
 @media screen and (min-width: 1700px) and (max-width: 2000px) {
     .classObject {
-        height: 210vh;
+        height: 200vh;
     }
 }
 
@@ -22,14 +22,14 @@ body, html {
 
 @media screen and (min-width:772px) and (max-width: 1031px){
     .classObject{
-        height: 210vh;
+        height: 310vh;
     }
 
 }
 
 @media screen and (max-width: 772px){
     .classObject{
-        height: 200vh;
+        height: 270vh;
     }
 
 }

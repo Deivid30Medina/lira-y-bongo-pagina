@@ -31,15 +31,14 @@ body{
     justify-content: space-evenly;
     width: 100%;
     height: 200px;
-    
+    margin-bottom: 4%;
 }
 
 .classHeaderImg{
-
-    height: 100%;
-    margin: 0;
-    width: auto;
+    margin-top: 5%;
+    width: 80%;
     object-fit: scale-down; 
+    
 }
 
 /*======================Fin Header=========================*/
@@ -48,7 +47,7 @@ body{
 
 .classMainBienvenidos{
     width: 100%;
-    height: 25vh;
+    margin-bottom: 3%;
 }
 
 .classMainContenedor{
@@ -101,7 +100,7 @@ body{
 .classMainImg2{
     position: absolute !important;
     object-fit: scale-down; 
-    width: 100%;
+    width: 80%;
     margin: 0;
     top: 0;
     border: 1px solid red;
@@ -131,7 +130,6 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 2%;
     margin-bottom: 5%;
 }
 
@@ -395,22 +393,19 @@ body{
 
 
 
-
-
 @media screen and (min-width: 1700px) and (max-width: 2000px) {
     .classMainBienvenidos{
-        width: 100%;
-        height: 25vh;
+        height: 350em;
     }
 
     .classMainImg1{
-        width: 25% !important;
-        top: 32%;
-        height: 25% !important;
+        width: 125% !important;
+        bottom: 0%;
     }
+    
 
-    .classMainImg2{
-        width: 100% !important;
+    .slick-list{
+        height: 50% !important;
     }
 
     .classItemCarrusel{
@@ -418,9 +413,11 @@ body{
     }
 }
 
-@media screen and (min-width:1031px) and (max-width: 1700px){
+
+
+@media screen and (min-width: 1031px) and (max-width: 1700px) {
     .classMainBienvenidos{
-        height: 27vh;
+        height: 30em;;
     }
 
     .classMainImg1{
@@ -437,9 +434,16 @@ body{
         height: 100% !important;
     }
 
+
 }
 
+
+
 @media screen and (min-width:772px) and (max-width: 1031px){
+
+    .classMainBienvenidos{
+        height: 30em;;
+    }
 
     .classNombreUserCarrusel{
         font-size: 15px;
@@ -465,8 +469,11 @@ body{
     .classContenedorPrincipalBienvenidos{
         width: 100%;
         display: flex;
+        align-items: center;
         flex-direction: column;
+        flex-wrap: wrap;
     }
+
 
     .classMainContenedor{
         width: 100%;
@@ -494,8 +501,10 @@ body{
     .classMainContenedorP{
         width: 100%;
         position: relative;
-        top: -2vh;
+        top: 2vh;
     }
+
+    .classContenedorPrincipalBienvenidos
 
     .classMainPPrincipal{
         order: 1;
@@ -525,12 +534,46 @@ body{
         width: 100%;    
     }
 
+    .classHeaderImg{
+        width: 100% !important;
+    }
     
     .col{
         position: static !important;
         max-width: 100% !important;
         margin-left: 0 !important;
     }
+
+    .classImgTituloComentario{
+        width: 60%;
+    }
+
+    .classColumnas {
+        margin-bottom: 10%;
+    }
+
+    .slick-track{
+        width: 100%;
+    }
+
+    .classCarrusel2 {
+        width: 90% !important;
+    }
+
+    .classItemCarrusel2{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .classContainerOpinion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 90%;
+    }
+
 
 }
 
@@ -539,11 +582,40 @@ body{
 
 
 
+    .classMainBienvenidos{
+        height: 30em;;
+    }
+
+    .classNombreUserCarrusel{
+        font-size: 15px;
+    }
+
+    .classCargoCarrusel{
+        font-size: 15px;
+    }
+
+    .classFechaComentarioCarrusel{
+        font-size: 15px;
+    }
+
+    .classComentarioCarrusel{
+        font-size: 14px;
+    }
+
+    .slick-list{
+        height: 50% !important;
+        margin: 0 !important;
+    }
+    
     .classContenedorPrincipalBienvenidos{
         width: 100%;
         display: flex;
+        align-items: center;
         flex-direction: column;
+        flex-wrap: wrap;
     }
+
+    
 
     .classMainContenedor{
         width: 100%;
@@ -556,7 +628,6 @@ body{
     .classMainDivImg1{
         order: 2;
         width: 100%;
-        position: relative;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -565,15 +636,17 @@ body{
 
     .classMainImg1{
         object-fit: scale-down;
-        width: 50%;
+        width: 40%;
         position: static;
     }
 
     .classMainContenedorP{
         width: 100%;
         position: relative;
-        top: -5vh;
+        top: 2vh;
     }
+
+    .classContenedorPrincipalBienvenidos
 
     .classMainPPrincipal{
         order: 1;
@@ -595,44 +668,57 @@ body{
         align-items: center;
         justify-content: space-evenly;
         position: relative;
-        top: -5vh;
+        top: -1vh;
+        height: 50%;
     }
 
     .classMainImg2{
         object-fit: scale-down;
-        width: 40%;
-        position: static;
-        margin-top: 10%;
+        width: 80%;    
     }
 
-    .classUserCarrusel{
-        margin-top: 2vh;
+    .classHeaderImg{
+        width: 100% !important;
     }
-
-    .ItemCarrusel {
-        height: 316px !important;
-    }
-
-    .classNombreUserCarrusel{
-        font-size: 15px;
-    }
-
-    .classCargoCarrusel{
-        font-size: 15px;
-    }
-
-    .classFechaComentarioCarrusel{
-        font-size: 15px;
-    }
-
-    .classComentarioCarrusel{
-        font-size: 14px;
-    }
-
+    
     .col{
         position: static !important;
         max-width: 100% !important;
+        margin-left: 0 !important;
     }
 
+    .classImgTituloComentario{
+        width: 60%;
+    }
+
+    .classColumnas {
+        margin-bottom: 10%;
+    }
+
+    .slick-track{
+        width: 100%;
+    }
+
+    .classCarrusel2 {
+        width: 90% !important;
+    }
+
+    .classItemCarrusel2{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .classSvgBtnOpinion{
+        width: 40%;
+    }
+
+    .classContainerOpinion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 120%;
+    }
     
 }
