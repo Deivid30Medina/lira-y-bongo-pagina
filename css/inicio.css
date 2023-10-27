@@ -10,6 +10,11 @@
 
 /*Estilos main Inicio*/
 
+.classBodyInicio{
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+
 .classPrincipalInicio{
     display: flex;
     align-items: center;
