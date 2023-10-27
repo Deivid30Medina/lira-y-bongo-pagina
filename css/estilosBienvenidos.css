@@ -36,13 +36,13 @@ body, html {
 
 @media screen and (min-width: 380px) and (max-width: 550px){
     .classObject{
-        height: 450vh;
+        height: 440vh;
     }
 }
 
 @media screen and (min-width: 100px) and (max-width: 380px) {
     .classObject{
-        height: 470vh;
+        height: 430vh;
     }
 }
 
