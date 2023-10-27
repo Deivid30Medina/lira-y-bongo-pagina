@@ -75,8 +75,7 @@ body{
 
 .classNav{
     margin: 0;
-    padding: 0;
-    position: relative;
+    position: absolute;
 }
 
 .nav_label{
@@ -452,7 +451,7 @@ button{
     }
 
     .classNav{
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
@@ -473,7 +472,7 @@ button{
         position: static;
         width: auto;
         background-color: #98c237;
-        height: 100vh;
+        height: 153vh;
         top: 0;
         left: 0;
         margin-bottom: 0px;
