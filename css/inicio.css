@@ -250,7 +250,7 @@
     .classBongo{
         order: 1;
         width: 50% ;
-        margin: 0;
+        margin-top: 20%;
         display: flex;
         height: 100%;
         
@@ -268,7 +268,7 @@
         order: 2;
         width: 50% ;
         height: 100%;
-        margin: 0;
+        margin-top: 20%;
         display: flex;
     }
 
@@ -285,5 +285,76 @@
         left: 0;
     }
 
+    .classCard .back{
+        bottom: -60%;
+        width: 400%;
+    }   
+
+    .text1{
+        left: 50% !important;
+    }
+
+    .text2{
+        left: -45% !important;
+    }
+    
+    .text3{
+        left: -140% !important;
+    }
+    
+    .text4{
+        left: -250% !important;
+    }
+    
+    .text5{
+        left: -345% !important;
+    }
+
+    
     /* Boton de Opciones main Fin*/
+}
+
+@media screen and (max-width: 375px){
+    .classBongo{
+        order: 1;
+        width: 50% ;
+        margin-top: 10%;
+        display: flex;
+        height: 100%;
+        margin-bottom: 5%;
+    }
+
+    .classLira{
+        order: 2;
+        width: 50% ;
+        height: 100%;
+        margin-top: 10%;
+        display: flex;
+        margin-bottom: 5%;
+    }
+
+    .classCard .back{
+        bottom: -10%;
+        width: 500%;
+    }   
+
+    .text1{
+        left: 0;
+    }
+
+    .text2{
+        left: 100 !important;
+    }
+    
+    .text3{
+        left: 100 !important;
+    }
+    
+    .text4{
+        left: 100 !important;
+    }
+    
+    .text5{
+        left: 100 !important;
+    }
 }
