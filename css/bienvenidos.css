@@ -578,7 +578,7 @@ body{
 }
 
 
-@media screen and (max-width: 772px){
+@media screen and (min-width:550px) and (max-width: 772px){
 
 
 
@@ -719,6 +719,296 @@ body{
         justify-content: center;
         width: 100%;
         margin-top: 120%;
+    }
+    
+}
+
+@media screen and (min-width: 380px) and (max-width: 550px){
+
+
+
+    .classMainBienvenidos{
+        height: 20em;;
+    }
+
+    .classNombreUserCarrusel{
+        font-size: 15px;
+    }
+
+    .classCargoCarrusel{
+        font-size: 15px;
+    }
+
+    .classFechaComentarioCarrusel{
+        font-size: 15px;
+    }
+
+    .classComentarioCarrusel{
+        font-size: 14px;
+    }
+
+    .slick-list{
+        height: 50% !important;
+        margin: 0 !important;
+    }
+    
+    .classContenedorPrincipalBienvenidos{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    
+
+    .classMainContenedor{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }    
+
+    .classMainDivImg1{
+        order: 2;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        top: -2vh;
+    }
+
+    .classMainImg1{
+        object-fit: scale-down;
+        width: 40%;
+        position: static;
+    }
+
+    .classMainContenedorP{
+        width: 100%;
+        position: relative;
+        top: 2vh;
+    }
+
+    .classContenedorPrincipalBienvenidos
+
+    .classMainPPrincipal{
+        order: 1;
+        width: 100%;
+    }
+
+    .classMainPDirectoNombre{
+        width: 100%;
+    }
+
+    .classMainPCargoDirector{
+        width: 100%;
+    }
+
+    .classMainDivImg2{
+        order: -1;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+        top: -1vh;
+        height: 50%;
+    }
+
+    .classMainImg2{
+        object-fit: scale-down;
+        width: 80%;    
+    }
+
+    .classHeaderImg{
+        width: 100% !important;
+    }
+    
+    .col{
+        position: static !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .classImgTituloComentario{
+        width: 60%;
+    }
+
+    .classColumnas {
+        margin-bottom: 10%;
+    }
+
+    .slick-track{
+        width: 100%;
+    }
+
+    .classCarrusel2 {
+        width: 90% !important;
+    }
+
+    .classItemCarrusel2{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .classSvgBtnOpinion{
+        width: 40%;
+    }
+
+    .classContainerOpinion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 240%;
+    }
+    
+}
+
+@media screen and (max-width: 380px){
+
+
+
+    .classMainBienvenidos{
+        height: 20em;;
+    }
+
+    .classNombreUserCarrusel{
+        font-size: 15px;
+    }
+
+    .classCargoCarrusel{
+        font-size: 15px;
+    }
+
+    .classFechaComentarioCarrusel{
+        font-size: 15px;
+    }
+
+    .classComentarioCarrusel{
+        font-size: 14px;
+    }
+
+    .slick-list{
+        height: 50% !important;
+        margin: 0 !important;
+    }
+    
+    .classContenedorPrincipalBienvenidos{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    
+
+    .classMainContenedor{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }    
+
+    .classMainDivImg1{
+        order: 2;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        top: -2vh;
+    }
+
+    .classMainImg1{
+        object-fit: scale-down;
+        width: 40%;
+        position: static;
+    }
+
+    .classMainContenedorP{
+        width: 100%;
+        position: relative;
+        top: 2vh;
+    }
+
+    .classContenedorPrincipalBienvenidos
+
+    .classMainPPrincipal{
+        order: 1;
+        width: 100%;
+    }
+
+    .classMainPDirectoNombre{
+        width: 100%;
+    }
+
+    .classMainPCargoDirector{
+        width: 100%;
+    }
+
+    .classMainDivImg2{
+        order: -1;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+        top: -1vh;
+        height: 50%;
+    }
+
+    .classMainImg2{
+        object-fit: scale-down;
+        width: 80%;    
+    }
+
+    .classHeaderImg{
+        width: 100% !important;
+    }
+    
+    .col{
+        position: static !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .classImgTituloComentario{
+        width: 60%;
+    }
+
+    .classColumnas {
+        margin-bottom: 10%;
+    }
+
+    .slick-track{
+        width: 100%;
+    }
+
+    .classCarrusel2 {
+        width: 90% !important;
+    }
+
+    .classItemCarrusel2{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .classSvgBtnOpinion{
+        width: 40%;
+    }
+
+    .classContainerOpinion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 350%;
     }
     
 }
