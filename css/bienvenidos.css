@@ -923,9 +923,9 @@ body{
 
     .classMainImg1{
         object-fit: scale-down;
-        width: 40%;
+        width: 45%;
         position: static;
-        margin-top: 5%;
+        margin-top: 10%;
     }
 
     .classMainContenedorP{
@@ -1006,7 +1006,7 @@ body{
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-top: 290%;
+        margin-top: 230%;
     }
 
     .classComentarioCarrusel{
