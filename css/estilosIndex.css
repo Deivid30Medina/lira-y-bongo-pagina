@@ -6,7 +6,7 @@
 
 body{
     overflow-x: hidden !important;
-  
+
 }
 
 .classContenedorPrincipal{
@@ -147,7 +147,7 @@ body{
     font-size: 15px;
     cursor: pointer;
     position: relative;
-    width: 100%;
+    width: auto;
     min-height: 40px;
     max-height: 80px;
     border-radius: 25px;
