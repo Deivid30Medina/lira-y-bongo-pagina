@@ -415,7 +415,7 @@ button{
     .classBtnSvg1{
         position: relative !important;
         top: -10px;
-        width: 100% !important;
+        width: auto !important;
         margin-bottom: 1%;
     }
 
@@ -424,7 +424,7 @@ button{
     }
 
     .classBtnSvg2{
-        width: 100% !important;
+        width: auto !important;
         top: -15px;
         margin-bottom: 3%;
     }
@@ -481,8 +481,8 @@ button{
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        position: static;
-        width: auto;
+        position: fixed;
+        width: 100vw;
         background-color: #ffffff;
         height: 400vh;
         top: 0;
@@ -602,7 +602,7 @@ button{
     .classBtnSvg1{
         position: relative !important;
         top: -10px;
-        width: 100% !important;
+        width: auto !important;
         margin-bottom: 1%;
     }
 
@@ -611,7 +611,7 @@ button{
     }
 
     .classBtnSvg2{
-        width: 100% !important;
+        width: auto !important;
         top: -15px;
         margin-bottom: 3%;
     }
@@ -668,8 +668,8 @@ button{
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        position: static;
-        width: auto;
+        position: fixed;
+        width: 100vw;
         background-color: #ffffff;
         height: 400vh;
         top: 0;
@@ -789,7 +789,7 @@ button{
     .classBtnSvg1{
         position: relative !important;
         top: -10px;
-        width: 100% !important;
+        width: auto !important;
         margin-bottom: 1%;
     }
 
@@ -798,7 +798,7 @@ button{
     }
 
     .classBtnSvg2{
-        width: 100% !important;
+        width: auto !important;
         top: -15px;
         margin-bottom: 3%;
     }
@@ -855,8 +855,8 @@ button{
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        position: static;
-        width: auto;
+        position: fixed;
+        width: 100vw;
         background-color: #ffffff;
         height: 400vh;
         top: 0;
