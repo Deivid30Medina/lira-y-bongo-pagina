@@ -406,7 +406,7 @@ button{
 }
 
 
-@media screen and (max-width: 771px){
+@media screen and (min-width:480px) and (max-width: 709px){
     .body{ 
         width: 800px;
         
@@ -563,18 +563,30 @@ button{
     }
 
     .classBtnSvgUniverso{
-        height: 80px;
-        margin-top: 20% !important;
+        height: 50px;
         object-fit: scale-down;
+        position: relative;
+        top: -609%;
+        width: 50%;
     }
 
     .classBtnSvgJuego{
-        margin-top: 14% !important;
+        height: 80px;
         object-fit: scale-down;
+        position: relative;
+        top: -596%;
+        width: 50%;
+    }
+
+    .classUniversoJuego{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (min-width:375px) and (max-width: 480px){
     .body{ 
         width: 800px;
         display: block;
@@ -686,4 +698,8 @@ button{
     }
 
     
+}
+
+@media screen and (max-width: 375px){
+
 }

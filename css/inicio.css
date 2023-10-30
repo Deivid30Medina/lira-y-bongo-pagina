@@ -287,29 +287,39 @@
    }
 
    .classCard .back{
-       bottom: -40%;
-       width: 400%;
-   }   
+    width: 95vw;
+    padding: 0;
+    top: 68%;
+    
+    }   
+
+    .svgGema1{
+        width: 100%;
+    }
 
    .text1{
-       left: 50% !important;
+        left: 0 !important;
    }
 
    .text2{
-       left: -45% !important;
+       left: -100% !important;
    }
    
    .text3{
-       left: -140% !important;
+       left: -200% !important;
    }
    
    .text4{
-       left: -250% !important;
+       left: -300% !important;
    }
    
    .text5{
-       left: -345% !important;
+       left: -400% !important;
    }
+
+    .svgGema1{
+        width: 100%;
+    }
 
    
    /* Boton de Opciones main Fin*/
@@ -382,8 +392,8 @@
   }
 
   .classCard .back{
-      bottom: -10%;
-      width: 400%;
+      bottom: -95%;
+      width: 100vw;
   }   
 
   .text1{
@@ -421,6 +431,8 @@
        margin: 0;
        align-items: initial;
    }
+
+
 
    .classSection{
        margin: 0
