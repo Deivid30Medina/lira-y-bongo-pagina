@@ -416,11 +416,17 @@ button{
         position: relative !important;
         top: -10px;
         width: 100% !important;
+        margin-bottom: 1%;
+    }
+
+    .classBtnEnlace{
+        margin-bottom: 4%;
     }
 
     .classBtnSvg2{
         width: 100% !important;
         top: -15px;
+        margin-bottom: 3%;
     }
 
     /* Boton de Opciones Header Inicio */
@@ -473,11 +479,12 @@ button{
     .classNavCheck:checked + .classNavItems{
         display: flex;
         flex-direction: column;
-        align-items: inherit;
+        align-items: center;
+        justify-content: flex-start;
         position: static;
         width: auto;
-        background-color: #98c237;
-        height: 195vh;
+        background-color: #ffffff;
+        height: 400vh;
         top: 0;
         left: 0;
         margin-bottom: 0px;
@@ -596,11 +603,17 @@ button{
         position: relative !important;
         top: -10px;
         width: 100% !important;
+        margin-bottom: 1%;
+    }
+
+    .classBtnEnlace{
+        margin-bottom: 4%;
     }
 
     .classBtnSvg2{
         width: 100% !important;
         top: -15px;
+        margin-bottom: 3%;
     }
 
     /* Boton de Opciones Header Inicio */
@@ -653,11 +666,12 @@ button{
     .classNavCheck:checked + .classNavItems{
         display: flex;
         flex-direction: column;
-        align-items: inherit;
+        align-items: center;
+        justify-content: flex-start;
         position: static;
         width: auto;
-        background-color: #98c237;
-        height: 195vh;
+        background-color: #ffffff;
+        height: 400vh;
         top: 0;
         left: 0;
         margin-bottom: 0px;
@@ -776,11 +790,17 @@ button{
         position: relative !important;
         top: -10px;
         width: 100% !important;
+        margin-bottom: 1%;
+    }
+
+    .classBtnEnlace{
+        margin-bottom: 4%;
     }
 
     .classBtnSvg2{
         width: 100% !important;
         top: -15px;
+        margin-bottom: 3%;
     }
 
     /* Boton de Opciones Header Inicio */
@@ -833,11 +853,12 @@ button{
     .classNavCheck:checked + .classNavItems{
         display: flex;
         flex-direction: column;
-        align-items: inherit;
+        align-items: center;
+        justify-content: flex-start;
         position: static;
         width: auto;
-        background-color: #98c237;
-        height: 195vh;
+        background-color: #ffffff;
+        height: 400vh;
         top: 0;
         left: 0;
         margin-bottom: 0px;
