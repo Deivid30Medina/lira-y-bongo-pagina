@@ -10,33 +10,33 @@ body, html {
 
 @media screen and (min-width: 1700px) and (max-width: 2000px) {
     .classObject {
-        height: 200vh;
+        height: 220vh;
     }
 }
 
 @media screen and (min-width: 1031px) and (max-width: 1700px) {
     .classObject {
-        height: 320vh;
+        height: 340vh;
     }
 }
 
 @media screen and (min-width:772px) and (max-width: 1031px){
     .classObject{
-        height: 310vh;
+        height: 360vh;
     }
 
 }
 
 @media screen and (min-width: 550px) and (max-width: 772px){
     .classObject{
-        height: 270vh;
+        height: 490vh;
     }
 
 }
 
 @media screen and (min-width: 380px) and (max-width: 550px){
     .classObject{
-        height: 320vh;
+        height: 430vh;
     }
 }
 

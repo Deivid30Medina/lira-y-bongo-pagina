@@ -47,7 +47,8 @@ body{
 
 .classMainBienvenidos{
     width: 100%;
-    margin-bottom: 3%;
+    margin-bottom: 6%;
+    height: 30em;
 }
 
 .classMainContenedor{
@@ -63,15 +64,15 @@ body{
 .classMainDivImg1{
     position: relative;
     display: flex;
+    align-items: flex-end;
     width: 21%;
     height: 100%;
-    align-items: start;
 }
 
 .classMainImg1{
     position: absolute;
-    width: 22%;
-    object-fit: scale-down; 
+    width: 120%;
+    object-fit: scale-down;
     border: 1px solid red;
 }
 
@@ -388,202 +389,13 @@ body{
 
 
 
-
-
-
-
-
-@media screen and (min-width: 1700px) and (max-width: 2000px) {
-    .classMainBienvenidos{
-        height: 350em;
-    }
-
-    .classMainImg1{
-        width: 125% !important;
-        bottom: 0%;
-    }
-    
-
-    .slick-list{
-        height: 50% !important;
-    }
-
-    .classItemCarrusel{
-        height: 100% !important;
-    }
-}
-
-
-
-@media screen and (min-width: 1031px) and (max-width: 1700px) {
-    .classMainBienvenidos{
-        height: 30em;;
-    }
-
-    .classMainImg1{
-        width: 125% !important;
-        bottom: 0%;
-    }
-    
-
-    .slick-list{
-        height: 50% !important;
-    }
-
-    .classItemCarrusel{
-        height: 100% !important;
-    }
-
-
-}
-
-
-
-@media screen and (min-width:772px) and (max-width: 1031px){
-
-    .classMainBienvenidos{
-        height: 30em;;
-    }
-
-    .classNombreUserCarrusel{
-        font-size: 15px;
-    }
-
-    .classCargoCarrusel{
-        font-size: 15px;
-    }
-
-    .classFechaComentarioCarrusel{
-        font-size: 15px;
-    }
-
-    .classComentarioCarrusel{
-        font-size: 14px;
-    }
-
-    .slick-list{
-        height: 50% !important;
-        margin: 0 !important;
-    }
-    
-    .classContenedorPrincipalBienvenidos{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-
-    .classMainContenedor{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }    
-
-    .classMainDivImg1{
-        order: 2;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        top: -2vh;
-    }
-
-    .classMainImg1{
-        object-fit: scale-down;
-        width: 40%;
-        position: static;
-    }
-
-    .classMainContenedorP{
-        width: 100%;
-        position: relative;
-        top: 2vh;
-    }
-
-    .classContenedorPrincipalBienvenidos
-
-    .classMainPPrincipal{
-        order: 1;
-        width: 100%;
-    }
-
-    .classMainPDirectoNombre{
-        width: 100%;
-    }
-
-    .classMainPCargoDirector{
-        width: 100%;
-    }
-
-    .classMainDivImg2{
-        order: -1;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        position: relative;
-        top: -1vh;
-    }
-
-    .classMainImg2{
-        object-fit: scale-down;
-        width: 100%;    
-    }
-
-    .classHeaderImg{
-        width: 100% !important;
-    }
-    
-    .col{
-        position: static !important;
-        max-width: 100% !important;
-        margin-left: 0 !important;
-    }
-
-    .classImgTituloComentario{
-        width: 60%;
-    }
-
-    .classColumnas {
-        margin-bottom: 10%;
-    }
-
-    .slick-track{
-        width: 100%;
-    }
-
-    .classCarrusel2 {
-        width: 90% !important;
-    }
-
-    .classItemCarrusel2{
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-    }
-
-    .classContainerOpinion{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 90%;
-    }
-
-
-}
-
-
 @media screen and (min-width:550px) and (max-width: 772px){
 
 
 
     .classMainBienvenidos{
-        height: 30em;;
+        height: 30em;
+        margin-bottom: 20%;
     }
 
     .classNombreUserCarrusel{
@@ -669,12 +481,12 @@ body{
         justify-content: space-evenly;
         position: relative;
         top: -1vh;
-        height: 50%;
+        height: 40%;
     }
 
     .classMainImg2{
         object-fit: scale-down;
-        width: 80%;    
+        width: 50%;    
     }
 
     .classHeaderImg{
@@ -718,7 +530,7 @@ body{
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-top: 120%;
+        margin-top: 75%;
     }
     
 }
@@ -728,7 +540,8 @@ body{
 
 
     .classMainBienvenidos{
-        height: 20em;;
+        height: 20em;
+        margin-bottom: 0%;
     }
 
     .classNombreUserCarrusel{
