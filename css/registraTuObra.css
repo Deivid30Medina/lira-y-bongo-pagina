@@ -251,18 +251,18 @@ body{
     }
     
     .classImgBtnRegistar{
-        width: 70%;
+        width: 100%;
     }
 
     .classImgTitle2{
-        width: 180%;
+        width: 150%;
     }
 }
 
 @media screen and (min-width: 380px) and (max-width: 550px){
 
     .classImgTitle2{
-        width: 70%;
+        width: 140%;
     }
 
     .classContenedor1{
@@ -282,14 +282,14 @@ body{
     }
 
     .classImgBtnRegistar{
-        width: 180%;
+        width: 150%;
     }
 }
 
 @media screen and (max-width: 380px) {
 
     .classImgTitle2{
-        width: 70%;
+        width: 140%;
     }
 
     .classContenedor1{
