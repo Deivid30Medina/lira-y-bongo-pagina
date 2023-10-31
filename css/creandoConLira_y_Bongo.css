@@ -28,6 +28,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     color: white;
+    position: relative;
 }
 
 
@@ -121,6 +122,10 @@
 
 .classMain{
     width: 50%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .classContenedorPrincipal{
@@ -129,6 +134,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    height: 100%;
 }
 
 /*Main Final*/
@@ -277,105 +283,33 @@
     position: absolute;
     display: flex;
     margin: auto;
-    width: 30%;
+    width: 25%;
     right: 10%;
-    margin-bottom: 60%;
+    margin-bottom: 75%;
+}
+
+.classSvgMapa{
+    position: absolute;
+    height: 100%;
+    top: 10%;
+    left: -20%;
 }
 
 /*================Estilos Popup Final==============*/
 
 /* Estilos generales que se aplican a todos los dispositivos */
 
-@media screen and (min-width: 1024px) and (max-width: 2000px) {
-    .classSvgMapa{
-        position: absolute;
-        display: flex;
-        margin: auto;
-        width: 140%;
-        left: 0;
-        margin-top: 40%;
-    }
-}
-
-/* Estilos para tablets (entre 768px y 1023px) */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .classLiraBongo{
-        height: 200px !important;
-        top: -220px !important;
-    }
-
-    .classImagenVideo{
-        right: 22% !important;
-    }
-
-    .classFinalPagina{
-        top: -200px !important;
-    }
-
-    .classContenedorBlanco{
-        width: 75% !important;
-    }
-
-    .classTituloPoppup{
-        width: 100% !important;
-        font-size: 25px !important;
-    }
-
-    .classBtnAtrasPoppup{
-        width: 30%;
-    }
-}
 
 
 /* Estilos para dispositivos móviles (menos de 768px) */
-@media screen and (max-width: 767px) {
-    .classLiraBongo{
-        height: 200px !important;
-        top: -120px !important;
-    }
+@media screen and (min-width:480px) and (max-width: 709px){
+    
+}
 
-    .classImagenVideo{
-        right: 22% !important;
-    }
+@media screen and (min-width:375px) and (max-width: 480px){
 
-    .classFinalPagina{
-        flex-wrap: wrap !important;
-        top: -200px !important;
-    }
+}
 
-    .classAventurasP{
-        margin-top: 20% !important;
-        font-size: 15px !important;
-    }
+@media screen and (max-width: 375px){
 
-    .classContenedorBlanco{
-        width: 75% !important;
-    }
-
-    .classTituloPoppup{
-        width: 100% !important;
-        font-size: 25px !important;
-    }
-
-    .classBtnAtrasPoppup{
-        width: 30% !important;
-    }
-
-    .classBtnsAzulPoppup{
-        width: 50% !important;
-        order: 1 !important;
-    }
-
-    .classBtnsNaranjaPoppup{
-        width: 50% !important;
-        order: 2 !important;
-    }
-
-    .classImgDepartamentPoppup{
-        width: 52% !important;
-    }
-
-    .classDepartamentoPoppup{
-        flex-wrap: wrap !important;
-    }
 }
