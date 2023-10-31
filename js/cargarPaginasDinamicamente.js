@@ -230,6 +230,30 @@ function manejarEventosLoad() {
     });
   });
 
+
+  // Escuchar el evento load del objeto <object> para Juego
+  document.getElementById('svgObjectJuego2').addEventListener('load', function () {
+    const svgDoc = this.contentDocument;
+    svgDoc.documentElement.addEventListener('click', function () {
+      const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'juego.html';
+  
+      // Modificar la URL para incluir el parámetro 'archivo'
+      history.pushState({}, '', `index.html?page=${archivo}`);
+      cargarContenidoDesdeSVG(archivo);
+    });
+  });
+
+  // Escuchar el evento load del objeto <object> para Universo
+  document.getElementById('svgObjectUniverso2').addEventListener('load', function () {
+    const svgDoc = this.contentDocument;
+    svgDoc.documentElement.addEventListener('click', function () {
+        const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'universo.html';
+        history.pushState({}, '', `index.html`); //para modificar la URL en la barra de direcciones del navegador. Esto agrega un parámetro archivo a la URL, lo que permite que el usuario vea el parámetro en la barra de direcciones sin recargar la página.
+        cargarContenidoDesdeSVG(archivo);
+    });
+  });
+  
+
 }
 
 // Llamar a la función para manejar eventos load
