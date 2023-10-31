@@ -262,7 +262,7 @@ body{
 @media screen and (min-width: 380px) and (max-width: 550px){
 
     .classImgTitle2{
-        width: 140%;
+        width: 100%;
     }
 
     .classContenedor1{
