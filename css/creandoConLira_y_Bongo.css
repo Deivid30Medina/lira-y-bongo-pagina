@@ -337,14 +337,14 @@
     }
 
     .classH1Header{
-        font-size: 35px;
+        font-size: 25px;
     }
 }
 
 @media screen and (min-width:375px) and (max-width: 480px){
 
     .classH1Header{
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .classBtnAtrasPoppup {
@@ -388,7 +388,7 @@
 @media screen and (max-width: 375px){
 
     .classBtnAtrasPoppup {
-        width: 30%;
+        width: 25%;
     }
 
     .classContenedorBlanco{
@@ -407,7 +407,7 @@
     }
 
     .classH1Header{
-        font-size: 100%;
+        font-size: 25PX;
     }
 
     .classHeaderA{
