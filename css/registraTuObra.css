@@ -226,15 +226,7 @@ body{
 
 
 
-@media screen and (min-width: 1600px) and (max-width: 2000px) {
-
-}
-
-@media screen and (min-width: 1023px) and (max-width: 1600px) {
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width:550px) and (max-width: 772px){
     .classContenedor1{
         width: 100%;
     }
@@ -243,14 +235,42 @@ body{
         width: 80%;
     }
 
+    .classTituloObra1{
+        height: 15vh;
+    }
+
     .slick-list {
         width: 80%;
     }
+
+    .classLinkRegistraObra{
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .classImgBtnRegistar{
+        width: 70%;
+    }
+
+    .classImgTitle2{
+        width: 70%;
+    }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 380px) and (max-width: 550px){
+
+    .classImgTitle2{
+        width: 70%;
+    }
+
     .classContenedor1{
         width: 100% !important;
+    }
+
+    .classTituloObra1{
+        height: 20vh;
     }
 
     .classContenedorImagenesMain{
@@ -259,5 +279,36 @@ body{
 
     .slick-list {
         width: 70%;
+    }
+
+    .classImgBtnRegistar{
+        width: 160%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    .classImgTitle2{
+        width: 70%;
+    }
+
+    .classContenedor1{
+        width: 100% !important;
+    }
+
+    .classTituloObra1{
+        height: 20vh;
+    }
+
+    .classContenedorImagenesMain{
+        width: 80%;
+    }
+
+    .slick-list {
+        width: 70%;
+    }
+
+    .classImgBtnRegistar{
+        width: 160%;
     }
 }

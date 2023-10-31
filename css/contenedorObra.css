@@ -17,17 +17,29 @@ iframe {
 
 @media screen and (min-width: 1023px) and (max-width: 1600px) {
     iframe {
-        height: 200vh;
+        height: 130vh;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 772px) and (max-width: 1023px) {
     iframe {
-        height: 1100px;
+        height: 130vh;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width:550px) and (max-width: 772px){
+    iframe {
+        height: 190vh;
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 550px){
+    iframe {
+        height: 170vh;
+    }
+}
+
+@media screen and (max-width: 380px) {
     iframe {
         height: 1050px;
     }
