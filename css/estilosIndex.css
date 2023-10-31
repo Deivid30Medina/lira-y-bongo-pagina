@@ -388,6 +388,14 @@ button{
 }
 
 
+.classUniverso2{
+    display: none !important;
+}
+
+.classJuego2{
+    display: none !important;
+}
+
 
 /*Estilos footer Final*/
 
@@ -402,6 +410,14 @@ button{
     .classBtnSvg2{
         width: 110px !important;
         top: -7px;
+    }
+
+    .classUniverso2{
+        display: none !important;
+    }
+    
+    .classJuego2{
+        display: none !important;
     }
 }
 
@@ -488,6 +504,14 @@ button{
         top: 0;
         left: 0;
         margin-bottom: 0px;
+}
+
+.classUniverso2{
+    display:block !important;
+}
+
+.classJuego2{
+    display: block !important;
 }
 
     .classNavItems{
@@ -677,6 +701,14 @@ button{
         margin-bottom: 0px;
 }
 
+.classJuego2{
+    display: block !important;
+}
+
+    .classNavItems{
+        display: none;
+    }
+
     .classNavItems{
         display: none;
     }
@@ -864,6 +896,14 @@ button{
         margin-bottom: 0px;
 }
 
+.classJuego2{
+    display: block !important;
+}
+
+    .classNavItems{
+        display: none;
+    }
+    
     .classNavItems{
         display: none;
     }
