@@ -413,12 +413,12 @@ button{
     }
 
     .classUniverso2{
-        display: none !important;
-    }
-    
-    .classJuego2{
-        display: none !important;
-    }
+    display: none !important;
+}
+
+.classJuego2{
+    display: none !important;
+}
 }
 
 
@@ -701,17 +701,14 @@ button{
         margin-bottom: 0px;
 }
 
+.classUniverso2{
+    display:block !important;
+}
+
 .classJuego2{
     display: block !important;
 }
 
-    .classNavItems{
-        display: none;
-    }
-
-    .classNavItems{
-        display: none;
-    }
 
         
     /* Boton de Opciones menu Fin*/
@@ -896,14 +893,14 @@ button{
         margin-bottom: 0px;
 }
 
+.classUniverso2{
+    display:block !important;
+}
+
 .classJuego2{
     display: block !important;
 }
 
-    .classNavItems{
-        display: none;
-    }
-    
     .classNavItems{
         display: none;
     }
