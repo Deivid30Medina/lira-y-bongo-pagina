@@ -325,9 +325,18 @@
         margin-bottom: 0%;
         top: 12%;
     }
+
+    .classContenedorBlanco{
+        width: 100%;
+    }
 }
 
 @media screen and (min-width:375px) and (max-width: 480px){
+
+    .classContenedorBlanco{
+        width: 100%;
+    }
+
     .classSvgMapa{
         height: auto;
         top: 8%;
@@ -357,6 +366,10 @@
 }
 
 @media screen and (max-width: 375px){
+
+    .classContenedorBlanco{
+        width: 100%;
+    }
 
     .classDivContenido1{
         width: 100%;
