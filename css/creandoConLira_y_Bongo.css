@@ -328,13 +328,25 @@
 
     .classContenedorBlanco{
         width: 100%;
+        position: fixed;
+        top: 20%;
+    }
+
+    .classBtnAtrasPoppup {
+        width: 30%;
     }
 }
 
 @media screen and (min-width:375px) and (max-width: 480px){
 
+    .classBtnAtrasPoppup {
+        width: 30%;
+    }
+
     .classContenedorBlanco{
         width: 100%;
+        position: fixed;
+        top: 20%;
     }
 
     .classSvgMapa{
@@ -367,8 +379,14 @@
 
 @media screen and (max-width: 375px){
 
+    .classBtnAtrasPoppup {
+        width: 30%;
+    }
+
     .classContenedorBlanco{
         width: 100%;
+        position: fixed;
+        top: 20%;
     }
 
     .classDivContenido1{
