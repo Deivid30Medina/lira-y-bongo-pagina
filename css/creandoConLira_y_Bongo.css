@@ -328,6 +328,11 @@
 }
 
 @media screen and (min-width:375px) and (max-width: 480px){
+    .classSvgMapa{
+        height: auto;
+        top: 8%;
+    }
+
     .classDivContenido1{
         width: 100%;
     }
