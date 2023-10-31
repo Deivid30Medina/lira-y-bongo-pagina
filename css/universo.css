@@ -20,17 +20,29 @@
 
 @media screen and (min-width: 1023px) and (max-width: 1600px) {
   .classObject{
-      height: 460vh !important;
+      height: 300vh !important;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 709px) and (max-width: 1023px) {
+  .classObject{
+      height: 300vh !important;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width: 709px){
+  .classObject{
+      height: 300vh !important;
+  }
+}
+
+@media screen and (min-width:375px) and (max-width: 480px){
   .classObject{
       height: 250vh !important;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 375px){
   .classObject{
       height: 250vh !important;
   }

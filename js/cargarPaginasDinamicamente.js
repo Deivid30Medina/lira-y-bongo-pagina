@@ -126,10 +126,6 @@ function cargarContenidoDesdeSVG(archivo) {
           document.getElementById('idSectionBtnFinales').style.display = 'flex';
           document.getElementById('idSectionBtnFinales').style.position = 'relative';
           document.getElementById('idSectionBtnFinales').style.top = '-10vh';
-        }else if(archivo === 'universo.html' || archivo === 'juego.html'){
-          document.getElementById('idSectionBtnFinales').style.display = 'flex';
-          document.getElementById('idSectionBtnFinales').style.position = 'absolute';
-          document.getElementById('idSectionBtnFinales').style.top = "0";
         }
       });
   }, 2000); // Ajustar el tiempo de carga HTML
@@ -230,9 +226,8 @@ function manejarEventosLoad() {
     });
   });
 
-
-  // Escuchar el evento load del objeto <object> para Juego
-  document.getElementById('svgObjectJuego2').addEventListener('load', function () {
+   // Escuchar el evento load del objeto <object> para Juego
+   document.getElementById('svgObjectJuego2').addEventListener('load', function () {
     const svgDoc = this.contentDocument;
     svgDoc.documentElement.addEventListener('click', function () {
       const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'juego.html';
@@ -252,7 +247,7 @@ function manejarEventosLoad() {
         cargarContenidoDesdeSVG(archivo);
     });
   });
-  
+
 
 }
 

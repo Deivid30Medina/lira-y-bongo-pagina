@@ -350,7 +350,48 @@
   margin-left: 2%;
 }
 
+
 /*===============================Fin Section 3======================================*/  
+
+
+
+
+
+
+
+
+/*===============================Inicio Section 0======================================*/  
+
+.classSection0{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+
+.classBtnUniverso3{
+  width: 28%;
+  margin-top: 3.3%;
+}
+
+.classBtnUniverso3Juego{
+  width: 30%;
+}
+
+/*===============================Fin Section 0======================================*/  
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -383,3 +424,29 @@
 
 
   /*===============================Fin animaciones efectos======================================*/
+
+
+
+
+  /*===============================Inicio Responsive======================================*/
+
+  @media screen and (min-width:480px) and (max-width: 709px){
+    .classSection1{
+      width: 100%;
+      margin-top: 20%;
+    }
+  }
+  
+  @media screen and (min-width:375px) and (max-width: 480px){
+    .classObject{
+        height: 250vh !important;
+    }
+  }
+  
+  @media screen and (max-width: 375px){
+    .classObject{
+        height: 250vh !important;
+    }
+  }
+
+   /*===============================Fin Responsive======================================*/
