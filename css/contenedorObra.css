@@ -29,7 +29,7 @@ iframe {
 
 @media screen and (min-width:550px) and (max-width: 772px){
     iframe {
-        height: 190vh;
+        height: 160vh;
     }
 }
 
@@ -41,6 +41,6 @@ iframe {
 
 @media screen and (max-width: 380px) {
     iframe {
-        height: 1050px;
+        height: 140vh;
     }
 }
