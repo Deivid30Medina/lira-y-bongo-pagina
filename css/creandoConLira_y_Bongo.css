@@ -307,12 +307,86 @@
     .classDivContenido1{
         width: 100%;
     }
+
+    .classMain{
+        width: 100%;
+    }
+
+    .classSvgMapa{
+        height: auto;
+        top: 10%;
+    }
+
+    .classPrimeraDescripcion{
+        margin-top: 150%;
+    }
+
+    .classImgColombia{
+        margin-bottom: 0%;
+        top: 12%;
+    }
 }
 
 @media screen and (min-width:375px) and (max-width: 480px){
+    .classDivContenido1{
+        width: 100%;
+    }
 
+    .classMain{
+        width: 100%;
+    }
+
+    .classSvgMapa{
+        height: auto;
+        top: 10%;
+    }
+
+    .classPrimeraDescripcion{
+        margin-top: 150%;
+    }
+
+    .classImgColombia{
+        margin-bottom: 0%;
+        top: 12%;
+    }
 }
 
 @media screen and (max-width: 375px){
 
+    .classDivContenido1{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .classH1Header{
+        font-size: 100%;
+    }
+
+    .classHeaderA{
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    .classMain{
+        width: 100%;
+    }
+
+    .classSvgMapa{
+        height: auto;
+        top: 10%;
+    }
+
+    .classPrimeraDescripcion{
+        margin-top: 150%;
+    }
+
+    .classImgColombia{
+        margin-bottom: 0%;
+        top: 12%;
+    }
 }

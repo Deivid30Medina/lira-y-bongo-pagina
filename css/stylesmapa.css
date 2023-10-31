@@ -26,19 +26,19 @@
 
 @media screen and (min-width: 709px) and (max-width: 1023px) {
     .classObjectLiraBongo{
-        height: 250vh !important;
+        height: 160vh !important;
     }
 }
 
 @media screen and (min-width:480px) and (max-width: 709px){
     .classObjectLiraBongo{
-        height: 250vh !important;
+        height: 340vh !important;
     }
 }
 
 @media screen and (min-width:375px) and (max-width: 480px){
     .classObjectLiraBongo{
-        height: 250vh !important;
+        height: 300vh !important;
     }
 }
 
