@@ -486,74 +486,11 @@ body{
 
 /* Estilos generales que se aplican a todos los dispositivos */
 
-/* Estilos para tablets (entre 768px y 1023px) */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .classContenedorTextoCreativo{
-        width: 100%;
-    }
 
-    .classContenedorVideoCreativo{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-
-    .classFrameBienvenidos{
-        position: absolute;
-        width: 69%;
-        height: 79%;
-        left: 18%;
-        top: 10%;
-    }
-
-    .classImgVideo{
-        width: 80%;
-    }
-
-
-
-
-    .classDivContenedorCreadores{
-        order: -1;
-        width: 100%;
-    }
-
-    .classDivContenedorVideo{
-        order: 1;
-        width: 80%;
-        margin-top: 5%;
-    }
-
-    .classDivImgCreadores{
-        margin-top: 3%;
-    }
-
-    .classPCreadores{
-        width: 80%;
-    }
-
-    
-    .classDivContenedorConexos{
-        width: 100%;
-    }
-
-    .classPCreadoresConexos{
-        width: 80%;
-    }
-
-    .classDivContenedorVideo3{
-        width: 80%;
-    }
-
-    .classActoresComic{
-        margin-top: 5%;
-    }
-}
 
 
 /* Estilos para dispositivos móviles (menos de 768px) */
-@media screen and (max-width: 767px) {
+@media screen and (min-width:480px) and (max-width: 709px){
     .classContenedorTextoCreativo{
         width: 100%;
     }
@@ -623,6 +560,176 @@ body{
     .classCard{
         width: 50%;
         margin-bottom: 80%;
+    }
+
+    .classTituloCreadoresWeb{
+        width: 60%;
+    }
+
+    .classBandaSonoraVideo{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width: 480px){
+    .classContenedorTextoCreativo{
+        width: 100%;
+    }
+
+    .classContenedorVideoCreativo{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .classFrameBienvenidos{
+        position: absolute;
+        width: 69%;
+        height: 79%;
+        left: 18%;
+        top: 10%;
+    }
+
+    .classImgVideo{
+        width: 80%;
+    }
+
+    .classDivContenedorCreadores{
+        order: -1;
+        width: 100%;
+    }
+
+    .classDivContenedorVideo{
+        order: 1;
+        width: 80%;
+        margin-top: 5%;
+    }
+
+    .classDivImgCreadores{
+        margin-top: 3%;
+    }
+
+    .classPCreadores{
+        width: 80%;
+    }
+
+    
+    .classDivContenedorConexos{
+        width: 100%;
+    }
+
+    .classPCreadoresConexos{
+        width: 80%;
+    }
+
+    .classDivContenedorVideo3{
+        width: 80%;
+    }
+
+    .classPersonaComic{
+        object-fit: scale-down;
+        width: 100%;
+        
+    }
+    
+    .classsPersonajeVoz{
+        object-fit: scale-down;
+        width: 100%;
+    }
+
+    .classCard{
+        width: 50%;
+        margin-bottom: 80%;
+    }
+
+    .classTituloCreadoresWeb{
+        width: 60%;
+    }
+
+    .classBandaSonoraVideo{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .classContenedorTextoCreativo{
+        width: 100%;
+    }
+
+    .classContenedorVideoCreativo{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .classFrameBienvenidos{
+        position: absolute;
+        width: 69%;
+        height: 79%;
+        left: 18%;
+        top: 10%;
+    }
+
+    .classImgVideo{
+        width: 80%;
+    }
+
+    .classDivContenedorCreadores{
+        order: -1;
+        width: 100%;
+    }
+
+    .classDivContenedorVideo{
+        order: 1;
+        width: 80%;
+        margin-top: 5%;
+    }
+
+    .classDivImgCreadores{
+        margin-top: 3%;
+    }
+
+    .classPCreadores{
+        width: 80%;
+    }
+
+    
+    .classDivContenedorConexos{
+        width: 100%;
+    }
+
+    .classPCreadoresConexos{
+        width: 80%;
+    }
+
+    .classDivContenedorVideo3{
+        width: 80%;
+    }
+
+    .classPersonaComic{
+        object-fit: scale-down;
+        width: 100%;
+        
+    }
+    
+    .classsPersonajeVoz{
+        object-fit: scale-down;
+        width: 100%;
+    }
+
+    .classCard{
+        width: 50%;
+        margin-bottom: 80%;
+    }
+
+    .classTituloCreadoresWeb{
+        width: 60%;
+    }
+
+    .classBandaSonoraVideo{
+        width: 80%;
     }
 }
 
