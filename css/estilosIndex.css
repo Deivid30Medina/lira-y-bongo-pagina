@@ -414,6 +414,51 @@ button{
 
 
 @media screen and (min-width:480px) and (max-width: 709px){
+
+    .classBtnHomeComic2{
+        order: -1;
+        margin-bottom: 3%;
+    }
+
+    .classBtnInicio{
+        order: 1;
+        margin-bottom: 0%;
+    }
+
+    .classBtnInicio{
+        order: 1;
+    }
+
+    .classBtnBienvenido{
+        order: 2;
+    }
+
+    .classBtnPDF{
+        order: 3;
+        margin-bottom: 2%;
+    }
+
+    .classBtnObra{
+        order: 4;
+    }
+
+    .classBtnProyecto{
+        order: 5;
+    }
+
+    .classBtnLiraBongo{
+        order: 6;
+        margin-bottom: 2%;
+    }
+
+    .classUniverso2{
+        order: 7;
+    }
+
+    .classJuego2{
+        order: 8;
+    }
+
     .body{ 
         width: 800px;
         
@@ -430,9 +475,7 @@ button{
 
     .classBtnSvg1{
         position: relative !important;
-        top: -10px;
         width: auto !important;
-        margin-bottom: 1%;
     }
 
     .classBtnEnlace{
@@ -441,8 +484,6 @@ button{
 
     .classBtnSvg2{
         width: auto !important;
-        top: -15px;
-        margin-bottom: 3%;
     }
 
     /* Boton de Opciones Header Inicio */
@@ -610,6 +651,51 @@ button{
 }
 
 @media screen and (min-width:375px) and (max-width: 480px){
+
+    .classBtnHomeComic2{
+        order: -1;
+        margin-bottom: 3%;
+    }
+
+    .classBtnInicio{
+        order: 1;
+        margin-bottom: 0%;
+    }
+
+    .classBtnInicio{
+        order: 1;
+    }
+
+    .classBtnBienvenido{
+        order: 2;
+    }
+
+    .classBtnPDF{
+        order: 3;
+        margin-bottom: 2%;
+    }
+
+    .classBtnObra{
+        order: 4;
+    }
+
+    .classBtnProyecto{
+        order: 5;
+    }
+
+    .classBtnLiraBongo{
+        order: 6;
+        margin-bottom: 2%;
+    }
+
+    .classUniverso2{
+        order: 7;
+    }
+
+    .classJuego2{
+        order: 8;
+    }
+
     .classUniverso2{
         display: block;
     }
@@ -626,9 +712,7 @@ button{
 
     .classBtnSvg1{
         position: relative !important;
-        top: -10px;
         width: auto !important;
-        margin-bottom: 1%;
     }
 
     .classBtnEnlace{
@@ -637,8 +721,6 @@ button{
 
     .classBtnSvg2{
         width: auto !important;
-        top: -15px;
-        margin-bottom: 3%;
     }
 
     /* Boton de Opciones Header Inicio */
@@ -807,6 +889,50 @@ button{
 
 @media screen and (max-width: 374px){
 
+    .classBtnHomeComic2{
+        order: -1;
+        margin-bottom: 3%;
+    }
+
+    .classBtnInicio{
+        order: 1;
+        margin-bottom: 0%;
+    }
+
+    .classBtnInicio{
+        order: 1;
+    }
+
+    .classBtnBienvenido{
+        order: 2;
+    }
+
+    .classBtnPDF{
+        order: 3;
+        margin-bottom: 2%;
+    }
+
+    .classBtnObra{
+        order: 4;
+    }
+
+    .classBtnProyecto{
+        order: 5;
+    }
+
+    .classBtnLiraBongo{
+        order: 6;
+        margin-bottom: 2%;
+    }
+
+    .classUniverso2{
+        order: 7;
+    }
+
+    .classJuego2{
+        order: 8;
+    }
+
     .classUniverso2{
         display: block;
     }
@@ -822,9 +948,7 @@ button{
 
     .classBtnSvg1{
         position: relative !important;
-        top: -10px;
         width: auto !important;
-        margin-bottom: 1%;
     }
 
     .classBtnEnlace{
@@ -833,8 +957,6 @@ button{
 
     .classBtnSvg2{
         width: auto !important;
-        top: -15px;
-        margin-bottom: 3%;
     }
 
     /* Boton de Opciones Header Inicio */
