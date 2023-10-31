@@ -255,14 +255,14 @@ body{
     }
 
     .classImgTitle2{
-        width: 150%;
+        width: 90%;
     }
 }
 
 @media screen and (min-width: 380px) and (max-width: 550px){
 
     .classImgTitle2{
-        width: 100%;
+        width: 90%;
     }
 
     .classContenedor1{
@@ -289,7 +289,7 @@ body{
 @media screen and (max-width: 380px) {
 
     .classImgTitle2{
-        width: 140%;
+        width: 90%;
     }
 
     .classContenedor1{
