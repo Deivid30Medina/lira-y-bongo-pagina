@@ -389,13 +389,12 @@ button{
 
 
 .classUniverso2{
-    display: none !important;
+    display: none;
 }
 
 .classJuego2{
-    display: none !important;
+    display: none;
 }
-
 
 /*Estilos footer Final*/
 
@@ -411,14 +410,6 @@ button{
         width: 110px !important;
         top: -7px;
     }
-
-    .classUniverso2{
-    display: none !important;
-}
-
-.classJuego2{
-    display: none !important;
-}
 }
 
 
@@ -427,6 +418,15 @@ button{
         width: 800px;
         
     }
+
+    .classUniverso2{
+        display: block;
+    }
+    
+    .classJuego2{
+        display: block;
+    }
+    
 
     .classBtnSvg1{
         position: relative !important;
@@ -504,14 +504,6 @@ button{
         top: 0;
         left: 0;
         margin-bottom: 0px;
-}
-
-.classUniverso2{
-    display:block !important;
-}
-
-.classJuego2{
-    display: block !important;
 }
 
     .classNavItems{
@@ -618,6 +610,15 @@ button{
 }
 
 @media screen and (min-width:375px) and (max-width: 480px){
+    .classUniverso2{
+        display: block;
+    }
+    
+    .classJuego2{
+        display: block;
+    }
+
+    
     .body{ 
         width: 800px;
         
@@ -701,14 +702,9 @@ button{
         margin-bottom: 0px;
 }
 
-.classUniverso2{
-    display:block !important;
-}
-
-.classJuego2{
-    display: block !important;
-}
-
+    .classNavItems{
+        display: none;
+    }
 
         
     /* Boton de Opciones menu Fin*/
@@ -810,6 +806,15 @@ button{
 }
 
 @media screen and (max-width: 374px){
+
+    .classUniverso2{
+        display: block;
+    }
+    
+    .classJuego2{
+        display: block;
+    }
+    
     .body{ 
         width: 800px;
         
@@ -891,14 +896,6 @@ button{
         top: 0;
         left: 0;
         margin-bottom: 0px;
-}
-
-.classUniverso2{
-    display:block !important;
-}
-
-.classJuego2{
-    display: block !important;
 }
 
     .classNavItems{
