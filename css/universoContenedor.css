@@ -59,7 +59,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 9%;
+    top: 20%;
     left: 1%;
   }
   
@@ -119,7 +119,8 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-
+    position: relative;
+    flex-wrap: wrap;
   }
   
   .classPInformacion1{
@@ -282,6 +283,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 5%;
 }
 
 .classImgTitleRegiones{
@@ -430,19 +432,119 @@
   @media screen and (min-width:480px) and (max-width: 709px){
     .classSection1{
       width: 100%;
-      margin-top: 20%;
+    }
+
+    .classTituloUniverso{
+      width: 90%;
+    }
+
+    .classPInformacion1{
+      width: 90%;
+    }
+
+    .classTituloReloj{
+      width: 90%;
+    }
+
+    .classContainerCarrusel{
+      width: 100%;
+      left: 0%;
+      top: 10%;
+    }
+
+    .classContainer2{
+      width: 90%;
+    }
+
+    .classImgTitleRegiones{
+      width: 90%;
     }
   }
   
   @media screen and (min-width:375px) and (max-width: 480px){
-    .classObject{
-        height: 250vh !important;
+    .classSection1{
+      width: 100%;
+    }
+
+    .classTituloUniverso{
+      width: 90%;
+    }
+
+    .classPInformacion1{
+      width: 90%;
+    }
+
+    .classTituloReloj{
+      width: 90%;
+    }
+
+    .classContainerCarrusel{
+      width: 100%;
+      left: 0%;
+      top: 10%;
+    }
+
+    .classContainer2{
+      width: 90%;
+    }
+
+    .classImgTitleRegiones{
+      width: 90%;
+    }
+    .classNombrePersonaje{
+      font-size: 20px;
+    }
+
+    .classApodoPersonaje{
+      font-size: 15px;
+    }
+
+    .classFechaPersonaje{
+      font-size: 10px;
     }
   }
   
   @media screen and (max-width: 375px){
-    .classObject{
-        height: 250vh !important;
+    .classSection1{
+      width: 100%;
+    }
+
+    .classTituloUniverso{
+      width: 90%;
+    }
+
+    .classPInformacion1{
+      width: 90%;
+    }
+
+    .classTituloReloj{
+      width: 90%;
+    }
+
+    .classContainerCarrusel{
+      width: 100%;
+      left: 0%;
+      top: 10%;
+    }
+
+    .classContainer2{
+      width: 90%;
+    }
+
+    .classImgTitleRegiones{
+      width: 90%;
+    }
+
+    .classNombrePersonaje{
+      font-size: 20px;
+    }
+
+    .classApodoPersonaje{
+      font-size: 15px;
+    }
+
+    .classFechaPersonaje{
+      font-size: 10px;
     }
   }
 
