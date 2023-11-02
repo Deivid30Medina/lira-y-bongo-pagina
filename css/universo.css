@@ -26,19 +26,19 @@
 
 @media screen and (min-width: 709px) and (max-width: 1023px) {
   .classObject{
-      height: 280vh !important;
+      height: 320vh !important;
   }
 }
 
 @media screen and (min-width:480px) and (max-width: 709px){
   .classObject{
-      height: 450vh !important;
+      height: 350vh !important;
   }
 }
 
 @media screen and (min-width:375px) and (max-width: 480px){
   .classObject{
-      height: 360vh !important;
+      height: 300vh !important;
   }
 }
 
