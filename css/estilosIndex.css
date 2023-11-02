@@ -912,9 +912,20 @@ button{
         align-items: center;
         justify-content: center;
     }
+
+    .classBtnUniverso3Juego{
+        position: relative;
+        top: -8px;
+    }
 }
 
 @media screen and (max-width: 374px){
+
+
+    .classBtnUniverso3Juego{
+        position: relative;
+        top: -5px;
+    }
 
     .classBtnHomeComic2{
         order: -1;
