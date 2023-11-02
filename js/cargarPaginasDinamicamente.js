@@ -1,3 +1,17 @@
+// Cargar el contenido de "inicio.html" al cargar la página
+window.addEventListener("load", function () {
+  const urlCompleta = window.location.href;
+  if (urlCompleta.includes("juego") == false) {
+    document.getElementById("idSection0").style.display = "none";
+    cargarContenido("inicio.html"); 
+  } else {
+    // Ocultar el canvas y el section al cargar contenido diferente
+    document.getElementById("canvas").style.display = "none";
+    document.getElementById("idSectionBtnFinales").style.display = "none";
+    cargarContenido("juego.html");
+  }
+});
+
 //Validar que al momento de dar clic en una opcion de la hamburgesa menu esta se cierre.
 // Obtén la casilla de verificación y todos los elementos del menú
 const navCheck = document.querySelector(".classNavCheck");
@@ -14,19 +28,7 @@ menuButtons.forEach((button) => {
 });
 // Fin Validación
 
-// Cargar el contenido de "inicio.html" al cargar la página
-window.addEventListener("load", function () {
-  const urlCompleta = window.location.href;
-  if (urlCompleta.includes("juego") == false) {
-    document.getElementById("idSection0").style.display = "none";
-    cargarContenido("inicio.html"); 
-  } else {
-    // Ocultar el canvas y el section al cargar contenido diferente
-    document.getElementById("canvas").style.display = "none";
-    document.getElementById("idSectionBtnFinales").style.display = "none";
-    cargarContenido("juego.html");
-  }
-});
+
 
 //Cargar Dinamicamente html al dar clic en una opción dle menu
 function cargarContenido(archivo) {

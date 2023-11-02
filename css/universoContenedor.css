@@ -32,35 +32,35 @@
   /*===============================Inicio Section 1======================================*/
   
   .classSection1{
-    margin-top: 10%;
-    width: 50%;
+
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
   
   .classTituloUniverso{
     object-fit: scale-down;
-    width: 100%;
+    width: 40%;
     
   }
   
   
   .classTituloReloj{
     border: 1px solid orangered;
-    width: 90%;
+    width: 40%;
   }
   
   
   .classContainerCarrusel{
-    width: 100%;
+    width: 45%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 45%;
+    top: 9%;
+    left: 1%;
   }
   
   .carruselPersonajes{
@@ -115,20 +115,18 @@
   /*===============================Inicio Section 2======================================*/
   
   .classSection2{
-    margin-top: 10%;
-    width: 50%;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
   }
   
   .classPInformacion1{
-    width: 90%;
+    width: 50%;
     color: #4a4a4a;
     text-align: justify;
     font-family: fuenteParrafo;
-    margin-top: 10%;
   }
 
   /* Agrega una clase para ocultar el contenido */
@@ -152,14 +150,13 @@
   .classContainer2{
     animation: fadeIn 1s ease;
     -webkit-animation: fadeIn 1s ease;
-    width: 90%;
+    width: 50%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border: 1px solid rgb(5, 43, 216);
-    margin-top: 10%;
 }
 
   .classImgMarcoPersonaje{
@@ -367,7 +364,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
+  opacity: 0;
 }
 
 
