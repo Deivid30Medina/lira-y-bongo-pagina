@@ -17,10 +17,9 @@ menuButtons.forEach((button) => {
 // Cargar el contenido de "inicio.html" al cargar la página
 window.addEventListener("load", function () {
   const urlCompleta = window.location.href;
-  if (urlCompleta.includes("juego.html") == false) {
+  if (urlCompleta.includes("juego") == false) {
     document.getElementById("idSection0").style.display = "none";
-    history.pushState({}, "", `index.html`);
-    cargarContenido("inicio.html");
+    cargarContenido("inicio.html"); 
   } else {
     // Ocultar el canvas y el section al cargar contenido diferente
     document.getElementById("canvas").style.display = "none";
@@ -39,6 +38,7 @@ function cargarContenido(archivo) {
       .then((response) => response.text())
       .then((data) => {
         // Actualiza el contenido
+        
         document.querySelector(".contenido_cambiante").innerHTML = data;
 
         // Muestra el contenido con una animación
@@ -133,6 +133,7 @@ function mostrarContenido(data) {
   const contenidoCambiante = document.querySelector(".contenido_cambiante");
   contenidoCambiante.innerHTML = data;
   contenidoCambiante.style.opacity = 1;
+  history.pushState({}, '', `index.html`);
 }
 
 function ocultarLoader(loaderContainer) {
@@ -152,7 +153,7 @@ function mostrarElementosEspecificos(archivo) {
     sectionBtnFinales.style.top = "-10vh";
   } else if (archivo === "juego.html" || archivo === "universo.html") {
     if (archivo === "juego.html") {
-      history.pushState({}, "", `index.html?page=${archivo}`);
+      history.pushState({}, '', `index.html?page=juego`);
     }
     section0.style.display = "block";
   }
