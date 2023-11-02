@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /ruta_a_tu_proyecto/  # Reemplaza con la ruta de tu proyecto en el servidor (por ejemplo, /mi_proyecto/)
+
+    # Rutas amigables para lira_y_bongo
+    RewriteRule ^lira_y_bongo/?$ lira_y_bongo.html [L]
+    RewriteRule ^lira_y_bongo/juego/?$ lira_y_bongo/juego.html [L]
+</IfModule>
