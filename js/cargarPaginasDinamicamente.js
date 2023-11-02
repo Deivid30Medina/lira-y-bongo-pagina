@@ -1,13 +1,17 @@
+document.getElementById("idSection0").style.display = "none";
+document.getElementById("idSectionBtnFinales").style.display = "none";
+
 // Cargar el contenido de "inicio.html" al cargar la página
 window.addEventListener("load", function () {
   const urlCompleta = window.location.href;
   if (urlCompleta.includes("juego") == false) {
-    document.getElementById("idSection0").style.display = "none";
     cargarContenido("inicio.html"); 
+    document.getElementById("idSectionBtnFinales").style.display = "flex";
   } else {
     // Ocultar el canvas y el section al cargar contenido diferente
     document.getElementById("canvas").style.display = "none";
     document.getElementById("idSectionBtnFinales").style.display = "none";
+    document.getElementById("idSection0").style.display = "flex";
     cargarContenido("juego.html");
   }
 });
