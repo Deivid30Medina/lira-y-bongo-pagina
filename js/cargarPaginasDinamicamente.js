@@ -155,7 +155,7 @@ function mostrarElementosEspecificos(archivo) {
     if (archivo === "juego.html") {
       history.pushState({}, '', `index.html?page=juego`);
     }
-    section0.style.display = "block";
+    section0.style.display = "flex";
   }
 }
 

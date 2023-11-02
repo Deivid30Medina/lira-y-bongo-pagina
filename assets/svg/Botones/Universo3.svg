@@ -20,12 +20,14 @@
         fill: none;
       }
 
+
       .classText{
         fill: white;
-        font-size: 21px;
+        font-size: 50px;
         font-family: ; /*fira sans medium italic*/
         cursor: pointer;
       }
+
       g:hover>path, g:focus>path{
 				fill: url(#Degradado_sin_nombre_22);
 			}
@@ -55,7 +57,7 @@
   </defs>
   <g class="cls-2">
     <path  class="cls-1 elemento-svg" d="m225.62,72.73H29.9c-7.48,0-14.13-4.77-16.53-11.86L1.45,25.67C-2.37,14.35,6.04,2.62,17.99,2.62h219.54c11.95,0,20.36,11.73,16.53,23.05l-11.91,35.2c-2.4,7.09-9.05,11.86-16.53,11.86Z"/>
-    <text  x="85" y="45" class="classText elemento-svg">
+    <text  x="30" y="55" class="classText elemento-svg">
       Universo
     </text>
   </g>

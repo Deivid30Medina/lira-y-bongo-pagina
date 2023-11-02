@@ -403,8 +403,20 @@ button{
 
 /*Estilos btn Juego y Universo 3*/
 
-.idSection0{
-    
+.classSection0{
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+}
+
+.classBtnUniverso3{
+    height: 80px;
+}
+
+.classBtnUniverso3Juego{
+    position: relative;
+    top: -17px;
 }
 
 
