@@ -449,7 +449,7 @@
     .classContainerCarrusel{
       width: 100%;
       left: 0%;
-      top: 6%;
+      top: 8%;
     }
 
     .classContainer2{
@@ -481,7 +481,7 @@
     .classContainerCarrusel{
       width: 100%;
       left: 0%;
-      top: 6%;
+      top: 8%;
     }
 
     .classContainer2{
@@ -492,15 +492,15 @@
       width: 90%;
     }
     .classNombrePersonaje{
-      font-size: 20px;
+      font-size: 18px;
     }
 
     .classApodoPersonaje{
-      font-size: 15px;
+      font-size: 13px;
     }
 
     .classFechaPersonaje{
-      font-size: 10px;
+      font-size: 8px;
     }
   }
   
@@ -524,7 +524,7 @@
     .classContainerCarrusel{
       width: 100%;
       left: 0%;
-      top: 6%;
+      top: 8%;
     }
 
     .classContainer2{
@@ -536,15 +536,15 @@
     }
 
     .classNombrePersonaje{
-      font-size: 20px;
+      font-size: 18px;
     }
 
     .classApodoPersonaje{
-      font-size: 15px;
+      font-size: 13px;
     }
 
     .classFechaPersonaje{
-      font-size: 10px;
+      font-size: 8px;
     }
   }
 
