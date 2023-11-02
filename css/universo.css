@@ -26,13 +26,13 @@
 
 @media screen and (min-width: 709px) and (max-width: 1023px) {
   .classObject{
-      height: 380vh !important;
+      height: 310vh !important;
   }
 }
 
 @media screen and (min-width:480px) and (max-width: 709px){
   .classObject{
-      height: 350vh !important;
+      height: 330vh !important;
   }
 }
 
