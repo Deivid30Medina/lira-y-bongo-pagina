@@ -33,13 +33,13 @@
         <input class="classNavCheck" type="checkbox" id="menu">
         <div class="classNavItems" id="idNavItems">
             <div class="classBtnSvg1 classBtn classBtnInicio" >
-                <object id="svgObjectInicio" class="classSvgContainer" data="assets/svg/Botones/Inicio.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+                <object id="svgObjectInicio" data-src="inicio.html" class="classSvgContainer" data="assets/svg/Botones/Inicio.svg" type="image/svg+xml" width="100%" height="100%" ></object>
             </div>
             <div class="classBtnSvg2 classBtn classBtnBienvenido">
-                <object id="svgObjectBienvenido" class="classSvgContainer" data="assets/svg/Botones/Bienvenido.svg" type="image/svg+xml" width="100%" height="100%"></object>
+                <object id="svgObjectBienvenido" data-src="bienvenidos.html" class="classSvgContainer" data="assets/svg/Botones/Bienvenido.svg" type="image/svg+xml" width="100%" height="100%"></object>
             </div>
             <div class="classBtnSvg1 classBtn classBtnPDF" >
-                <object id="svgObjectPDF" class="classsvgInicio" data="assets/svg/Botones/descargar.svg" type="image/svg+xml" width="100%" height="100%"></object>
+                <object id="svgObjectPDF" data-src="libro.html" class="classSvgContainer" data="assets/svg/Botones/descargar.svg" type="image/svg+xml" width="100%" height="100%"></object>
             </div>
             <div class="classBtnHomeComic2">
                 <a class="classBtnEnlace" href="http://www.derechodeautor.gov.co:8081/tiposDeDerechosDeAutor/index.html">
@@ -47,19 +47,19 @@
                 </a>
             </div>
             <div class="classBtnSvg1 classBtn classBtnObra" >
-                <object id="svgObjectRegistraObra" class="classsvgInicio" data="assets/svg/Botones/registraObra.svg" type="image/svg+xml" width="100%" height="100%"></object>
+                <object id="svgObjectRegistraObra" data-src="registraTuObra.html" class="classSvgContainer" data="assets/svg/Botones/registraObra.svg" type="image/svg+xml" width="100%" height="100%"></object>
             </div>
             <div class="classBtnSvg2 classBtn classBtnProyecto" >
-                <object id="svgObjectProyecto" class="classsvgInicio" data="assets/svg/Botones/SobreProyecto.svg" type="image/svg+xml" width="100%" height="100%"></object>
+                <object id="svgObjectProyecto" data-src="sobreElProyecto.html" class="classSvgContainer" data="assets/svg/Botones/SobreProyecto.svg" type="image/svg+xml" width="100%" height="100%"></object>
             </div>
             <div class="classBtnSvg1 classBtn classBtnLiraBongo" >
-                <object id="svgObjectLiraBongo" class="classsvgInicio" data="assets/svg/Botones/CreandoLiraBongo.svg" type="image/svg+xml" width="100%" height="100%"></object>
+                <object id="svgObjectLiraBongo" data-src="creandoConLira_y_Bongo.html" class="classSvgContainer" data="assets/svg/Botones/CreandoLiraBongo.svg" type="image/svg+xml" width="100%" height="100%"></object>
             </div>
             <div class="classBtnSvg1 classBtn classUniverso2" >
-                <object id="svgObjectUniverso2" class="classsvgUniverso2" data="assets/svg/Botones/Universo2.svg" type="image/svg+xml" width="100%" height="100%"></object>
+                <object id="svgObjectUniverso2" data-src="universo.html" class="classsvgUniverso2 classSvgContainer" data="assets/svg/Botones/Universo2.svg" type="image/svg+xml" width="100%" height="100%"></object>
             </div>
             <div class="classBtnSvg2 classBtn classJuego2" >
-                <object id="svgObjectJuego2" class="classsvgJuego2" data="assets/svg/Botones/Juego2.svg" type="image/svg+xml" width="100%" height="100%"></object>
+                <object id="svgObjectJuego2" data-src="juego.html" class="classsvgJuego2 classSvgContainer" data="assets/svg/Botones/Juego2.svg" type="image/svg+xml" width="100%" height="100%"></object>
             </div>
             
         </div>
@@ -72,10 +72,10 @@
                     <div id="contenido-dinamico" class="contenido_cambiante"></div> <!-- Contenedor para el contenido dinámico -->
                     <section id="idSectionBtnFinales" class="classUniversoJuego">
                         <div class="classBtnSvgUniverso classBtn" >
-                            <object id="svgObjectUniverso" class="classSvgContainer" data="assets/svg/Botones/Universo.svg" type="image/svg+xml" width="100%" height="100%" ></object>
+                            <object id="svgObjectUniverso" data-src="universo.html" class="classSvgContainer" data="assets/svg/Botones/Universo.svg" type="image/svg+xml" width="100%" height="100%" ></object>
                         </div>
                         <div class="classBtnSvgJuego classBtn classBtnSvg">
-                            <object id="svgObjectJuego" class="classSvgContainer" data="assets/svg/Botones/Juego.svg" type="image/svg+xml" width="100%" height="100%" data-archivo="juego.html"></object>
+                            <object id="svgObjectJuego" data-src="juego.html" class="classSvgContainer" data="assets/svg/Botones/Juego.svg" type="image/svg+xml" width="100%" height="100%" data-archivo="juego.html"></object>
                         </div>
                     </section>
                 </main>
@@ -158,5 +158,7 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 </body>
 </html>

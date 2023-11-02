@@ -133,125 +133,27 @@ function cargarContenidoDesdeSVG(archivo) {
 
 
 
-// Manejar eventos load para Inicio.html
-function manejarEventosLoad() {
+//Metodo por  AXIOS   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+var svgObjects = document.querySelectorAll('.classSvgContainer');
 
-  // Obtén el nombre del archivo a cargar desde el parámetro de la URL
-  const params = new URLSearchParams(window.location.search);
-  const archivo = params.get('archivo');
+// Para cada elemento SVG seleccionado, agrega un evento de carga
+svgObjects.forEach(function(svgObject) {
+  svgObject.addEventListener('load', function() {
+      // Obtiene el documento SVG cargado dentro del objeto <object>
+      var svgDocument = svgObject.contentDocument;
+      
+      // Selecciona todos los elementos con la clase '.elemento-svg' dentro del documento SVG
+      var elementsSVG = svgDocument.querySelectorAll('.elemento-svg');
 
-  // Si se proporciona un parámetro 'archivo', cárgalo
-  if (archivo) {
-    cargarContenidoDesdeSVG(`${archivo}.html`);
-  } 
-  // Escuchar el evento load del objeto <object> para el SVG de Inicio
-  document.getElementById('svgObjectInicio').addEventListener('load', function () {
-      const svgDoc = this.contentDocument;
-      svgDoc.documentElement.addEventListener('click', function () {
-          const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'inicio.html';
-          history.pushState({}, '', `index.html`);
-          cargarContenidoDesdeSVG(archivo);
+      // Para cada elemento con la clase '.elemento-svg', agrega un evento de clic
+      elementsSVG.forEach(function(elementoSVG) {
+        elementoSVG.onclick = function() {
+              // Obtiene el atributo 'data-src' del objeto <object> que contiene el SVG
+              var archivoHTML = svgObject.getAttribute('data-src');
+              
+              // Llama a la función cargarContenido con el archivo HTML como argumento
+              cargarContenidoDesdeSVG(archivoHTML);
+          };
       });
   });
-
-  // Escuchar el evento load del objeto <object> para bienvenidos.html
-  document.getElementById('svgObjectBienvenido').addEventListener('load', function () {
-      const svgDoc = this.contentDocument;
-      svgDoc.documentElement.addEventListener('click', function () {
-          const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'bienvenidos.html';
-          history.pushState({}, '', `index.html`);
-          cargarContenidoDesdeSVG(archivo);
-      });
-  });
-
-  // Escuchar el evento load del objeto <object> para RegistrarObra.html
-  document.getElementById('svgObjectRegistraObra').addEventListener('load', function () {
-    const svgDoc = this.contentDocument;
-    svgDoc.documentElement.addEventListener('click', function () {
-        const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'registraTuObra.html';
-        history.pushState({}, '', `index.html`);
-        cargarContenidoDesdeSVG(archivo);
-    });
-  });
-  
-  // Escuchar el evento load del objeto <object> para Sobre el proyecto
-  document.getElementById('svgObjectProyecto').addEventListener('load', function () {
-    const svgDoc = this.contentDocument;
-    svgDoc.documentElement.addEventListener('click', function () {
-        const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'sobreElProyecto.html';
-        history.pushState({}, '', `index.html`);
-        cargarContenidoDesdeSVG(archivo);
-    });
-  });
-
-  // Escuchar el evento load del objeto <object> para CreandoLiraBongo
-  document.getElementById('svgObjectLiraBongo').addEventListener('load', function () {
-    const svgDoc = this.contentDocument;
-    svgDoc.documentElement.addEventListener('click', function () {
-        const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'creandoConLira_y_Bongo.html';
-        history.pushState({}, '', `index.html`);
-        cargarContenidoDesdeSVG(archivo);
-    });
-  });
-
-  // Escuchar el evento load del objeto <object> para descargarLibro
-  document.getElementById('svgObjectPDF').addEventListener('load', function () {
-    const svgDoc = this.contentDocument;
-    svgDoc.documentElement.addEventListener('click', function () {
-        const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'libro.html';
-        history.pushState({}, '', `index.html`);
-        cargarContenidoDesdeSVG(archivo);
-    });
-  });
-
-  // Escuchar el evento load del objeto <object> para Juego
-  document.getElementById('svgObjectJuego').addEventListener('load', function () {
-    const svgDoc = this.contentDocument;
-    svgDoc.documentElement.addEventListener('click', function () {
-      const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'juego.html';
-  
-      // Modificar la URL para incluir el parámetro 'archivo'
-      history.pushState({}, '', `index.html?page=${archivo}`);
-      cargarContenidoDesdeSVG(archivo);
-    });
-  });
-
-  // Escuchar el evento load del objeto <object> para Universo
-  document.getElementById('svgObjectUniverso').addEventListener('load', function () {
-    const svgDoc = this.contentDocument;
-    svgDoc.documentElement.addEventListener('click', function () {
-        const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'universo.html';
-        history.pushState({}, '', `index.html`); //para modificar la URL en la barra de direcciones del navegador. Esto agrega un parámetro archivo a la URL, lo que permite que el usuario vea el parámetro en la barra de direcciones sin recargar la página.
-        cargarContenidoDesdeSVG(archivo);
-    });
-  });
-
-   // Escuchar el evento load del objeto <object> para Juego
-   document.getElementById('svgObjectJuego2').addEventListener('load', function () {
-    const svgDoc = this.contentDocument;
-    svgDoc.documentElement.addEventListener('click', function () {
-      const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'juego.html';
-  
-      // Modificar la URL para incluir el parámetro 'archivo'
-      history.pushState({}, '', `index.html?page=${archivo}`);
-      cargarContenidoDesdeSVG(archivo);
-    });
-  });
-
-  // Escuchar el evento load del objeto <object> para Universo
-  document.getElementById('svgObjectUniverso2').addEventListener('load', function () {
-    const svgDoc = this.contentDocument;
-    svgDoc.documentElement.addEventListener('click', function () {
-        const archivo = svgDoc.documentElement.getAttribute('data-archivo') || 'universo.html';
-        history.pushState({}, '', `index.html`); //para modificar la URL en la barra de direcciones del navegador. Esto agrega un parámetro archivo a la URL, lo que permite que el usuario vea el parámetro en la barra de direcciones sin recargar la página.
-        cargarContenidoDesdeSVG(archivo);
-    });
-  });
-
-
-}
-
-// Llamar a la función para manejar eventos load
-manejarEventosLoad();
-
-
+});
