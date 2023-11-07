@@ -168,7 +168,7 @@ function mostrarElementosEspecificos(archivo) {
 }
 
 function validarObejectHtml(archivo){
-  if(archivo === "bienvenidos.html" || archivo === "registraTuObra.html"){
+  if(archivo === "bienvenidos.html" || archivo === "creandoConLira_y_Bongo.html"){
     var miObjeto = document.getElementById('idObjeto');
 
     // Esperar a que el contenido se cargue completamente

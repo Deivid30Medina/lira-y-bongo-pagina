@@ -1,9 +1,4 @@
-.classBodyContenedorObra, .classHtmlContenedorObra {
-    margin: 0;
-    padding: 0;
-    overflow-y: hidden !important;
-    overflow-x: hidden !important;
-}
+
 
 object {
     width: 100%;

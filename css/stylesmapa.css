@@ -12,38 +12,3 @@
 }
 
 
-@media screen and (min-width: 1600px) and (max-width: 2000px) {
-    .classObjectLiraBongo{
-        height: 120vh !important;
-    }
-}
-
-@media screen and (min-width: 1023px) and (max-width: 1600px) {
-    .classObjectLiraBongo{
-        height: 170vh !important;
-    }
-}
-
-@media screen and (min-width: 709px) and (max-width: 1023px) {
-    .classObjectLiraBongo{
-        height: 160vh !important;
-    }
-}
-
-@media screen and (min-width:480px) and (max-width: 709px){
-    .classObjectLiraBongo{
-        height: 250vh !important;
-    }
-}
-
-@media screen and (min-width:375px) and (max-width: 480px){
-    .classObjectLiraBongo{
-        height: 210vh !important;
-    }
-}
-
-@media screen and (max-width: 375px){
-    .classObjectLiraBongo{
-        height: 230vh !important;
-    }
-}
