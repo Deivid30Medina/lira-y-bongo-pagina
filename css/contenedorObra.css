@@ -8,38 +8,4 @@ object {
     overflow-x: hidden !important;
 }
 
-@media screen and (min-width: 1600px) and (max-width: 2000px) {
-    object {
-        height: 1000px;
-    }
-}
 
-@media screen and (min-width: 1023px) and (max-width: 1600px) {
-    object {
-        height: 852px;
-    }
-}
-
-@media screen and (min-width: 772px) and (max-width: 1023px) {
-    object {
-        height: 1051px;
-    }
-}
-
-@media screen and (min-width:550px) and (max-width: 772px){
-    object {
-        height: 826px;
-    }
-}
-
-@media screen and (min-width: 380px) and (max-width: 550px){
-    object {
-        height: 684px;
-    }
-}
-
-@media screen and (max-width: 380px) {
-    object {
-        height: 700px;
-    }
-}
