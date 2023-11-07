@@ -14,36 +14,36 @@
 
 @media screen and (min-width: 1600px) and (max-width: 2000px) {
   .classObject{
-      height: 300vh !important;
+      height: 2586px ;
   }
 }
 
 @media screen and (min-width: 1023px) and (max-width: 1600px) {
   .classObject{
-      height: 430vh !important;
+      height: 2340px ;
   }
 }
 
 @media screen and (min-width: 709px) and (max-width: 1023px) {
   .classObject{
-      height: 350vh !important;
+      height: 2384px ;
   }
 }
 
 @media screen and (min-width:480px) and (max-width: 709px){
   .classObject{
-      height: 330vh !important;
+      height: 3040px ;
   }
 }
 
 @media screen and (min-width:375px) and (max-width: 480px){
   .classObject{
-      height: 440vh !important;
+      height: 3333px ;
   }
 }
 
 @media screen and (max-width: 375px){
   .classObject{
-      height: 450vh !important;
+      height: 5621px ;
   }
 }
