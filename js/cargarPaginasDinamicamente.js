@@ -34,7 +34,10 @@ menuButtons.forEach((button) => {
 
 
 
-//Cargar Dinamicamente html al dar clic en una opción dle menu
+/**
+ * Función que me carga inicialmente el contenido inicio.html
+ * @param {*} archivo 
+ */
 function cargarContenido(archivo) {
   // Capturar la URL completa
   document.querySelector(".contenido_cambiante").style.opacity = 0;
@@ -52,8 +55,13 @@ function cargarContenido(archivo) {
       });
   }, 1000); // Ajustar el tiempo de carga html
 }
-// Fin cargar paginas .html
 
+
+
+/**
+ * Función que me carga los html cuando se le da clic algun btn svg del sitio
+ * @param {*} archivo contiene el nombre del html que se desea cargar en la pagina
+ */
 function cargarContenidoDesdeSVG(archivo) {
   // Ocultar elementos que ya no deben mostarse
   ocualtarElementos();
@@ -83,6 +91,10 @@ function cargarContenidoDesdeSVG(archivo) {
   
 }
 
+/**
+ * Función que me crear el loader para tener un tiempo de espera más amigable con el usuario.
+ * @returns mainDiv - Contiene la arquitectura del loader para que se peuda visualizar correctamente.
+ */
 function mostrarLoader() {
   // Obtener una referencia al div del main
   const mainDiv = document.querySelector(".classMainPagina");
@@ -121,6 +133,9 @@ function mostrarLoader() {
   return mainDiv;
 }
 
+/**
+ * Función que al terminar el tiempo de espera de cargar el documento html se retira el loader.
+ */
 function removerLoader() {
   var loader = document.getElementById("idLoader");
   // Ocultar y eliminar el div del loader cuando la carga esté completa
@@ -128,6 +143,11 @@ function removerLoader() {
   loader.remove();
 }
 
+/**
+ * Función para ocultar algunos elementos en especifico que ya no deben ir en otras secciones.
+ * Se oculta el canvas con movimiento de espiral
+ * Se oculta los btn de universo y juego
+ */
 function ocualtarElementos() {
   // Ocultar el canvas, el section, contenido actual y botones de jeugo y universo 3 al cargar contenido diferente
   document.getElementById("canvas").style.display = "none";
@@ -136,6 +156,11 @@ function ocualtarElementos() {
   document.querySelector(".contenido_cambiante").style.opacity = 0;
 }
 
+/**
+ * Función que me permite mostrar el nuevo contenido que se desea cargar, dado que se hubiera dado clic en algun btn svg
+ * Los nuevos html o contenidos se cargan dentro de un div con id contenido_cambiante
+ * @param {*} data - Nombre dek html que se desea cargar dinamicamente
+ */
 function mostrarContenido(data) {
   const contenidoCambiante = document.querySelector(".contenido_cambiante");
   contenidoCambiante.innerHTML = data;
@@ -143,11 +168,21 @@ function mostrarContenido(data) {
   history.pushState({}, '', `index.html`);
 }
 
+/**
+ * Función que vuelve el display en none del loader inicialmente para que no salga.
+ * @param {*} loaderContainer 
+ */
 function ocultarLoader(loaderContainer) {
   loaderContainer.style.display = "none";
   loaderContainer.remove();
 }
 
+/**
+ * Función para mostrar algunos elementos en especifico, dado que se dio alguna de estas acciones.
+ * Si se dio en inicio.html, debe de cargar la espiral del canvas y los btn de juego e inicio.
+ * Si se dio clic en juego o universo se debe desplegar nuevamente los nuevos btn de jeugo y universo 
+ * @param {*} archivo 
+ */
 function mostrarElementosEspecificos(archivo) {
   const canvas = document.getElementById("canvas");
   const sectionBtnFinales = document.getElementById("idSectionBtnFinales");
@@ -167,6 +202,10 @@ function mostrarElementosEspecificos(archivo) {
   validarObejectHtml(archivo);
 }
 
+/**
+ * Función que me permite obtener el alto del html que se esta cargando en el object, co el fin de ajusatr el alto del object
+ * @param {bienvenidos.html, creandoConLira_y_Bongo.html,registraTuObra.html,universo.html} archivo archivo html que se esta llamando, no todos los html tiene html sino solo los de la lista.
+ */
 function validarObejectHtml(archivo){
   if(archivo === "bienvenidos.html" || archivo === "creandoConLira_y_Bongo.html" || archivo === "registraTuObra.html" || archivo === "universo.html"){
     var miObjeto = document.getElementById('idObjeto');
@@ -181,12 +220,10 @@ function validarObejectHtml(archivo){
 
       // Obtener la altura del contenido
       var alturaContenido = contenidoBody.clientHeight;
-      console.log(alturaContenido);
       // Asignar la altura del contenido al objeto
       if(archivo === "registraTuObra.html"){
         alturaContenido += 210;
       }
-      console.log(alturaContenido);
       miObjeto.style.height = (alturaContenido) + 'px';
     };
     
