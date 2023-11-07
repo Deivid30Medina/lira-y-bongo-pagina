@@ -80,6 +80,7 @@ function cargarContenidoDesdeSVG(archivo) {
         mostrarElementosEspecificos(archivo);
       });
   }, 2000); // Ajustar el tiempo de carga HTML
+  
 }
 
 function mostrarLoader() {
@@ -162,6 +163,29 @@ function mostrarElementosEspecificos(archivo) {
       history.pushState({}, '', `index.html?page=juego`);
     }
     section0.style.display = "flex";
+  }
+  validarObejectHtml(archivo);
+}
+
+function validarObejectHtml(archivo){
+  if(archivo === "bienvenidos.html"){
+    var miObjeto = document.getElementById('idObjeto');
+
+    // Esperar a que el contenido se cargue completamente
+    miObjeto.onload = function() {
+      // Obtener el documento dentro del objeto
+      var contenidoDoc = miObjeto.contentDocument;
+      
+      // Obtener el elemento raíz dentro del documento del objeto
+      var contenidoBody = contenidoDoc.body;
+
+      // Obtener la altura del contenido
+      var alturaContenido = contenidoBody.clientHeight;
+      console.log(alturaContenido);
+      // Asignar la altura del contenido al objeto
+      miObjeto.style.height = alturaContenido + 'px';
+    };
+    
   }
 }
 
