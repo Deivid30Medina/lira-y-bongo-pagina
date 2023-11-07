@@ -168,7 +168,7 @@ function mostrarElementosEspecificos(archivo) {
 }
 
 function validarObejectHtml(archivo){
-  if(archivo === "bienvenidos.html"){
+  if(archivo === "bienvenidos.html" || archivo === "registraTuObra.html"){
     var miObjeto = document.getElementById('idObjeto');
 
     // Esperar a que el contenido se cargue completamente
@@ -183,7 +183,10 @@ function validarObejectHtml(archivo){
       var alturaContenido = contenidoBody.clientHeight;
       console.log(alturaContenido);
       // Asignar la altura del contenido al objeto
-      miObjeto.style.height = alturaContenido + 'px';
+      if(archivo === "registraTuObra.html"){
+        alturaContenido += 110;
+      }
+      miObjeto.style.height = (alturaContenido) + 'px';
     };
     
   }
