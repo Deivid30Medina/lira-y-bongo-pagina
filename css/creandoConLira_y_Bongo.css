@@ -198,6 +198,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .classBtnsAzulPoppup{
@@ -338,6 +339,21 @@
 
     .classH1Header{
         font-size: 25px;
+    }
+
+    .classDepartamentoPoppup{
+        flex-direction: column ;
+    }
+
+    .classImgDepartamentPoppup{
+        order: 0;
+        width: 30%;
+    }
+
+    .classBtnsAzulPoppup{
+        margin-top: 2%;
+        order: 1;
+        width: 50%;
     }
 }
 
