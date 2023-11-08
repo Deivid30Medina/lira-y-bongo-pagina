@@ -277,10 +277,8 @@ function pintarJuego(archivo) {
 
   // Si el archivo no es "juego.html", desvincula la clase "pintar2" del elemento anterior y agrega la clase "pintar1"
   if (archivo !== "juego.html") {
-    if (pathAnterior) {
-      pathAnterior.classList.remove("pintar2");
-      pathAnterior.classList.add("pintar1");
-    }
+    pathAnterior.classList.remove("pintar2");
+    pathAnterior.classList.add("pintar1");
   }
   
   pathAnterior = svgUniverso3.querySelector('#idPath');
