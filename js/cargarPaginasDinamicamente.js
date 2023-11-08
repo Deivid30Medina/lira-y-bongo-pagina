@@ -1,5 +1,15 @@
-document.getElementById("idSection0").style.display = "none";
+document.getElementById("idSection0").style.opacity = 0;
 document.getElementById("idSectionBtnFinales").style.display = "none";
+let banderaBtnDespintar, banderaBtnPintado, pathAnterior, pathSvg2Universo, pathSvg2Juego;
+let cont = 0;
+
+
+//Validar que al momento de dar clic en una opcion de la hamburgesa menu esta se cierre.
+// Obtén la casilla de verificación y todos los elementos del menú
+const navCheck = document.querySelector(".classNavCheck");
+const menuButtons = document.querySelectorAll(".classbtnMenu");
+
+
 
 // Cargar el contenido de "inicio.html" al cargar la página
 window.addEventListener("load", function () {
@@ -12,14 +22,12 @@ window.addEventListener("load", function () {
     document.getElementById("canvas").style.display = "none";
     document.getElementById("idSectionBtnFinales").style.display = "none";
     document.getElementById("idSection0").style.display = "flex";
+    document.getElementById("idSection0").style.display = 1;
     cargarContenido("juego.html");
   }
 });
 
-//Validar que al momento de dar clic en una opcion de la hamburgesa menu esta se cierre.
-// Obtén la casilla de verificación y todos los elementos del menú
-const navCheck = document.querySelector(".classNavCheck");
-const menuButtons = document.querySelectorAll(".classbtnMenu");
+
 
 // Agrega un evento clic a cada botón del menú
 menuButtons.forEach((button) => {
@@ -40,6 +48,12 @@ menuButtons.forEach((button) => {
  */
 function cargarContenido(archivo) {
   // Capturar la URL completa
+  if(screen.width >= 772){
+    let objectInicio = document.querySelector('#svgObjectInicio');
+    let SvgInicio = objectInicio.contentDocument;
+    pathAnterior = SvgInicio.querySelector('#idPathSvg');
+    pathAnterior.classList.add("pintar2");
+  }  
   document.querySelector(".contenido_cambiante").style.opacity = 0;
   setTimeout(function () {
     // Carga el nuevo contenido
@@ -52,8 +66,11 @@ function cargarContenido(archivo) {
 
         // Muestra el contenido con una animación
         document.querySelector(".contenido_cambiante").style.opacity = 1;
+        
       });
+     
   }, 1000); // Ajustar el tiempo de carga html
+ 
 }
 
 
@@ -152,7 +169,7 @@ function ocualtarElementos() {
   // Ocultar el canvas, el section, contenido actual y botones de jeugo y universo 3 al cargar contenido diferente
   document.getElementById("canvas").style.display = "none";
   document.getElementById("idSectionBtnFinales").style.display = "none";
-  document.getElementById("idSection0").style.display = "none";
+  document.getElementById("idSection0").style.opacity = 0;
   document.querySelector(".contenido_cambiante").style.opacity = 0;
 }
 
@@ -197,6 +214,7 @@ function mostrarElementosEspecificos(archivo) {
     if (archivo === "juego.html") {
       history.pushState({}, '', `index.html?page=juego`);
     }
+    section0.style.opacity = 1;
     section0.style.display = "flex";
   }
   validarObejectHtml(archivo);
@@ -230,6 +248,95 @@ function validarObejectHtml(archivo){
   }
 }
 
+function pintarUniverso(archivo){
+  console.log("Entro 3");
+    let objectUniverso3 = document.querySelector('#svgObjectUniverso3');
+    let svgUniverso3 = objectUniverso3.contentDocument;
+    let objectUniverso2 = document.querySelector('#svgObjectUniverso2');
+    let svgUniverso2 = objectUniverso2.contentDocument;
+    pathSvg2Universo = svgUniverso2.querySelector('#idPath');
+    pathSvg2Universo.classList.add("pintar2");
+
+    if(archivo != "universo.html" ){
+      pathAnterior.classList.remove("pintar2");
+      pathAnterior.classList.add("pintar1");
+    }
+    
+    pathAnterior = svgUniverso3.querySelector('#idPath');
+    pathAnterior.classList.add("pintar2");
+}
+
+function pintarJuego(archivo) {
+  console.log("Entró en pintarJuego");
+  let objectUniverso3 = document.querySelector('#svgObjectJuego3');
+  let svgUniverso3 = objectUniverso3.contentDocument;
+  let objectUniverso2 = document.querySelector('#svgObjectJuego2');
+  let svgUniverso2 = objectUniverso2.contentDocument;
+  let pathSvg2Universo = svgUniverso2.querySelector('#idPath');
+  pathSvg2Universo.classList.add("pintar2");
+
+  // Si el archivo no es "juego.html", desvincula la clase "pintar2" del elemento anterior y agrega la clase "pintar1"
+  if (archivo !== "juego.html") {
+    if (pathAnterior) {
+      pathAnterior.classList.remove("pintar2");
+      pathAnterior.classList.add("pintar1");
+    }
+  }
+  
+  pathAnterior = svgUniverso3.querySelector('#idPath');
+  pathAnterior.classList.add("pintar2");
+}
+
+// Función para despintar los botones iniciales y resetear los estilos
+function despintarBtnIniciales() {
+  let objectUniverso2 = document.querySelector('#svgObjectUniverso');
+  let svgUniverso2 = objectUniverso2.contentDocument;
+  let svUniverso1 = svgUniverso2.querySelector('#idPath');
+
+  svUniverso1.classList.remove("pintar2");
+  svUniverso1.classList.add("pintar1");
+
+  let objectJuego1 = document.querySelector('#svgObjectJuego');
+  let svgJuego1 = objectJuego1.contentDocument;
+  let svJuego1 = svgJuego1.querySelector('#idPath');
+
+  svJuego1.classList.remove("pintar2");
+  svJuego1.classList.add("pintar1");
+
+  if (pathSvg2Universo) {
+    pathSvg2Universo.classList.remove("pintar2");
+    pathSvg2Universo.classList.add("pintar1");
+    pathSvg2Universo = null;
+  }
+}
+
+// Función para pintar el botón del SVG especificado y despintar los botones iniciales
+function pintarBtnSvg(path, archivo) {
+  if (path !== pathAnterior) {
+    if (pathAnterior) {
+      pathAnterior.classList.remove("pintar2");
+      pathAnterior.classList.add("pintar1");
+    }
+    path.classList.add("pintar2");
+    pathAnterior = path;
+
+    // Despinta los botones iniciales si existe un botón pintado anteriormente
+    if (pathSvg2Universo) {
+      despintarBtnIniciales();  
+    }
+    
+    console.log(pathAnterior);
+
+    // Pinta el universo o el juego según el archivo especificado
+    if (archivo === "universo.html") {
+      pintarUniverso(archivo);
+    }
+    if (archivo === "juego.html") {
+      pintarJuego(archivo);
+    }
+  }
+}
+
 //Metodo por  AXIOS   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 var svgObjects = document.querySelectorAll(".classSvgContainer");
 
@@ -248,8 +355,11 @@ svgObjects.forEach(function (svgObject) {
         // Obtiene el atributo 'data-src' del objeto <object> que contiene el SVG
         var archivoHTML = svgObject.getAttribute("data-src");
 
+        var elementPath = svgDocument.querySelectorAll(".elementoPintar");
+
         // Llama a la función cargarContenido con el archivo HTML como argumento
-        cargarContenidoDesdeSVG(archivoHTML);
+        cargarContenidoDesdeSVG(archivoHTML,elementPath[0]);
+        pintarBtnSvg(elementPath[0], archivoHTML);
       };
     });
   });

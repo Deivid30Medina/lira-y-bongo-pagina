@@ -390,11 +390,11 @@ button{
 
 
 .classUniverso2{
-    display: none;
+    opacity: 0;
 }
 
 .classJuego2{
-    display: none;
+    opacity: 0;
 }
 
 /*Estilos footer Final*/
@@ -480,10 +480,12 @@ button{
     }
 
     .classUniverso2{
+        opacity: 1;
         order: 7;
     }
 
     .classJuego2{
+        opacity: 1;
         order: 8;
     }
 
@@ -717,10 +719,12 @@ button{
     }
 
     .classUniverso2{
+        opacity: 1;
         order: 7;
     }
 
     .classJuego2{
+        opacity: 1;
         order: 8;
     }
 
@@ -965,10 +969,12 @@ button{
     }
 
     .classUniverso2{
+        opacity: 1;
         order: 7;
     }
 
     .classJuego2{
+        opacity: 1;
         order: 8;
     }
 
