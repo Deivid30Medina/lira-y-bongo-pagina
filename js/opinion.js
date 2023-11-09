@@ -1,7 +1,5 @@
-console.log("Entro en 0");
 document.getElementById("svgBtnOpinion").addEventListener("load", function() {
     var svgDoc = this.contentDocument; // Accede al documento SVG dentro del objeto
-    console.log("Entro en 1");
     // Agrega un evento de clic al elemento SVG
     svgDoc.getElementById("Capa_1").addEventListener("click", function() {
         // Redirige al usuario a la URL
