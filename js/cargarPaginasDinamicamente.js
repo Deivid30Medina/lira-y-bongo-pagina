@@ -168,7 +168,7 @@ function ocualtarElementos() {
   // Ocultar el canvas, el section, contenido actual y botones de jeugo y universo 3 al cargar contenido diferente
   document.getElementById("canvas").style.display = "none";
   document.getElementById("idSectionBtnFinales").style.display = "none";
-  document.getElementById("idSection0").style.opacity = 0;
+  document.getElementById("idSection0").style.display = "none";
   document.querySelector(".contenido_cambiante").style.opacity = 0;
 }
 
