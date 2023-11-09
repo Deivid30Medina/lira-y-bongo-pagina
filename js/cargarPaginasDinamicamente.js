@@ -88,7 +88,7 @@ function cargarContenido(archivo) {
  */
 function cargarContenidoDesdeSVG(archivo) {
   // Ocultar elementos que ya no deben mostarse
-  ocualtarElementos();
+  ocualtarElementos(archivo);
 
   // Mostrar loader mientras se carga el contenido
   const mainContainer = mostrarLoader();
@@ -172,11 +172,14 @@ function removerLoader() {
  * Se oculta el canvas con movimiento de espiral
  * Se oculta los btn de universo y juego
  */
-function ocualtarElementos() {
+function ocualtarElementos(archivo) {
   // Ocultar el canvas, el section, contenido actual y botones de jeugo y universo 3 al cargar contenido diferente
   document.getElementById("canvas").style.display = "none";
   document.getElementById("idSectionBtnFinales").style.display = "none";
-  document.getElementById("idSection0").style.display = "none";
+  if(archivo != "juego.html" && archivo != "universo.html"){
+    document.getElementById("idSection0").style.display = "none";
+  }
+  document.getElementById("idSection0").style.opacity = 0;
   document.querySelector(".contenido_cambiante").style.opacity = 0;
 }
 
@@ -245,7 +248,6 @@ function validarObejectHtml(archivo){
 
       // Obtener la altura del contenido
       var alturaContenido = contenidoBody.clientHeight;
-      console.log(alturaContenido);
       // Asignar la altura del contenido al objeto
       if(archivo === "registraTuObra.html"){
         alturaContenido += 210;
@@ -259,28 +261,24 @@ function validarObejectHtml(archivo){
 function pintarUniverso(archivo){
     let objectUniverso3 = document.querySelector('#svgObjectUniverso3');
     let svgUniverso3 = objectUniverso3.contentDocument;
-    let objectUniverso2 = document.querySelector('#svgObjectUniverso2');
-    let svgUniverso2 = objectUniverso2.contentDocument;
-    pathSvg2Universo = svgUniverso2.querySelector('#idPath');
-    pathSvg2Universo.classList.add("pintar2");
 
     if(archivo != "universo.html" ){
       pathAnterior.classList.remove("pintar2");
       pathAnterior.classList.add("pintar1");
     }
 
-    
     pathAnterior = svgUniverso3.querySelector('#idPath');
     pathAnterior.classList.add("pintar2");
+
+    let objectUniverso2 = document.querySelector('#svgObjectUniverso2');
+    let svgUniverso2 = objectUniverso2.contentDocument;
+    pathSvg2Universo = svgUniverso2.querySelector('#idPath');
+    pathSvg2Universo.classList.add("pintar2");
 }
 
 function pintarJuego(archivo) {
   let objectUniverso3 = document.querySelector('#svgObjectJuego3');
   let svgUniverso3 = objectUniverso3.contentDocument;
-  let objectUniverso2 = document.querySelector('#svgObjectJuego2');
-  let svgUniverso2 = objectUniverso2.contentDocument;
-  pathSvg2Juego = svgUniverso2.querySelector('#idPath');
-  pathSvg2Juego.classList.add("pintar2");
 
   // Si el archivo no es "juego.html", desvincula la clase "pintar2" del elemento anterior y agrega la clase "pintar1"
   if (archivo !== "juego.html") {
@@ -290,6 +288,11 @@ function pintarJuego(archivo) {
   
   pathAnterior = svgUniverso3.querySelector('#idPath');
   pathAnterior.classList.add("pintar2");
+
+  let objectUniverso2 = document.querySelector('#svgObjectJuego2');
+  let svgUniverso2 = objectUniverso2.contentDocument;
+  pathSvg2Juego = svgUniverso2.querySelector('#idPath');
+  pathSvg2Juego.classList.add("pintar2");
 }
 
 function despintarUniverso2Btn(){
