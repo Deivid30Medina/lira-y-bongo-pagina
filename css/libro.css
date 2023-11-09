@@ -1,35 +1,68 @@
 
+.classLibroBody{
+    overflow: hidden;
+}
 
-.classBodyPdf{
+
+.classContainerOpinion{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    margin-bottom: 5%;
 }
 
-.classContenedorLibro{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 3%;
+
+.classSvgBtnOpinion{
+    z-index: 0;
+    width: 20%;
 }
 
-.classBtnPDF{
-    
-}
 
-.classLibroPdf{
-    width: 50%;
-    height: 100%;
-    
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-}
+
 
 #toolbar {
     --pdf-toolbar-text-color: rgb(255 181 13) !important; 
+}
+
+@media screen and (min-width:550px) and (max-width: 772px){
+    .classSvgBtnOpinion{
+        width: 40%;
+    }
+
+    .classContainerOpinion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 75%;
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 550px){
+    .classSvgBtnOpinion{
+        width: 40%;
+    }
+
+    .classContainerOpinion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 140%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .classSvgBtnOpinion{
+        width: 40%;
+    }
+
+    .classContainerOpinion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 230%;
+    }
 }

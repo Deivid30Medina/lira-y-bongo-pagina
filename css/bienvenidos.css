@@ -126,17 +126,7 @@ body{
     width: 110%;
 }
 
-.classContainerOpinion{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 5%;
-}
 
-.classSvgBtnOpinion{
-    width: 20%;
-}
 
 
 
@@ -521,17 +511,7 @@ body{
         justify-content: center !important;
     }
 
-    .classSvgBtnOpinion{
-        width: 40%;
-    }
-
-    .classContainerOpinion{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 75%;
-    }
+   
     
 }
 
@@ -666,18 +646,6 @@ body{
         align-items: center !important;
         justify-content: center !important;
     }
-
-    .classSvgBtnOpinion{
-        width: 40%;
-    }
-
-    .classContainerOpinion{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 140%;
-    }
     
 }
 
@@ -808,18 +776,6 @@ body{
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
-    }
-
-    .classSvgBtnOpinion{
-        width: 40%;
-    }
-
-    .classContainerOpinion{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 230%;
     }
 
     .classComentarioCarrusel{

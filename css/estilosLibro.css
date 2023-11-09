@@ -1,0 +1,35 @@
+
+
+.classObject {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+}
+
+.classBodyPdf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.classContenedorLibro{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.classLibroPdf{
+    width: 50%;
+    height: 100%;
+    
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}

@@ -224,7 +224,7 @@ function mostrarElementosEspecificos(archivo) {
  * @param {bienvenidos.html, creandoConLira_y_Bongo.html,registraTuObra.html,universo.html} archivo archivo html que se esta llamando, no todos los html tiene html sino solo los de la lista.
  */
 function validarObejectHtml(archivo){
-  if(archivo === "bienvenidos.html" || archivo === "creandoConLira_y_Bongo.html" || archivo === "registraTuObra.html" || archivo === "universo.html"){
+  if(archivo === "bienvenidos.html" || archivo === "creandoConLira_y_Bongo.html" || archivo === "registraTuObra.html" || archivo === "universo.html" || archivo === "libro.html"){
     var miObjeto = document.getElementById('idObjeto');
 
     // Esperar a que el contenido se cargue completamente
@@ -237,6 +237,7 @@ function validarObejectHtml(archivo){
 
       // Obtener la altura del contenido
       var alturaContenido = contenidoBody.clientHeight;
+      console.log(alturaContenido);
       // Asignar la altura del contenido al objeto
       if(archivo === "registraTuObra.html"){
         alturaContenido += 210;
