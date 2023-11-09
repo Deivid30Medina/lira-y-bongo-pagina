@@ -248,7 +248,6 @@ function validarObejectHtml(archivo){
 }
 
 function pintarUniverso(archivo){
-  console.log("Entro 3");
     let objectUniverso3 = document.querySelector('#svgObjectUniverso3');
     let svgUniverso3 = objectUniverso3.contentDocument;
     let objectUniverso2 = document.querySelector('#svgObjectUniverso2');
@@ -326,7 +325,6 @@ function despintarBtnIniciales() {
 function pintarBtnSvg(path, archivo) {
   if (path !== pathAnterior) {
     if (pathAnterior) {
-      console.log("Entro 1");
       pathAnterior.classList.remove("pintar2");
       pathAnterior.classList.add("pintar1");
       if(archivoAnterior = "Universo.html"){
@@ -342,17 +340,14 @@ function pintarBtnSvg(path, archivo) {
 
     // Despinta los botones iniciales si existe si se va a inicio
     if (archivo == "inicio.html") {
-      console.log("Entro 2");
       despintarBtnIniciales();  
     }
     
     // Pinta el universo o el juego según el archivo especificado
     if (archivo === "universo.html") {
-      console.log("Entro 3");
       pintarUniverso(archivo);
     }
     if (archivo === "juego.html") {
-      console.log("Entro 4");
       pintarJuego(archivo);
     }
   }

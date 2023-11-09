@@ -10,7 +10,6 @@ $(document).ready(function() {
   var x;
   var $cards = jQuery(".card"); 
   var $style = jQuery(".hover");
-console.log($cards);
 $cards
   .on("mousemove touchmove", function(e) { 
     // normalise touch/mouse
