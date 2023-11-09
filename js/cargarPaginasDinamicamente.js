@@ -47,12 +47,20 @@ menuButtons.forEach((button) => {
  */
 function cargarContenido(archivo) {
   // Capturar la URL completa
-  if(screen.width >= 772){
+  const urlCompleta = window.location.href;
+  if(screen.width >= 772 && urlCompleta.includes("juego") == false){
     let objectInicio = document.querySelector('#svgObjectInicio');
     let SvgInicio = objectInicio.contentDocument;
     pathAnterior = SvgInicio.querySelector('#idPathSvg');
     pathAnterior.classList.add("pintar2");
-  }  
+  }  else{
+    mostrarElementosEspecificos(archivo);
+
+    let objectInicio = document.querySelector('#svgObjectJuego3');
+    let SvgInicio = objectInicio.contentDocument;
+    pathAnterior = SvgInicio.querySelector('#idPath');
+    pathAnterior.classList.add("pintar2");
+  }
   document.querySelector(".contenido_cambiante").style.opacity = 0;
   setTimeout(function () {
     // Carga el nuevo contenido
