@@ -329,6 +329,7 @@ body{
     align-items: center;
     justify-content: center;
     margin-bottom: 5%;
+
 }
 
 .classImgTituloComentario{
@@ -381,11 +382,14 @@ body{
 
 @media screen and (min-width:550px) and (max-width: 772px){
 
+    .classH2TituloComentarios{
+        margin-top: 80%;
+    }
 
 
     .classMainBienvenidos{
         height: 30em;
-        margin-bottom: 20%;
+        margin-top: 20%;
     }
 
     .classNombreUserCarrusel{
@@ -517,7 +521,9 @@ body{
 
 @media screen and (min-width: 380px) and (max-width: 550px){
 
-
+    .classH2TituloComentarios{
+        margin-top: 80%;
+    }
 
     .classMainBienvenidos{
         height: 20em;
@@ -554,6 +560,9 @@ body{
     }
 
     
+    .classH2TituloComentarios{
+        margin-top: 200%;
+    }
 
     .classMainContenedor{
         width: 100%;
@@ -650,6 +659,11 @@ body{
 }
 
 @media screen and (max-width: 380px) {
+
+    .classH2TituloComentarios{
+        margin-top: 250%;
+    }
+
     .classMainBienvenidos{
         height: 20em;;
     }
