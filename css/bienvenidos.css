@@ -383,7 +383,7 @@ body{
 @media screen and (min-width:550px) and (max-width: 772px){
 
     .classH2TituloComentarios{
-        margin-top: 80%;
+        margin-top: 70%;
     }
 
 
@@ -522,7 +522,7 @@ body{
 @media screen and (min-width: 380px) and (max-width: 550px){
 
     .classH2TituloComentarios{
-        margin-top: 80%;
+        margin-top: 70%;
     }
 
     .classMainBienvenidos{
@@ -559,10 +559,6 @@ body{
         flex-wrap: wrap;
     }
 
-    
-    .classH2TituloComentarios{
-        margin-top: 200%;
-    }
 
     .classMainContenedor{
         width: 100%;
@@ -661,7 +657,7 @@ body{
 @media screen and (max-width: 380px) {
 
     .classH2TituloComentarios{
-        margin-top: 250%;
+        margin-top: 200%;
     }
 
     .classMainBienvenidos{
