@@ -1,7 +1,6 @@
 document.getElementById("idSection0").style.opacity = 0;
 document.getElementById("idSectionBtnFinales").style.display = "none";
-let banderaBtnDespintar, banderaBtnPintado, pathAnterior, pathSvg2Universo, pathSvg2Juego;
-let cont = 0;
+let banderaBtnDespintar, archivoAnterior, banderaBtnPintado, pathAnterior, pathSvg2Universo, pathSvg2Juego;
 
 
 //Validar que al momento de dar clic en una opcion de la hamburgesa menu esta se cierre.
@@ -261,19 +260,19 @@ function pintarUniverso(archivo){
       pathAnterior.classList.remove("pintar2");
       pathAnterior.classList.add("pintar1");
     }
+
     
     pathAnterior = svgUniverso3.querySelector('#idPath');
     pathAnterior.classList.add("pintar2");
 }
 
 function pintarJuego(archivo) {
-  console.log("Entró en pintarJuego");
   let objectUniverso3 = document.querySelector('#svgObjectJuego3');
   let svgUniverso3 = objectUniverso3.contentDocument;
   let objectUniverso2 = document.querySelector('#svgObjectJuego2');
   let svgUniverso2 = objectUniverso2.contentDocument;
-  let pathSvg2Universo = svgUniverso2.querySelector('#idPath');
-  pathSvg2Universo.classList.add("pintar2");
+  pathSvg2Juego = svgUniverso2.querySelector('#idPath');
+  pathSvg2Juego.classList.add("pintar2");
 
   // Si el archivo no es "juego.html", desvincula la clase "pintar2" del elemento anterior y agrega la clase "pintar1"
   if (archivo !== "juego.html") {
@@ -283,6 +282,22 @@ function pintarJuego(archivo) {
   
   pathAnterior = svgUniverso3.querySelector('#idPath');
   pathAnterior.classList.add("pintar2");
+}
+
+function despintarUniverso2Btn(){
+  if (pathSvg2Universo) {
+    pathSvg2Universo.classList.remove("pintar2");
+    pathSvg2Universo.classList.add("pintar1");
+    pathSvg2Universo = null;
+  }
+}
+
+function despintarJuego2Btn(){
+  if (pathSvg2Juego) {
+    pathSvg2Juego.classList.remove("pintar2");
+    pathSvg2Juego.classList.add("pintar1");
+    pathSvg2Juego = null;
+  }
 }
 
 // Función para despintar los botones iniciales y resetear los estilos
@@ -301,35 +316,43 @@ function despintarBtnIniciales() {
   svJuego1.classList.remove("pintar2");
   svJuego1.classList.add("pintar1");
 
-  if (pathSvg2Universo) {
-    pathSvg2Universo.classList.remove("pintar2");
-    pathSvg2Universo.classList.add("pintar1");
-    pathSvg2Universo = null;
-  }
+  despintarUniverso2Btn();
+
+  despintarJuego2Btn();
+ 
 }
 
 // Función para pintar el botón del SVG especificado y despintar los botones iniciales
 function pintarBtnSvg(path, archivo) {
   if (path !== pathAnterior) {
     if (pathAnterior) {
+      console.log("Entro 1");
       pathAnterior.classList.remove("pintar2");
       pathAnterior.classList.add("pintar1");
+      if(archivoAnterior = "Universo.html"){
+        despintarUniverso2Btn();
+      }
+      if(archivoAnterior = "juego.html"){
+        despintarJuego2Btn();
+      }
     }
     path.classList.add("pintar2");
     pathAnterior = path;
+    archivoAnterior = archivo;
 
-    // Despinta los botones iniciales si existe un botón pintado anteriormente
-    if (pathSvg2Universo) {
+    // Despinta los botones iniciales si existe si se va a inicio
+    if (archivo == "inicio.html") {
+      console.log("Entro 2");
       despintarBtnIniciales();  
     }
     
-    console.log(pathAnterior);
-
     // Pinta el universo o el juego según el archivo especificado
     if (archivo === "universo.html") {
+      console.log("Entro 3");
       pintarUniverso(archivo);
     }
     if (archivo === "juego.html") {
+      console.log("Entro 4");
       pintarJuego(archivo);
     }
   }
