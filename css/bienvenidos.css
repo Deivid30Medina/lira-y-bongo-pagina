@@ -522,7 +522,7 @@ body{
 @media screen and (min-width: 380px) and (max-width: 550px){
 
     .classH2TituloComentarios{
-        margin-top: 80%;
+        margin-top: 130%;
     }
 
     .classMainBienvenidos{
@@ -657,7 +657,7 @@ body{
 @media screen and (max-width: 380px) {
 
     .classH2TituloComentarios{
-        margin-top: 180%;
+        margin-top: 210%;
     }
 
     .classMainBienvenidos{
