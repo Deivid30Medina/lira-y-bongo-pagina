@@ -53,6 +53,10 @@ function cargarContenido(archivo) {
     let SvgInicio = objectInicio.contentDocument;
     pathAnterior = SvgInicio.querySelector('#idPathSvg');
     pathAnterior.classList.add("pintar2");
+    let objectUniverso2 = document.querySelector('#idDivUniverso2');
+    objectUniverso2.style.display = "none"
+    let objecJuego2 = document.querySelector('#idDivJuego2');
+    objecJuego2.style.display = "none"
   }  else{
     mostrarElementosEspecificos(archivo);
 
