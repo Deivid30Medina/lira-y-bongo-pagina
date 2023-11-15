@@ -388,20 +388,7 @@
         font-size: 25px;
     }
 
-    .classDepartamentoPoppup{
-        flex-direction: column ;
-    }
 
-    .classImgDepartamentPoppup{
-        order: 0;
-        width: 30%;
-    }
-
-    .classBtnsAzulPoppup{
-        margin-top: 2%;
-        order: 1;
-        width: 50%;
-    }
 }
 
 @media screen and (min-width:375px) and (max-width: 480px){
