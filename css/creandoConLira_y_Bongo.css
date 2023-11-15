@@ -230,6 +230,13 @@
     
 }
 
+.btnAzulCunadoEstaSolo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .classBtnvisitadoAzulPoppup{
     background: linear-gradient(90deg, rgba(0,219,250,1) 0%, rgba(0,90,230,1) 100%);
     border-radius: 10px;
