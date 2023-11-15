@@ -460,8 +460,8 @@
       width: 90%;
     }
 
-    .classImgTitleRegiones{
-      width: 90%;
+    .classImgTituloRegiones{
+      width: 60%;
     }
     
   }
@@ -493,9 +493,6 @@
       width: 90%;
     }
 
-    .classImgTitleRegiones{
-      width: 90%;
-    }
     .classNombrePersonaje{
       font-size: 14px;
     }
@@ -506,6 +503,10 @@
 
     .classFechaPersonaje{
       font-size: 8px;
+    }
+
+    .classImgTituloRegiones{
+      width: 60%;
     }
   }
   
@@ -536,9 +537,6 @@
       width: 90%;
     }
 
-    .classImgTitleRegiones{
-      width: 90%;
-    }
 
     .classNombrePersonaje{
       font-size: 14px;
@@ -550,6 +548,10 @@
 
     .classFechaPersonaje{
       font-size: 8px;
+    }
+
+    .classImgTituloRegiones{
+      width: 60%;
     }
   }
 
