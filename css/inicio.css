@@ -141,16 +141,23 @@
     width: 300%;
 }
 
+.text1{
+    top: 55%;
+}
+
 .text2{
     left: -185% !important;
+    top: 55%;
 }
 
 .text4{
     left: -318% !important;
+    top: 55%;
 }
 
 .text5{
     left: -450% !important;
+    top: 55%;
 }
 
 .classGemas{
@@ -295,18 +302,22 @@
 
    .text1{
         left: 0 !important;
+        top: 55%;
    }
 
    .text2{
        left: -133% !important;
+       top: 55%;
    }
    
    .text4{
        left: -265% !important;
+       top: 55%;
    }
    
    .text5{
        left: -400% !important;
+       top: 55%;
    }
 
     .svgGema1{
@@ -396,18 +407,22 @@
 
     .text1{
         left: 0 !important;
+        top: 55%;
     }
 
     .text2{
         left: -135% !important;
+        top: 55%;
     }
 
     .text4{
         left: -270% !important;
+        top: 55%;
     }
 
     .text5{
         left: -405% !important;
+        top: 55%;
     }
 
     .svgGema1{
@@ -495,18 +510,22 @@
 
     .text1{
         left: 0 !important;
+        top: 55%;
     }
 
     .text2{
         left: -150% !important;
+        top: 55%;
     }
 
     .text4{
         left: -280% !important;
+        top: 55%;
     }
 
     .text5{
         left: -410% !important;
+        top: 55%;
     }
 
     .svgGema1{
