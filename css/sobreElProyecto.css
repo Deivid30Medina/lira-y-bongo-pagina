@@ -565,12 +565,17 @@ body{
     }
 
     .classTituloCreadoresWeb{
-        width: 60%;
+        width: 70%;
     }
 
     .classBandaSonoraVideo{
         width: 80%;
     }
+
+    .classImgBandaSonora{
+        width: 70%;
+    }
+
 }
 
 @media screen and (min-width:375px) and (max-width: 480px){
@@ -646,11 +651,15 @@ body{
     }
 
     .classTituloCreadoresWeb{
-        width: 60%;
+        width: 70%;
     }
 
     .classBandaSonoraVideo{
         width: 80%;
+    }
+
+    .classImgBandaSonora{
+        width: 70%;
     }
 }
 
@@ -727,11 +736,15 @@ body{
     }
 
     .classTituloCreadoresWeb{
-        width: 60%;
+        width: 70%;
     }
 
     .classBandaSonoraVideo{
         width: 80%;
+    }
+
+    .classImgBandaSonora{
+        width: 70%;
     }
 }
 
