@@ -33,7 +33,7 @@
 
       .classText1{
         fill: #002f70;
-        font-size: 23px;
+        font-size: 22px;
         font-family: fuenteTitulo; /*fira sans medium italic*/
         cursor: pointer;
         font-weight: bold;
