@@ -218,7 +218,7 @@
 
 .classLineaSeparador{
     width: 1% !important;
-    border-right: 2px solid black !important;
+    border-right: 2px solid rgb(204, 197, 197) !important;
     height: 220px !important;
 }
 
