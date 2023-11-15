@@ -33,7 +33,7 @@
 
       .classText1{
         fill: white;
-        font-size: 10px;
+        font-size: 7px;
         font-family: fuenteTitulo; /*fira sans medium italic*/
         cursor: pointer;
         font-weight: bold;
@@ -87,13 +87,13 @@
     <image x="10" y="18" width="40" height="40" xlink:href="../../imagenes/Comic/Inicio/Gemas/InicioGema4-4.png" />
     <rect class="cls-3" x="60" y="-10" width="1" height="50" transform="translate(-11.53 33.74) rotate(-11.08)"/>
     <text  x="65" y="20" class="classText1">
-      Derecho de comunicación pública:
+      Derecho de comunicación pública y puesta a disposición
     </text>
     <text  x="65" y="30" class="classText2">
-      <tspan x="65" y="35">Cuando se permite que muchas personas tengan acceso</tspan>
-      <tspan x="65" y="45">a una obra a través de medios de comunicación u otros</tspan>
-      <tspan x="65" y="55">medios que permitan a las personas acceder a ésta como</tspan>
-      <tspan x="65" y="65">los establecimientos públicos, radio, televisión, cine o teatro.</tspan>
+      <tspan x="65" y="35">Cuando se permite que muchas personas tengan acceso a</tspan>
+      <tspan x="65" y="45">una obra a través de medios de comunicación tradicionales,</tspan>
+      <tspan x="65" y="55">digitales u otros medios que permiten a las personas</tspan>
+      <tspan x="65" y="65">acceder a ellas.</tspan>
     </text>
   </g>
 </svg>
