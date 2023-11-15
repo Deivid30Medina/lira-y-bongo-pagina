@@ -286,10 +286,15 @@
 }
 
 .classImgTitleRegiones{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.classImgTituloRegiones{
   object-fit: scale-down;
   width: 40%;
-  text-align: left;
-  font-size: 30px;
 }
 
 

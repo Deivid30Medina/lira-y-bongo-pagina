@@ -336,7 +336,7 @@ body{
 
 .classTituloCreadoresWeb{
     object-fit: scale-down;
-    width: 30%;
+    width: 40%;
 }
 
 .classInformacionCreadoresWeb{
@@ -418,13 +418,15 @@ body{
 }
 
 .classTituloBandaSonora{
-    width: 80%;
-    color: gray;
-    font-family: fuenteTitulo;
-    text-align: justify !important;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+.classImgBandaSonora{
+    object-fit: scale-down;
+    width: 50%;
 }
 
 .classBandaSonoraVideo{
