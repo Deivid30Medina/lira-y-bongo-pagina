@@ -159,7 +159,7 @@
 
 .classContenedorBlanco{
     background-color: white;
-    width: 60%;
+    width: 50%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -175,25 +175,40 @@
     width: 100%;
 }
 
+.classContainerImgEscudo{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
 .classImgEscudoPopup{
     object-fit: scale-down;
     height: 100px;
-    width: 80%;
 }
 
 .classTituloPoppup{
     text-align: center;
     width: 50%;
     font-family: fuenteTitulo;
+    color: #2767C9;
+}
+
+.classContainerImgBordon{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .classImgBordonPopup{
     object-fit: scale-down;
     height: 100px;
-    width: 80%;
 }
 
 .classDepartamentoPoppup{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -201,18 +216,24 @@
     flex-wrap: wrap;
 }
 
+.classLineaSeparador{
+    width: 1% !important;
+    border-right: 2px solid black !important;
+    height: 220px !important;
+}
+
 .classBtnsAzulPoppup{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
-    width: 18%;
+    width: 40%;
     
 }
 
 .classBtnvisitadoAzulPoppup{
     background: linear-gradient(90deg, rgba(0,219,250,1) 0%, rgba(0,90,230,1) 100%);
-    border-radius: 30px;
-    width: 100%;
+    border-radius: 10px;
+    width: 60%;
     height: 50px;
     margin-bottom: 5%;
     cursor: pointer;
@@ -221,19 +242,34 @@
     font-size: medium;
     font-weight: bold;
     color: aliceblue;
+    text-align: center;
 }
 
 .classBtnsNaranjaPoppup{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    width: 18%;
+    width: 40%;
+}
+
+.classTituloEscudo{
+    text-align: right;
+    font-family: fuenteTitulo;
+    color: #2767C9;
+    width: 70%;
+}
+
+.classTituloBordon{
+    text-align: left;
+    font-family: fuenteTitulo;
+    color: #2767C9;
+    width: 70%;
 }
 
 .classBtnvisitadoNaranjaPoppup{
     background: linear-gradient(90deg, rgba(255,154,0,1) 0%, rgba(250,100,0,1) 55%, rgba(252,42,79,1) 100%);
-    border-radius: 30px;
-    width: 100%;
+    border-radius: 10px;
+    width: 60%;
     height: 50px;
     margin-bottom: 5%;
     cursor: pointer;
@@ -242,6 +278,7 @@
     font-size: medium;
     font-weight: bold;
     color: aliceblue;
+    text-align: center;
 }
 
 .classImgDepartamentPoppup{
@@ -273,10 +310,20 @@
 
 .classAAzulBtn{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    margin-top: 5%;
 }
 
 .classANaranjaBtn{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    margin-top: 5%;
 }
 
 .classImgColombia{
