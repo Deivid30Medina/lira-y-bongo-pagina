@@ -291,7 +291,7 @@ $(document).ready(function(){
     // Carrusel 1
     $('#idCarruselPersonajesFotos').on('slid.bs.carousel', function (e) {
         var currentIndex = $(this).find('.carousel-item.active').index();
-
+        console.log(currentIndex);
         // Elimina y vuelve a agregar el elemento para reiniciar la animación
         $('.classNombrePersonaje').each(function(){
             var $clone = $(this).clone();

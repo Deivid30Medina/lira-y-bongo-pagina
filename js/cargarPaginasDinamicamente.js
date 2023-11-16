@@ -114,9 +114,20 @@ function cargarContenidoDesdeSVG(archivo) {
 
         //Mostar Elementos especificos de otras paginas
         mostrarElementosEspecificos(archivo);
+        cambiarTituloPagina(archivo);
       });
   }, 2000); // Ajustar el tiempo de carga HTML
   
+}
+
+
+function cambiarTituloPagina(archivo){
+  let ubicacion = archivo.split(".html");
+  let tituloActual = document.title.split("-");
+  let tituloSinExtencion = tituloActual[0];
+  let mayusculaTitulo = ubicacion[0].toUpperCase();
+  let titulonuevo = tituloSinExtencion+"-"+mayusculaTitulo;
+  document.title = titulonuevo;
 }
 
 /**
