@@ -179,6 +179,13 @@
     justify-content: flex-end;
 }
 
+.classContainerImgEscudo2{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .classImgEscudoPopup{
     object-fit: scale-down;
@@ -213,6 +220,15 @@
     flex-wrap: wrap;
 }
 
+.classDepartamentoPoppup2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .classLineaSeparador{
     width: 1% !important;
     border-right: 2px solid rgb(204, 197, 197) !important;
@@ -224,7 +240,14 @@
     align-items: flex-end;
     flex-direction: column;
     width: 40%;
-    
+}
+
+.classBtnsAzulPoppup2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 .btnAzulCunadoEstaSolo{
@@ -258,6 +281,13 @@
 
 .classTituloEscudo{
     text-align: right;
+    font-family: fuenteTitulo;
+    color: #2767C9;
+    width: 70%;
+}
+
+.classTituloEscudo2{
+    text-align: center;
     font-family: fuenteTitulo;
     color: #2767C9;
     width: 70%;
@@ -317,6 +347,15 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    text-decoration: none;
+    margin-top: 5%;
+}
+
+.classAAzulBtn2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     margin-top: 5%;
 }
