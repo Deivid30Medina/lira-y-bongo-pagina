@@ -59,7 +59,7 @@ body{
     font-family: fuenteParrafo;
     display: flex;
     align-items: center;
-    text-align: justify;
+    text-align: left;
     justify-content: space-evenly;
     font-size: 19px;
     width: 90%;
@@ -113,7 +113,7 @@ body{
 .classInformacionFinalMain {
     font-family: fuenteParrafo;
     font-size: 19px;
-    text-align: justify;
+    text-align: left;
     width: 90%;
     display: flex;
     align-items: center;

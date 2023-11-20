@@ -85,7 +85,7 @@ body{
     position: relative;
     width: 110%;
     color: #4a4a4a;
-    text-align: justify;
+    text-align: left;
     font-family: fuenteParrafo;
 
 }
@@ -108,7 +108,7 @@ body{
 }
 
 .classMainPDirectoNombre{
-    text-align: end;
+    text-align: left;
     font-size: 26px;
     margin: 0;
     font-style: italic;
@@ -118,7 +118,7 @@ body{
 }
 
 .classMainPCargoDirector{
-    text-align: end;
+    text-align: left;
     color: gray;
     font-size: 10px;
     font-family: fuenteParrafo;

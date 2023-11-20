@@ -54,19 +54,17 @@
 
 .classPrimeraDescripcion{
     font-family: fuenteParrafo;
-    text-align: justify;
+    text-align: left;
     width: 100%;
     color: #4a4a4a;
-    text-align: justify;
     font-size: 19px;
 }
 
 .classSegundaDescripcion{
     font-family: fuenteParrafo;
-    text-align: justify;
+    text-align: left;
     width: 100%;
     color: #4a4a4a;
-    text-align: justify;
     font-size: 19px;
 }
 
@@ -79,7 +77,7 @@
     font-family: fuenteParrafo;
     width: 100%;
     color: #4a4a4a;
-    text-align: justify;
+    text-align: left;
     font-size: 19px;
 }
 
@@ -110,10 +108,9 @@
 
 .classPFinalLiraBongo{
     font-family: fuenteParrafo;
-    text-align: justify;
     width: 100%;
     color: #4a4a4a;
-    text-align: justify;
+    text-align: left;
     font-size: 19px;
 }
 
