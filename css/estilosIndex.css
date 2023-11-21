@@ -96,7 +96,6 @@ body{
     text-align: center;
     /*border: 1px solid black;*/
     width: 100%;
-    flex-wrap: wrap;
     margin: 0;
     padding: 20px;
     position: absolute;
