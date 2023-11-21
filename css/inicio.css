@@ -44,7 +44,6 @@
     width: 40%;
     height: 100%;
     text-align: center;
-    border: 1px solid red;
     margin: 2px;
 }
 
@@ -163,7 +162,6 @@
 .classGemas{
     width: 100%;
     margin: 0;
-    border: 1px solid white;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -193,7 +191,6 @@
     width: 25%;
     height: 100%;
     text-align: center;
-    border: 1px solid green;
     margin: 0px;
 }
 

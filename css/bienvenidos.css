@@ -57,7 +57,6 @@ body{
     align-items: start;
     justify-content: space-between;
     flex-wrap: wrap;
-    border: 1px solid black;
     height: 100%;
 }
 
@@ -73,12 +72,10 @@ body{
     position: absolute;
     width: 120%;
     object-fit: scale-down;
-    border: 1px solid red;
 }
 
 .classMainContenedorP{
     width: 45%;
-    border: 1px solid blue;
 }
 
 .classMainPPrincipal{
@@ -104,7 +101,6 @@ body{
     width: 80%;
     margin: 0;
     top: 0;
-    border: 1px solid red;
 }
 
 .classMainPDirectoNombre{
@@ -218,7 +214,6 @@ body{
 }
 
 .classDatosFechaUserCarrusel{
-    border-left: 4px solid white;
     display: flex;
     flex-direction: column;
     margin-top: 2%;
