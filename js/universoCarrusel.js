@@ -38,7 +38,7 @@ const personajesFichaTecnica = [
         , Lore:'El gran inventor Gutti no se esperaba realizar uno de los descubrimientos de mayor impacto de la historia: “La imprenta”, un dispositivo que permitía realizar múltiples copias de las obras literarias. Al principio todo fue maravilloso, el conocimiento llegó a todas partes del viejo mundo y dando paso a un nuevo poder, el de “La información”. Pero como dijo un sabio de la antigüedad “Un gran poder conlleva a una gran responsabilidad”, pues las copias ilegales de las obras fueron acumulándose hasta formar a una de las peores villanas de la historia “Piratería” en el primer cataclismo de la historia.'
         , habilidades:'Reproducir obras y sabiduría'
         , pasatiempo:'Democratizar el conocimiento alrededor del mundo y crear inventos'
-        , edad: '66 años'
+        , edad: 'Se dice que murió a los 68 años'
         , region: 'Alemania'
         , comida: 'Pescado y pan'
         , color: 'Amarillo'
