@@ -40,6 +40,16 @@ menuButtons.forEach((button) => {
 // Fin Validación
 
 
+function validacionInicial(objectInicio){
+  let SvgInicio = objectInicio.contentDocument;
+  pathAnterior = SvgInicio.querySelector('#idPathSvg');
+  pathAnterior.classList.add("pintar2");
+  let objectUniverso2 = document.querySelector('#idDivUniverso2');
+  objectUniverso2.style.display = "none"
+  let objecJuego2 = document.querySelector('#idDivJuego2');
+  objecJuego2.style.display = "none"
+}
+
 
 /**
  * Función que me carga inicialmente el contenido inicio.html
@@ -49,14 +59,23 @@ function cargarContenido(archivo) {
   // Capturar la URL completa
   const urlCompleta = window.location.href;
   if(screen.width >= 772 && urlCompleta.includes("juego") == false){
-    let objectInicio = document.querySelector('#svgObjectInicio');
-    let SvgInicio = objectInicio.contentDocument;
-    pathAnterior = SvgInicio.querySelector('#idPathSvg');
-    pathAnterior.classList.add("pintar2");
-    let objectUniverso2 = document.querySelector('#idDivUniverso2');
-    objectUniverso2.style.display = "none"
-    let objecJuego2 = document.querySelector('#idDivJuego2');
-    objecJuego2.style.display = "none"
+      // Obtener el objeto <object>
+      let objectInicio = document.querySelector('#svgObjectInicio');
+      let SvgInicio = objectInicio.contentDocument;
+      pathAnterior = SvgInicio.querySelector('#idPathSvg');
+      pathAnterior.classList.add("pintar2");
+      let objectUniverso2 = document.querySelector('#idDivUniverso2');
+      objectUniverso2.style.display = "none"
+      let objecJuego2 = document.querySelector('#idDivJuego2');
+      objecJuego2.style.display = "none"
+      
+      //validacionInicial(objectInicio);
+      // Agregar un evento load al objeto
+      //objectInicio.addEventListener('load', function() {
+        // La función se ejecutará después de que se haya cargado el contenido del objeto
+        
+ //     });
+  
   }  else{
     mostrarElementosEspecificos(archivo);
 

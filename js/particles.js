@@ -85,16 +85,16 @@ window.onload = function() {
     }
 
     // Comenta o elimina las líneas relacionadas con dat.gui si no deseas la interfaz de usuario
-    /*
-    var gui = new dat.GUI();
-    gui.add(settings, 'angulo', 0, 360).listen();
-    gui.add(settings, 'wow', 0, 100);
-    gui.add(settings, 'omg', 0, 2);
-    gui.add(settings, 'spartaX', 1, 20);
-    gui.add(settings, 'spartaY', 1, 20);
-    gui.add(settings, 'height', 2, 50);
-    gui.add(settings, 'width', 2, 50);
-    */
+    
+    // var gui = new dat.GUI();
+    // gui.add(settings, 'angulo', 0, 360).listen();
+    // gui.add(settings, 'wow', 0, 100);
+    // gui.add(settings, 'omg', 0, 2);
+    // gui.add(settings, 'spartaX', 1, 20);
+    // gui.add(settings, 'spartaY', 1, 20);
+    // gui.add(settings, 'height', 2, 50);
+    // gui.add(settings, 'width', 2, 50);
+    
 
     // Inicia el bucle de animación
     gameloop();
